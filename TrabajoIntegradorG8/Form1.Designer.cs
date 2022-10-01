@@ -40,7 +40,7 @@
             // 
             this.btnIngresar.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.Location = new System.Drawing.Point(47, 231);
+            this.btnIngresar.Location = new System.Drawing.Point(145, 227);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(124, 37);
             this.btnIngresar.TabIndex = 0;
@@ -94,9 +94,9 @@
             this.lblTitulo.Font = new System.Drawing.Font("Impact", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(137, 54);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(136, 43);
+            this.lblTitulo.Size = new System.Drawing.Size(155, 43);
             this.lblTitulo.TabIndex = 5;
-            this.lblTitulo.Text = "FULBITO";
+            this.lblTitulo.Text = "FULBITOo";
             // 
             // frmLogin
             // 
