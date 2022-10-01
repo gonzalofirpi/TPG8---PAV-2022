@@ -40,7 +40,7 @@
             // 
             this.btnIngresar.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.Location = new System.Drawing.Point(241, 227);
+            this.btnIngresar.Location = new System.Drawing.Point(279, 162);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(124, 37);
             this.btnIngresar.TabIndex = 0;
