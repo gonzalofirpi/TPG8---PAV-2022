@@ -102,5 +102,41 @@
   <ItemGroup>
     <None Include="Resources\InShot_20220928_1530501151.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoClubes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoComisiones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoCanchas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoSocios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoJugadores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoCategorias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoPuestos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoArbitros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoCargos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoBarrios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoLocalidades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoPartidos.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
