@@ -33,3 +33,16 @@ C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\G
 C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\Git tp\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\Git tp\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.exe
 C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\Git tp\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.pdb
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\bin\Debug\TrabajoIntegradorG8.exe.config
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\bin\Debug\TrabajoIntegradorG8.exe
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\bin\Debug\TrabajoIntegradorG8.pdb
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.frmLogin.resources
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.frmPrincipal.resources
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.Properties.Resources.resources
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.exe
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.pdb
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.AltaArbitro.resources
