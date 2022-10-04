@@ -60,7 +60,7 @@
             this.lblClubes.AutoSize = true;
             this.lblClubes.BackColor = System.Drawing.Color.Transparent;
             this.lblClubes.Font = new System.Drawing.Font("Impact", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClubes.Location = new System.Drawing.Point(176, 24);
+            this.lblClubes.Location = new System.Drawing.Point(295, 36);
             this.lblClubes.Name = "lblClubes";
             this.lblClubes.Size = new System.Drawing.Size(128, 43);
             this.lblClubes.TabIndex = 6;
@@ -300,6 +300,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 469);
             this.Controls.Add(this.btnBorrarClub);
             this.Controls.Add(this.txtNroCuit);

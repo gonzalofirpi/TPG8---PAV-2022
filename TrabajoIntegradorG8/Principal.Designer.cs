@@ -190,7 +190,7 @@
             // consultasToolStripMenuItem3
             // 
             this.consultasToolStripMenuItem3.Name = "consultasToolStripMenuItem3";
-            this.consultasToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem3.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem3.Text = "Consultas";
             this.consultasToolStripMenuItem3.Click += new System.EventHandler(this.consultasToolStripMenuItem3_Click);
             // 
@@ -270,7 +270,7 @@
             // consultasToolStripMenuItem6
             // 
             this.consultasToolStripMenuItem6.Name = "consultasToolStripMenuItem6";
-            this.consultasToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem6.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem6.Text = "Consultas";
             this.consultasToolStripMenuItem6.Click += new System.EventHandler(this.consultasToolStripMenuItem6_Click);
             // 
@@ -292,6 +292,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::TrabajoIntegradorG8.Properties.Resources.fondoPrincipal2;
             this.ClientSize = new System.Drawing.Size(1062, 457);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
