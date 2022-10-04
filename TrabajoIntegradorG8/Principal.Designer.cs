@@ -95,7 +95,7 @@
             // aBMClubesToolStripMenuItem
             // 
             this.aBMClubesToolStripMenuItem.Name = "aBMClubesToolStripMenuItem";
-            this.aBMClubesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aBMClubesToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.aBMClubesToolStripMenuItem.Text = "Consultas";
             // 
             // sociosToolStripMenuItem
@@ -110,7 +110,7 @@
             // aBMSociosToolStripMenuItem
             // 
             this.aBMSociosToolStripMenuItem.Name = "aBMSociosToolStripMenuItem";
-            this.aBMSociosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aBMSociosToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.aBMSociosToolStripMenuItem.Text = "Consultas";
             // 
             // canchasToolStripMenuItem
@@ -127,6 +127,7 @@
             this.aBMCanchasToolStripMenuItem.Name = "aBMCanchasToolStripMenuItem";
             this.aBMCanchasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aBMCanchasToolStripMenuItem.Text = "Consultas";
+            this.aBMCanchasToolStripMenuItem.Click += new System.EventHandler(this.aBMCanchasToolStripMenuItem_Click);
             // 
             // jugadoresToolStripMenuItem
             // 
@@ -140,7 +141,7 @@
             // consultasToolStripMenuItem
             // 
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem.Text = "Consultas";
             // 
             // arbitrosToolStripMenuItem
@@ -155,7 +156,7 @@
             // consultasToolStripMenuItem1
             // 
             this.consultasToolStripMenuItem1.Name = "consultasToolStripMenuItem1";
-            this.consultasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem1.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem1.Text = "Consultas";
             // 
             // categoriasToolStripMenuItem
@@ -170,7 +171,7 @@
             // consultasToolStripMenuItem2
             // 
             this.consultasToolStripMenuItem2.Name = "consultasToolStripMenuItem2";
-            this.consultasToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem2.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem2.Text = "Consultas";
             // 
             // comisionesToolStripMenuItem
@@ -185,7 +186,7 @@
             // consultasToolStripMenuItem3
             // 
             this.consultasToolStripMenuItem3.Name = "consultasToolStripMenuItem3";
-            this.consultasToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem3.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem3.Text = "Consultas";
             // 
             // arbitrosToolStripMenuItem1
@@ -200,7 +201,7 @@
             // consultasToolStripMenuItem10
             // 
             this.consultasToolStripMenuItem10.Name = "consultasToolStripMenuItem10";
-            this.consultasToolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem10.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem10.Text = "Consultas";
             this.consultasToolStripMenuItem10.Click += new System.EventHandler(this.consultasToolStripMenuItem10_Click);
             // 

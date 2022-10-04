@@ -14,10 +14,10 @@ using TrabajoIntegradorG8.Entidades;
 
 namespace TrabajoIntegradorG8
 {
-    public partial class AltaArbitro : Form
+    public partial class ABMarbitros : Form
     {
         private int codArbitro;
-        public AltaArbitro()
+        public ABMarbitros()
         {
             InitializeComponent();
         }
@@ -250,7 +250,7 @@ namespace TrabajoIntegradorG8
             {
                 if (actualizarArbitro(arbitro))
                 {
-                    MessageBox.Show("Barrio actualizado con exito!!");
+                    MessageBox.Show("Arbitro actualizado con exito!!");
                     LimpiarCampos();
                     cargarGrilla();
                 }
@@ -307,7 +307,7 @@ namespace TrabajoIntegradorG8
             {
                 try
                 {
-                    if (borrarBarrio())
+                    if (borrarArbitro())
                     {
                         MessageBox.Show("arbitro borrado con exito!!");
                         LimpiarCampos();
@@ -326,7 +326,7 @@ namespace TrabajoIntegradorG8
                 MessageBox.Show("No se eliminara el arbitro");
             }
         }
-        private bool borrarBarrio()
+        private bool borrarArbitro()
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);

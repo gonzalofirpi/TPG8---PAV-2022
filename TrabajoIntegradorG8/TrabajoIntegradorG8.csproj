@@ -47,13 +47,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AltaArbitro.cs">
+    <Compile Include="ABMcanchas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaArbitro.Designer.cs">
-      <DependentUpon>AltaArbitro.cs</DependentUpon>
+    <Compile Include="ABMcanchas.Designer.cs">
+      <DependentUpon>ABMcanchas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMarbitros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMarbitros.Designer.cs">
+      <DependentUpon>ABMarbitros.cs</DependentUpon>
     </Compile>
     <Compile Include="Entidades\Arbitro.cs" />
+    <Compile Include="Entidades\Canchas.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,8 +75,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AltaArbitro.resx">
-      <DependentUpon>AltaArbitro.cs</DependentUpon>
+    <EmbeddedResource Include="ABMcanchas.resx">
+      <DependentUpon>ABMcanchas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMarbitros.resx">
+      <DependentUpon>ABMarbitros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

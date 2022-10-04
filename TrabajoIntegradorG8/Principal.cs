@@ -17,18 +17,19 @@ namespace TrabajoIntegradorG8
             InitializeComponent();
         }
 
-        private void altaArbitroToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AltaArbitro ventana = new AltaArbitro();
-            ventana.Show();
-
-        }
+   
 
         private void consultasToolStripMenuItem10_Click(object sender, EventArgs e)
         {
-            AltaArbitro ventana = new AltaArbitro();
+            ABMarbitros ventana = new ABMarbitros();
             ventana.Show();
            
+        }
+
+        private void aBMCanchasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABMcanchas ventana = new ABMcanchas();
+            ventana.Show();
         }
     }
 }

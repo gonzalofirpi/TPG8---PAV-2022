@@ -1,6 +1,6 @@
 ﻿namespace TrabajoIntegradorG8
 {
-    partial class AltaArbitro
+    partial class ABMarbitros
     {
         /// <summary>
         /// Required designer variable.
@@ -48,7 +48,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(54, 135);
+            this.lblNombre.Location = new System.Drawing.Point(54, 154);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(47, 13);
             this.lblNombre.TabIndex = 0;
@@ -56,14 +56,14 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(107, 132);
+            this.txtNombre.Location = new System.Drawing.Point(108, 147);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(155, 20);
             this.txtNombre.TabIndex = 1;
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(107, 170);
+            this.txtApellido.Location = new System.Drawing.Point(108, 188);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(155, 20);
             this.txtApellido.TabIndex = 3;
@@ -71,7 +71,7 @@
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(54, 173);
+            this.lblApellido.Location = new System.Drawing.Point(54, 195);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(47, 13);
             this.lblApellido.TabIndex = 2;
@@ -79,7 +79,7 @@
             // 
             // btnGuardarArbitro
             // 
-            this.btnGuardarArbitro.Location = new System.Drawing.Point(125, 262);
+            this.btnGuardarArbitro.Location = new System.Drawing.Point(188, 226);
             this.btnGuardarArbitro.Name = "btnGuardarArbitro";
             this.btnGuardarArbitro.Size = new System.Drawing.Size(75, 49);
             this.btnGuardarArbitro.TabIndex = 6;
@@ -89,7 +89,7 @@
             // 
             // btnLimpiarCampos
             // 
-            this.btnLimpiarCampos.Location = new System.Drawing.Point(32, 262);
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(107, 226);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
             this.btnLimpiarCampos.Size = new System.Drawing.Size(75, 49);
             this.btnLimpiarCampos.TabIndex = 7;
@@ -106,10 +106,10 @@
             this.idarbitro,
             this.NombreArbitro,
             this.Apellido});
-            this.grillaArbitros.Location = new System.Drawing.Point(313, 56);
+            this.grillaArbitros.Location = new System.Drawing.Point(313, 74);
             this.grillaArbitros.Name = "grillaArbitros";
             this.grillaArbitros.ReadOnly = true;
-            this.grillaArbitros.Size = new System.Drawing.Size(268, 150);
+            this.grillaArbitros.Size = new System.Drawing.Size(268, 134);
             this.grillaArbitros.TabIndex = 8;
             this.grillaArbitros.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grillaArbitros_CellClick);
             // 
@@ -138,16 +138,17 @@
             // lblListaArbitros
             // 
             this.lblListaArbitros.AutoSize = true;
-            this.lblListaArbitros.Location = new System.Drawing.Point(325, 22);
+            this.lblListaArbitros.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListaArbitros.Location = new System.Drawing.Point(310, 40);
             this.lblListaArbitros.Name = "lblListaArbitros";
-            this.lblListaArbitros.Size = new System.Drawing.Size(81, 13);
+            this.lblListaArbitros.Size = new System.Drawing.Size(98, 13);
             this.lblListaArbitros.TabIndex = 9;
             this.lblListaArbitros.Text = "Lista de arbitros";
             // 
             // btnActualizar
             // 
             this.btnActualizar.Enabled = false;
-            this.btnActualizar.Location = new System.Drawing.Point(313, 262);
+            this.btnActualizar.Location = new System.Drawing.Point(394, 226);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(75, 49);
             this.btnActualizar.TabIndex = 10;
@@ -158,7 +159,7 @@
             // btnBorrar
             // 
             this.btnBorrar.Enabled = false;
-            this.btnBorrar.Location = new System.Drawing.Point(217, 262);
+            this.btnBorrar.Location = new System.Drawing.Point(313, 226);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(75, 49);
             this.btnBorrar.TabIndex = 11;
@@ -171,17 +172,17 @@
             this.lblBarrios.AutoSize = true;
             this.lblBarrios.BackColor = System.Drawing.Color.Transparent;
             this.lblBarrios.Font = new System.Drawing.Font("Impact", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBarrios.Location = new System.Drawing.Point(99, 56);
+            this.lblBarrios.Location = new System.Drawing.Point(49, 22);
             this.lblBarrios.Name = "lblBarrios";
             this.lblBarrios.Size = new System.Drawing.Size(164, 43);
             this.lblBarrios.TabIndex = 12;
             this.lblBarrios.Text = "ARBITROS";
             // 
-            // AltaArbitro
+            // ABMarbitros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 419);
+            this.ClientSize = new System.Drawing.Size(612, 307);
             this.Controls.Add(this.lblBarrios);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnActualizar);
@@ -193,7 +194,7 @@
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
-            this.Name = "AltaArbitro";
+            this.Name = "ABMarbitros";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Arbitros";
             this.Load += new System.EventHandler(this.AltaArbitro_Load);
