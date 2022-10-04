@@ -16,5 +16,12 @@ namespace TrabajoIntegradorG8
         {
             InitializeComponent();
         }
+
+        private void consultasToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form2 nuevaCategoria = new Form2();
+            nuevaCategoria.Show();
+            this.Hide();
+        }
     }
 }

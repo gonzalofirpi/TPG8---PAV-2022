@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.observacionesXPartidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultasToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.observacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultasToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.clubesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMClubesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,6 +53,10 @@
             this.consultasToolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.arbitrosXPartidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.observacionesXPartidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.observacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,34 +83,6 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // observacionesXPartidoToolStripMenuItem
-            // 
-            this.observacionesXPartidoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultasToolStripMenuItem5});
-            this.observacionesXPartidoToolStripMenuItem.Name = "observacionesXPartidoToolStripMenuItem";
-            this.observacionesXPartidoToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
-            this.observacionesXPartidoToolStripMenuItem.Text = "Tipos Piso";
-            // 
-            // consultasToolStripMenuItem5
-            // 
-            this.consultasToolStripMenuItem5.Name = "consultasToolStripMenuItem5";
-            this.consultasToolStripMenuItem5.Size = new System.Drawing.Size(126, 22);
-            this.consultasToolStripMenuItem5.Text = "Consultas";
-            // 
-            // observacionesToolStripMenuItem
-            // 
-            this.observacionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultasToolStripMenuItem4});
-            this.observacionesToolStripMenuItem.Name = "observacionesToolStripMenuItem";
-            this.observacionesToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
-            this.observacionesToolStripMenuItem.Text = "Observaciones";
-            // 
-            // consultasToolStripMenuItem4
-            // 
-            this.consultasToolStripMenuItem4.Name = "consultasToolStripMenuItem4";
-            this.consultasToolStripMenuItem4.Size = new System.Drawing.Size(126, 22);
-            this.consultasToolStripMenuItem4.Text = "Consultas";
-            // 
             // clubesToolStripMenuItem
             // 
             this.clubesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -123,7 +95,7 @@
             // aBMClubesToolStripMenuItem
             // 
             this.aBMClubesToolStripMenuItem.Name = "aBMClubesToolStripMenuItem";
-            this.aBMClubesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aBMClubesToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.aBMClubesToolStripMenuItem.Text = "Consultas";
             // 
             // sociosToolStripMenuItem
@@ -198,8 +170,9 @@
             // consultasToolStripMenuItem2
             // 
             this.consultasToolStripMenuItem2.Name = "consultasToolStripMenuItem2";
-            this.consultasToolStripMenuItem2.Size = new System.Drawing.Size(126, 22);
-            this.consultasToolStripMenuItem2.Text = "Consultas";
+            this.consultasToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem2.Text = "Agregar";
+            this.consultasToolStripMenuItem2.Click += new System.EventHandler(this.consultasToolStripMenuItem2_Click);
             // 
             // comisionesToolStripMenuItem
             // 
@@ -243,7 +216,7 @@
             // consultasToolStripMenuItem9
             // 
             this.consultasToolStripMenuItem9.Name = "consultasToolStripMenuItem9";
-            this.consultasToolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem9.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem9.Text = "Consultas";
             // 
             // barriosToolStripMenuItem
@@ -258,7 +231,7 @@
             // consultasToolStripMenuItem8
             // 
             this.consultasToolStripMenuItem8.Name = "consultasToolStripMenuItem8";
-            this.consultasToolStripMenuItem8.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem8.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem8.Text = "Consultas";
             // 
             // localidadesToolStripMenuItem
@@ -273,7 +246,7 @@
             // consultasToolStripMenuItem7
             // 
             this.consultasToolStripMenuItem7.Name = "consultasToolStripMenuItem7";
-            this.consultasToolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem7.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem7.Text = "Consultas";
             // 
             // arbitrosXPartidoToolStripMenuItem
@@ -288,8 +261,36 @@
             // consultasToolStripMenuItem6
             // 
             this.consultasToolStripMenuItem6.Name = "consultasToolStripMenuItem6";
-            this.consultasToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem6.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem6.Text = "Consultas";
+            // 
+            // observacionesXPartidoToolStripMenuItem
+            // 
+            this.observacionesXPartidoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consultasToolStripMenuItem5});
+            this.observacionesXPartidoToolStripMenuItem.Name = "observacionesXPartidoToolStripMenuItem";
+            this.observacionesXPartidoToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.observacionesXPartidoToolStripMenuItem.Text = "Tipos Piso";
+            // 
+            // consultasToolStripMenuItem5
+            // 
+            this.consultasToolStripMenuItem5.Name = "consultasToolStripMenuItem5";
+            this.consultasToolStripMenuItem5.Size = new System.Drawing.Size(126, 22);
+            this.consultasToolStripMenuItem5.Text = "Consultas";
+            // 
+            // observacionesToolStripMenuItem
+            // 
+            this.observacionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consultasToolStripMenuItem4});
+            this.observacionesToolStripMenuItem.Name = "observacionesToolStripMenuItem";
+            this.observacionesToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
+            this.observacionesToolStripMenuItem.Text = "Observaciones";
+            // 
+            // consultasToolStripMenuItem4
+            // 
+            this.consultasToolStripMenuItem4.Name = "consultasToolStripMenuItem4";
+            this.consultasToolStripMenuItem4.Size = new System.Drawing.Size(126, 22);
+            this.consultasToolStripMenuItem4.Text = "Consultas";
             // 
             // frmPrincipal
             // 
