@@ -96,10 +96,6 @@ namespace TrabajoIntegradorG8
                 {
                     MessageBox.Show("Error, completar todos los datos");
                 }
-                else if (existeEnGrilla(club.NroCuit))
-                {
-                    MessageBox.Show("Error, ya existe un club con el número de CUIT: " + club.NroCuit);
-                }
                 else
                 {
                     try
@@ -127,7 +123,6 @@ namespace TrabajoIntegradorG8
           
 
         }
-
         private void cargarComboBarrios()
         {
             try
@@ -145,68 +140,6 @@ namespace TrabajoIntegradorG8
             }
         }
 
-       /* private bool existeCuit(long nroCuit)
-        {
-
-            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-            SqlConnection cn = new SqlConnection(cadenaConexion);
-
-            try
-            {
-                SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT C.NROCUIT" +
-                    "              FROM CLUBES C" +
-                    "              WHERE C.NROCUIT = @cuit";
-
-
-                cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@cuit", nroCuit);
-
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = consulta;
-
-                cn.Open();
-                cmd.Connection = cn;
-
-                DataTable tabla = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-
-                da.Fill(tabla);
-
-                if (tabla.Rows.Count > 0)
-                {
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }
-
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-            finally
-            {
-                cn.Close();
-            }
-            return false;
-        }*/
-        private bool existeEnGrilla(long criterioBuscar)
-        {
-
-            for (int i = 0; i < grdClubes.Rows.Count; i++)
-            {
-                if (grdClubes.Rows[i].Cells["nroCuit"].Value.Equals(criterioBuscar))
-                {
-                    return true;
-                }
-
-            }
-
-            return false;
-        }
 
         private void cargarGrilla()
         {
