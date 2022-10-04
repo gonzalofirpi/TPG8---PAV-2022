@@ -47,12 +47,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ABMComisiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMComisiones.Designer.cs">
+      <DependentUpon>ABMComisiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMLocalidades.Designer.cs">
+      <DependentUpon>ABMLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Comision.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entidades\Localidad.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +75,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ABMComisiones.resx">
+      <DependentUpon>ABMComisiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMLocalidades.resx">
+      <DependentUpon>ABMLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
