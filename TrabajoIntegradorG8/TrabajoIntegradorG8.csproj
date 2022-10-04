@@ -118,6 +118,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABMClubes.resx">
       <DependentUpon>ABMClubes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ABMComisiones.resx">
       <DependentUpon>ABMComisiones.cs</DependentUpon>
     </EmbeddedResource>
