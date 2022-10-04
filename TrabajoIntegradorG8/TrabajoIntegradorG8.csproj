@@ -47,8 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccesoDatos\AD_TipoObservaciones.cs" />
     <Compile Include="AccesoDatos\AD_Puesto.cs" />
+    <Compile Include="Entidad\TipoObservaciones.cs" />
     <Compile Include="Entidad\Puesto.cs" />
+    <Compile Include="TipoObservaciones\ABMTipoObservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoObservaciones\ABMTipoObservaciones.Designer.cs">
+      <DependentUpon>ABMTipoObservaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +77,9 @@
     <Compile Include="Puestos\PuestosABM.Designer.cs">
       <DependentUpon>PuestosABM.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TipoObservaciones\ABMTipoObservaciones.resx">
+      <DependentUpon>ABMTipoObservaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrabajoIntegradorG8.Puestos;
+using TrabajoIntegradorG8.EstadoCancha;
 
 namespace TrabajoIntegradorG8
 {
@@ -24,6 +25,15 @@ namespace TrabajoIntegradorG8
         private void consultasToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             PuestosABM ventana = new PuestosABM();
+            ventana.Show();
+            this.Hide();
+        }
+
+        
+
+        private void observacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABMTipoObservaciones ventana = new ABMTipoObservaciones();
             ventana.Show();
             this.Hide();
         }
