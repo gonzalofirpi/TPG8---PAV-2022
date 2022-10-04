@@ -202,14 +202,14 @@ namespace TrabajoIntegradorG8
             int indice = e.RowIndex;
 
             DataGridViewRow filaSeleccionada = grdSocios.Rows[indice];
-            string apellido = filaSeleccionada.Cells["apellido"].Value.ToString();
+            int id = int.Parse(filaSeleccionada.Cells["id"].Value.ToString());
 
             try
             {
                 limpiarCampos();
                 btnActualizarSocio.Enabled = true;
                 btnBorrarSocio.Enabled = true;
-                cargarCampos(AD_Socios.obtenerSocio(this.idSocio));
+                cargarCampos(AD_Socios.obtenerSocio(id));
             }
             catch (Exception ex)
             {

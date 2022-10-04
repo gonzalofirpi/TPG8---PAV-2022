@@ -45,13 +45,14 @@ namespace TrabajoIntegradorG8
             this.btnActualizarSocio = new System.Windows.Forms.Button();
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.grdSocios = new System.Windows.Forms.DataGridView();
+            this.btnBorrarSocio = new System.Windows.Forms.Button();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nroCalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.barrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnBorrarSocio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdSocios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -223,6 +224,7 @@ namespace TrabajoIntegradorG8
             this.grdSocios.AllowUserToAddRows = false;
             this.grdSocios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdSocios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
             this.nombre,
             this.apellido,
             this.fechaNacimiento,
@@ -236,38 +238,6 @@ namespace TrabajoIntegradorG8
             this.grdSocios.TabIndex = 15;
             this.grdSocios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdSocios_CellClick);
             // 
-            // nombre
-            // 
-            this.nombre.DataPropertyName = "NOMBRE";
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            // 
-            // apellido
-            // 
-            this.apellido.Name = "apellido";
-            this.apellido.ReadOnly = true;
-            // 
-            // fechaNacimiento
-            // 
-            this.fechaNacimiento.Name = "fechaNacimiento";
-            this.fechaNacimiento.ReadOnly = true;
-            // 
-            // calle
-            // 
-            this.calle.Name = "calle";
-            this.calle.ReadOnly = true;
-            // 
-            // nroCalle
-            // 
-            this.nroCalle.Name = "nroCalle";
-            this.nroCalle.ReadOnly = true;
-            // 
-            // barrio
-            // 
-            this.barrio.Name = "barrio";
-            this.barrio.ReadOnly = true;
-            // 
             // btnBorrarSocio
             // 
             this.btnBorrarSocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -278,6 +248,56 @@ namespace TrabajoIntegradorG8
             this.btnBorrarSocio.Text = "Borrar socio";
             this.btnBorrarSocio.UseVisualStyleBackColor = true;
             this.btnBorrarSocio.Click += new System.EventHandler(this.btnBorrarSocio_Click);
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "ID_SOCIO";
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Width = 35;
+            // 
+            // nombre
+            // 
+            this.nombre.DataPropertyName = "NOMBRE";
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            // 
+            // apellido
+            // 
+            this.apellido.DataPropertyName = "APELLIDO";
+            this.apellido.HeaderText = "Apellido";
+            this.apellido.Name = "apellido";
+            this.apellido.ReadOnly = true;
+            // 
+            // fechaNacimiento
+            // 
+            this.fechaNacimiento.DataPropertyName = "FECHA_NACIMIENTO";
+            this.fechaNacimiento.HeaderText = "Fecha Nacimiento";
+            this.fechaNacimiento.Name = "fechaNacimiento";
+            this.fechaNacimiento.ReadOnly = true;
+            // 
+            // calle
+            // 
+            this.calle.DataPropertyName = "CALLE";
+            this.calle.HeaderText = "Calle";
+            this.calle.Name = "calle";
+            this.calle.ReadOnly = true;
+            // 
+            // nroCalle
+            // 
+            this.nroCalle.DataPropertyName = "NRO_CALLE";
+            this.nroCalle.HeaderText = "Numero";
+            this.nroCalle.Name = "nroCalle";
+            this.nroCalle.ReadOnly = true;
+            // 
+            // barrio
+            // 
+            this.barrio.DataPropertyName = "BARRIO";
+            this.barrio.HeaderText = "Barrio";
+            this.barrio.Name = "barrio";
+            this.barrio.ReadOnly = true;
             // 
             // frmSocios
             // 
@@ -331,12 +351,13 @@ namespace TrabajoIntegradorG8
         private System.Windows.Forms.Button btnActualizarSocio;
         private System.Windows.Forms.Button btnLimpiarCampos;
         private System.Windows.Forms.DataGridView grdSocios;
+        private System.Windows.Forms.Button btnBorrarSocio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaNacimiento;
         private System.Windows.Forms.DataGridViewTextBoxColumn calle;
         private System.Windows.Forms.DataGridViewTextBoxColumn nroCalle;
         private System.Windows.Forms.DataGridViewTextBoxColumn barrio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaNacimiento;
-        private System.Windows.Forms.Button btnBorrarSocio;
     }
 }
