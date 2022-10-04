@@ -97,6 +97,7 @@
             this.aBMClubesToolStripMenuItem.Name = "aBMClubesToolStripMenuItem";
             this.aBMClubesToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.aBMClubesToolStripMenuItem.Text = "Consultas";
+            this.aBMClubesToolStripMenuItem.Click += new System.EventHandler(this.aBMClubesToolStripMenuItem_Click);
             // 
             // sociosToolStripMenuItem
             // 
@@ -234,6 +235,7 @@
             this.consultasToolStripMenuItem8.Name = "consultasToolStripMenuItem8";
             this.consultasToolStripMenuItem8.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem8.Text = "Consultas";
+            this.consultasToolStripMenuItem8.Click += new System.EventHandler(this.consultasToolStripMenuItem8_Click);
             // 
             // localidadesToolStripMenuItem
             // 
