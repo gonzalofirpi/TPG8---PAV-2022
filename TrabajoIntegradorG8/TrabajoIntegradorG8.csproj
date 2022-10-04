@@ -59,6 +59,8 @@
     <Compile Include="ABMClubes.Designer.cs">
       <DependentUpon>ABMClubes.cs</DependentUpon>
     </Compile>
+    <Compile Include="AccesoADatos\AD_Barrios.cs" />
+    <Compile Include="AccesoADatos\AD_Clubes.cs" />
     <Compile Include="Entidades\Barrio.cs" />
     <Compile Include="Entidades\Club.cs" />
     <Compile Include="Form1.cs">

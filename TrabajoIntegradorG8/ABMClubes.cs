@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using TrabajoIntegradorG8.AccesoADatos;
 using TrabajoIntegradorG8.Entidades;
 
 namespace TrabajoIntegradorG8
@@ -65,120 +66,74 @@ namespace TrabajoIntegradorG8
             }
             else
             {
-                club.Nombre = txtNombre.Text;
-                club.NroCuit = long.Parse(txtNroCuit.Text);
-                club.Calle = txtCalle.Text;
-                club.NroCalle = int.Parse(txtNroCalle.Text);
-                club.Barrio = (int)cmbBarrios.SelectedValue;
-                club.FechaFundacion = DateTime.Parse(txtFechaFundacion.Text);
+                try
+                {
+                    club.Nombre = txtNombre.Text;
+                    club.NroCuit = long.Parse(txtNroCuit.Text);
+                    club.Calle = txtCalle.Text;
+                    club.NroCalle = int.Parse(txtNroCalle.Text);
+                    club.Barrio = (int)cmbBarrios.SelectedValue;
+                    club.FechaFundacion = DateTime.Parse(txtFechaFundacion.Text);
 
-                return club;
-
+                    return club;
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
             }
             
         }
 
         private void btnGuardarClub_Click(object sender, EventArgs e)
         {
-
-            Club club = obtenerDatosClub();
-
-
-            if (club == null)
-            {
-                MessageBox.Show("Error, completar todos los datos");
-            }
-            else if (existeEnGrilla(club.NroCuit))
-            {
-                MessageBox.Show("Error, ya existe un club con el número de CUIT: " + club.NroCuit);
-            }
-            else
-            {
-                try
-                {
-                    if (agregarClubBD(club))
-                    {
-                        MessageBox.Show("Club cargado con exito!!");
-                        limpiarCampos();
-                        cargarComboBarrios();
-                        cargarGrilla();
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error en acceso a Base de Datos - " + ex.Message);
-                    return;
-                }
-            }
-
-        }
-
-        private bool agregarClubBD(Club club)
-        {
-
-            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-            SqlConnection cn = new SqlConnection(cadenaConexion);
-
             try
             {
-                SqlCommand cmd = new SqlCommand();
-                string consulta = "INSERT INTO CLUBES(NOMBRE, NROCUIT, CALLE, NRO_CALLE, COD_BARRIO, FECHA_FUNDACION)" +
-                    "              VALUES(@nombre, @nroCuit, @calle, @nroCalle, @barrio, @fechaFundacion)";
+                Club club = obtenerDatosClub();
 
-                cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@nombre", club.Nombre);
-                cmd.Parameters.AddWithValue("@nroCuit", club.NroCuit);
-                cmd.Parameters.AddWithValue("@calle", club.Calle);
-                cmd.Parameters.AddWithValue("@nroCalle", club.NroCalle);
-                cmd.Parameters.AddWithValue("@barrio", club.Barrio);
-                cmd.Parameters.AddWithValue("@fechaFundacion", club.FechaFundacion);
 
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = consulta;
-
-                cn.Open();
-                cmd.Connection = cn;
-
-                cmd.ExecuteNonQuery();
-
-                return true;
+                if (club == null)
+                {
+                    MessageBox.Show("Error, completar todos los datos");
+                }
+                else if (existeEnGrilla(club.NroCuit))
+                {
+                    MessageBox.Show("Error, ya existe un club con el número de CUIT: " + club.NroCuit);
+                }
+                else
+                {
+                    try
+                    {
+                        if (AD_Clubes.agregarClubBD(club))
+                        {
+                            MessageBox.Show("Club cargado con exito!!");
+                            limpiarCampos();
+                            cargarComboBarrios();
+                            cargarGrilla();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error en acceso a Base de Datos - " + ex.Message);
+                        return;
+                    }
+                }
 
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show("Error en la carga de datos - " + ex.Message);
             }
-            finally
-            {
-                cn.Close();
-            }
+          
 
         }
 
-        public void cargarComboBarrios()
+        private void cargarComboBarrios()
         {
-            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-            SqlConnection cn = new SqlConnection(cadenaConexion);
-
             try
             {
-                SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT B.*" +
-                    "              FROM BARRIO B";
 
-                cmd.Parameters.Clear();
-
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = consulta;
-
-                cn.Open();
-                cmd.Connection = cn;
-
-                DataTable tabla = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(tabla);
-
-                cmbBarrios.DataSource = tabla;
+                cmbBarrios.DataSource = AD_Clubes.obtenerBarrios();
                 cmbBarrios.DisplayMember = "NOMBRE";
                 cmbBarrios.ValueMember = "COD_BARRIO";
                 cmbBarrios.SelectedIndex = -1;
@@ -187,10 +142,6 @@ namespace TrabajoIntegradorG8
             catch (Exception ex)
             {
                 throw;
-            }
-            finally
-            {
-                cn.Close();
             }
         }
 
@@ -259,89 +210,14 @@ namespace TrabajoIntegradorG8
 
         private void cargarGrilla()
         {
-            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-            SqlConnection cn = new SqlConnection(cadenaConexion);
-
             try
             {
-
-                SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT C.NOMBRE, C.NROCUIT, C.CALLE, C.NRO_CALLE, B.NOMBRE AS BARRIO, C.FECHA_FUNDACION" +
-                    "              FROM CLUBES C INNER JOIN BARRIO B ON (C.COD_BARRIO = B.COD_BARRIO)";
-
-                cmd.Parameters.Clear();
-
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = consulta;
-
-                cn.Open();
-                cmd.Connection = cn;
-
-                DataTable tabla = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(tabla);
-
-                grdClubes.DataSource = tabla;
-
+                grdClubes.DataSource = AD_Clubes.obtenerListadoClubes();
             }
             catch (Exception ex)
             {
                 throw;
             }
-            finally
-            {
-                cn.Close();
-            }
-        }
-
-        private Club obtenerClub(long nroCuit)
-        {
-
-            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-            SqlConnection cn = new SqlConnection(cadenaConexion);
-            Club club = new Club();
-
-            try
-            {
-
-                SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT C.*" +
-                    "              FROM CLUBES C" +
-                    "              WHERE C.NROCUIT = @cuit";
-
-                cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@cuit", nroCuit);
-
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = consulta;
-
-                cn.Open();
-                cmd.Connection = cn;
-
-                SqlDataReader dr = cmd.ExecuteReader();
-
-                if (dr != null && dr.Read())
-                {
-                    club.Id = int.Parse(dr["ID_CLUB"].ToString());
-                    club.Nombre = dr["NOMBRE"].ToString();
-                    club.NroCuit = long.Parse(dr["NROCUIT"].ToString());
-                    club.Calle = dr["CALLE"].ToString();
-                    club.NroCalle = int.Parse(dr["NRO_CALLE"].ToString());
-                    club.Barrio = int.Parse(dr["COD_BARRIO"].ToString());
-                    club.FechaFundacion = DateTime.Parse(dr["FECHA_FUNDACION"].ToString());
-                }
-
-                return club;
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-            finally
-            {
-                cn.Close();
-            }
-
         }
 
         private void cargarCampos(Club club)
@@ -385,7 +261,7 @@ namespace TrabajoIntegradorG8
                 limpiarCampos();
                 btnActualizarClub.Enabled = true;
                 btnBorrarClub.Enabled = true;
-                cargarCampos(obtenerClub(cuit));
+                cargarCampos(AD_Clubes.obtenerClub(cuit));
             }
             catch (Exception ex)
             {
@@ -393,103 +269,33 @@ namespace TrabajoIntegradorG8
             }
         }
 
-        private bool actualizarClub(Club club)
-        {
-
-            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-            SqlConnection cn = new SqlConnection(cadenaConexion);
-
-            try
-            {
-
-                SqlCommand cmd = new SqlCommand();
-                string consulta = "UPDATE CLUBES" +
-                    "              SET NOMBRE = @nombre, NROCUIT = @nroCuit, CALLE = @calle, NRO_CALLE = @nroCalle," +
-                    "                  COD_BARRIO = @codBarrio, FECHA_FUNDACION = @fechaFundacion " +
-                    "              WHERE ID_CLUB = @id";
-
-                cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id", this.idClub);
-                cmd.Parameters.AddWithValue("@nombre", club.Nombre);
-                cmd.Parameters.AddWithValue("@nroCuit", club.NroCuit);
-                cmd.Parameters.AddWithValue("@calle", club.Calle);
-                cmd.Parameters.AddWithValue("@nroCalle", club.NroCalle);
-                cmd.Parameters.AddWithValue("@codBarrio", club.Barrio);
-                cmd.Parameters.AddWithValue("@fechaFundacion", club.FechaFundacion);
-
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = consulta;
-
-                cn.Open();
-                cmd.Connection = cn;
-
-                cmd.ExecuteNonQuery();
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-            finally
-            {
-                cn.Close();
-            }
-        }
+        
 
         private void btnActualizarClub_Click(object sender, EventArgs e)
         {
-
-            Club club = obtenerDatosClub();
-
             try
             {
-                if (actualizarClub(club))
+                Club club = obtenerDatosClub();
+
+                try
                 {
-                    MessageBox.Show("Club actualizado con exito!!");
-                    limpiarCampos();
-                    cargarComboBarrios();
-                    cargarGrilla();
+                    if (AD_Clubes.actualizarClub(club, this.idClub))
+                    {
+                        MessageBox.Show("Club actualizado con exito!!");
+                        limpiarCampos();
+                        cargarComboBarrios();
+                        cargarGrilla();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al actualizar el club - " + ex.Message);
+                    return;
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al actualizar el club - " + ex.Message);
-            }
-        }
-
-        private bool borrarClub()
-        {
-            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-            SqlConnection cn = new SqlConnection(cadenaConexion);
-
-            try
-            {
-
-                SqlCommand cmd = new SqlCommand();
-                string consulta = "DELETE FROM CLUBES" +
-                    "              WHERE ID_CLUB = @id";
-
-                cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id", this.idClub);
-
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = consulta;
-
-                cn.Open();
-                cmd.Connection = cn;
-
-                cmd.ExecuteNonQuery();
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-            finally
-            {
-                cn.Close();
+                MessageBox.Show("Error en la carga del dato - " + ex.Message);
             }
 
         }
@@ -500,7 +306,7 @@ namespace TrabajoIntegradorG8
             {
                 try
                 {
-                    if (borrarClub())
+                    if (AD_Clubes.borrarClub(this.idClub))
                     {
                         MessageBox.Show("Club borrado con exito!!");
                         limpiarCampos();

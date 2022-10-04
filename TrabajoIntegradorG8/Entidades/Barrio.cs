@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabajoIntegradorG8.Entidades
 {
-    internal class Barrio
+    public class Barrio
     {
         private int codigo;
         private string nombre;

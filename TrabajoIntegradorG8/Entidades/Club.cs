@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TrabajoIntegradorG8.Entidades
 {
-    internal class Club
+    public class Club
     {
         private int id;
         private string nombre;
