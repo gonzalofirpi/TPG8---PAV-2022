@@ -111,7 +111,7 @@
             // aBMSociosToolStripMenuItem
             // 
             this.aBMSociosToolStripMenuItem.Name = "aBMSociosToolStripMenuItem";
-            this.aBMSociosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aBMSociosToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.aBMSociosToolStripMenuItem.Text = "Consultas";
             this.aBMSociosToolStripMenuItem.Click += new System.EventHandler(this.aBMSociosToolStripMenuItem_Click);
             // 
@@ -127,7 +127,7 @@
             // aBMCanchasToolStripMenuItem
             // 
             this.aBMCanchasToolStripMenuItem.Name = "aBMCanchasToolStripMenuItem";
-            this.aBMCanchasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aBMCanchasToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.aBMCanchasToolStripMenuItem.Text = "Consultas";
             this.aBMCanchasToolStripMenuItem.Click += new System.EventHandler(this.aBMCanchasToolStripMenuItem_Click);
             // 
@@ -143,7 +143,7 @@
             // consultasToolStripMenuItem
             // 
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem.Text = "Consultas";
             this.consultasToolStripMenuItem.Click += new System.EventHandler(this.consultasToolStripMenuItem_Click);
             // 
@@ -159,7 +159,7 @@
             // consultasToolStripMenuItem1
             // 
             this.consultasToolStripMenuItem1.Name = "consultasToolStripMenuItem1";
-            this.consultasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem1.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem1.Text = "Consultas";
             this.consultasToolStripMenuItem1.Click += new System.EventHandler(this.consultasToolStripMenuItem1_Click);
             // 
@@ -175,8 +175,9 @@
             // consultasToolStripMenuItem2
             // 
             this.consultasToolStripMenuItem2.Name = "consultasToolStripMenuItem2";
-            this.consultasToolStripMenuItem2.Size = new System.Drawing.Size(126, 22);
+            this.consultasToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.consultasToolStripMenuItem2.Text = "Consultas";
+            this.consultasToolStripMenuItem2.Click += new System.EventHandler(this.consultasToolStripMenuItem2_Click_1);
             // 
             // comisionesToolStripMenuItem
             // 
@@ -205,7 +206,7 @@
             // consultasToolStripMenuItem10
             // 
             this.consultasToolStripMenuItem10.Name = "consultasToolStripMenuItem10";
-            this.consultasToolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem10.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem10.Text = "Consultas";
             this.consultasToolStripMenuItem10.Click += new System.EventHandler(this.consultasToolStripMenuItem10_Click);
             // 
@@ -221,8 +222,9 @@
             // consultasToolStripMenuItem9
             // 
             this.consultasToolStripMenuItem9.Name = "consultasToolStripMenuItem9";
-            this.consultasToolStripMenuItem9.Size = new System.Drawing.Size(126, 22);
+            this.consultasToolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
             this.consultasToolStripMenuItem9.Text = "Consultas";
+            this.consultasToolStripMenuItem9.Click += new System.EventHandler(this.consultasToolStripMenuItem9_Click);
             // 
             // barriosToolStripMenuItem
             // 
@@ -348,3 +350,4 @@
         private System.Windows.Forms.ToolStripMenuItem observacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem4;
     }
+}

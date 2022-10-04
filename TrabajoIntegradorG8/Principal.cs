@@ -66,18 +66,13 @@ namespace TrabajoIntegradorG8
             ventana.Show();
         }
 
-        private void consultasToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void consultasToolStripMenuItem2_Click_1(object sender, EventArgs e)
         {
             Form2 nuevaCategoria = new Form2();
             nuevaCategoria.Show();
         }
 
-        private void consultasToolStripMenuItem10_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void consultasToolStripMenuItem9_Click(object sender, EventArgs e)
         {
             Form3 nuevoCargo = new Form3();
             nuevoCargo.Show();
