@@ -112,10 +112,10 @@
     </Compile>
     <Compile Include="Entidades\Arbitro.cs" />
     <Compile Include="Entidades\Canchas.cs" />
-    <Compile Include="AccesoDatos\AD_TipoObservaciones.cs" />
-    <Compile Include="AccesoDatos\AD_Puesto.cs" />
-    <Compile Include="Entidad\TipoObservaciones.cs" />
-    <Compile Include="Entidad\Puesto.cs" />
+    <Compile Include="AccesoADatos\AD_TipoObservaciones.cs" />
+    <Compile Include="AccesoADatos\AD_Puesto.cs" />
+    <Compile Include="Entidades\TipoObservaciones.cs" />
+    <Compile Include="Entidades\Puesto.cs" />
     <Compile Include="TipoObservaciones\ABMTipoObservaciones.cs">
       <SubType>Form</SubType>
     </Compile>
