@@ -127,8 +127,9 @@
             // aBMCanchasToolStripMenuItem
             // 
             this.aBMCanchasToolStripMenuItem.Name = "aBMCanchasToolStripMenuItem";
-            this.aBMCanchasToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.aBMCanchasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aBMCanchasToolStripMenuItem.Text = "Consultas";
+            this.aBMCanchasToolStripMenuItem.Click += new System.EventHandler(this.aBMCanchasToolStripMenuItem_Click);
             // 
             // jugadoresToolStripMenuItem
             // 
@@ -206,6 +207,7 @@
             this.consultasToolStripMenuItem10.Name = "consultasToolStripMenuItem10";
             this.consultasToolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
             this.consultasToolStripMenuItem10.Text = "Consultas";
+            this.consultasToolStripMenuItem10.Click += new System.EventHandler(this.consultasToolStripMenuItem10_Click);
             // 
             // cargosToolStripMenuItem
             // 

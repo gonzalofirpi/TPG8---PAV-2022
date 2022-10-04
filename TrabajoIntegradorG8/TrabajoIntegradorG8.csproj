@@ -98,6 +98,20 @@
       <DependentUpon>ABMLocalidades.cs</DependentUpon>
     </Compile>
     <Compile Include="Entidades\Comision.cs" />
+    <Compile Include="ABMcanchas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMcanchas.Designer.cs">
+      <DependentUpon>ABMcanchas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMarbitros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMarbitros.Designer.cs">
+      <DependentUpon>ABMarbitros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Arbitro.cs" />
+    <Compile Include="Entidades\Canchas.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +138,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABMLocalidades.resx">
       <DependentUpon>ABMLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMcanchas.resx">
+      <DependentUpon>ABMcanchas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMarbitros.resx">
+      <DependentUpon>ABMarbitros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

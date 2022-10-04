@@ -52,6 +52,19 @@ namespace TrabajoIntegradorG8
             ABMComisiones ventana = new ABMComisiones();
             ventana.Show();
         }
+
+        private void consultasToolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            ABMarbitros ventana = new ABMarbitros();
+            ventana.Show();
+           
+        }
+
+        private void aBMCanchasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABMcanchas ventana = new ABMcanchas();
+            ventana.Show();
+        }
     }
 
        
