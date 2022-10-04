@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrabajoIntegradorG8.Entidades;
@@ -23,17 +24,178 @@ namespace TrabajoIntegradorG8
 
 
             txtNroCancha.Text = "";
-            txtIdClub.Text = "";
+            cmbClub.SelectedIndex = -1;
             txtCalle.Text = "";
             txtNroCalle.Text = "";
             txtCodBarrio.Text = "";
-            txtCodPiso.Text = "";
-            txtCodEstado.Text = "";
+            cmbCodPiso.SelectedIndex = -1;
+            cmbTestado.SelectedIndex = -1;
             txtFechaUltMant.Text = "";
 
             txtNroCancha.Focus();
             btnActualizarCancha.Enabled = false;
             btnBorrarCancha.Enabled = false;
+        }
+        private bool existeCancha(int idClub ,int numCan)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT ID_CLUB,NRO_CANCHA" +
+                    "              FROM CANCHAS" +
+                    "              WHERE ID_CLUB = @id AND NRO_CANCHA = @num";
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id",idClub);
+                cmd.Parameters.AddWithValue("@num", numCan);
+
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(tabla);
+
+                if (tabla.Rows.Count > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+        }
+        public void cargarComboEstado()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT *" +
+                    "              FROM TIPO_ESTADOCANCHA";
+
+                cmd.Parameters.Clear();
+
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                cmbTestado.DataSource = tabla;
+                cmbTestado.DisplayMember = "NOMBRE";
+                cmbTestado.ValueMember = "COD_ESTADO";
+                cmbTestado.SelectedIndex = -1;
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+        public void cargarComboClub()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT *" +
+                    "              FROM CLUBES";
+
+                cmd.Parameters.Clear();
+
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                cmbClub.DataSource = tabla;
+                cmbClub.DisplayMember = "NOMBRE";
+                cmbClub.ValueMember = "ID_CLUB";
+                cmbClub.SelectedIndex = -1;
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+        public void cargarComboTipoPiso()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT *" +
+                    "              FROM TIPO_PISO";
+
+                cmd.Parameters.Clear();
+
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                cmbCodPiso.DataSource = tabla;
+                cmbCodPiso.DisplayMember = "NOMBRE";
+                cmbCodPiso.ValueMember = "COD_PISO";
+                cmbCodPiso.SelectedIndex = -1;
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
         }
 
         private void cargarGrilla()
@@ -45,8 +207,8 @@ namespace TrabajoIntegradorG8
             {
 
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT NRO_CANCHA,ID_CLUB,FECHA_ULT_MANTENIMIENTO FROM CANCHAS ";
-                    //"INNER JOIN CLUBES C ON (CA.ID_CLUB = C.ID_CLUB )";
+                string consulta = "SELECT NRO_CANCHA,ID_CLUB,FECHA_ULT_MANTENIMIENTO FROM CANCHAS";
+                  
 
                 cmd.Parameters.Clear();
 
@@ -75,8 +237,21 @@ namespace TrabajoIntegradorG8
 
         private void ABMcanchas_Load(object sender, EventArgs e)
         {
+            LimpiarCampos();
+            try
+            {
+                cargarComboTipoPiso();
+                cargarComboEstado();
+                cargarComboClub();
+                cargarGrilla();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error en el acceso a base de datos -" + ex);
+            }
+           
             
-            cargarGrilla();
             
            
         }
@@ -84,20 +259,20 @@ namespace TrabajoIntegradorG8
         {
             Canchas cancha = new Canchas();
 
-            if (txtNroCancha.Text.Equals("") || txtIdClub.Text.Equals("") || txtCalle.Text.Equals("") || txtNroCalle.Text.Equals("") || txtCodBarrio.Text.Equals("")
-                || txtCodPiso.Text.Equals("") || txtCodEstado.Text.Equals("") || txtFechaUltMant.Text.Equals(""))
+            if (txtNroCancha.Text.Equals("") || (int)cmbClub.SelectedValue == -1 || txtCalle.Text.Equals("") || txtNroCalle.Text.Equals("") || txtCodBarrio.Text.Equals("")
+                || (int)cmbCodPiso.SelectedValue == -1 || (int)cmbTestado.SelectedValue == -1 || txtFechaUltMant.Text.Equals(""))
             {
                 return null;
             }
             else
             {
                 cancha.NroCancha = int.Parse(txtNroCancha.Text);
-                cancha.Idclub = int.Parse(txtIdClub.Text);
+                cancha.Idclub = (int)cmbClub.SelectedValue;
                 cancha.Calle = txtCalle.Text;
                 cancha.NroCalle = int.Parse(txtNroCalle.Text);
                 cancha.CodBarrio = int.Parse(txtCodBarrio.Text);
-                cancha.CodPiso = int.Parse(txtCodPiso.Text);
-                cancha.CodEstado = int.Parse(txtCodEstado.Text);
+                cancha.CodPiso = (int)cmbCodPiso.SelectedValue;
+                cancha.CodEstado = (int)cmbTestado.SelectedValue;
                 cancha.FechaUltMant = DateTime.Parse(txtFechaUltMant.Text);
 
                 return cancha;
@@ -118,10 +293,22 @@ namespace TrabajoIntegradorG8
             {
                 try
                 {
-                    if (agregarCanchaBD(cancha))
+                    if (existeCancha(cancha.Idclub, cancha.NroCancha))
                     {
-                        MessageBox.Show("Cancha agregada con exito");
-                        LimpiarCampos();
+                        MessageBox.Show("Error ya existe esta cancha");
+                        return;
+                    }
+                    else
+                    {
+                        if (agregarCanchaBD(cancha))
+                        {
+                            MessageBox.Show("Cancha agregada con exito");
+                            LimpiarCampos();
+                            cargarComboClub();
+                            cargarComboEstado();
+                            cargarComboTipoPiso();
+                            cargarGrilla();
+                        }
                     }
                 }
                 catch (Exception ex)
@@ -144,7 +331,7 @@ namespace TrabajoIntegradorG8
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "INSERT INTO CANCHAS (NRO_CANCHA,ID_CLUB,CALLE,NRO_CALLE,COD_BARRIO,COD_PISO,COD_ESTADO,FECHA_ULT_MANTENIMIENTO)" +
+                string consulta = "INSERT INTO CANCHAS(NRO_CANCHA, ID_CLUB, CALLE, NRO_CALLE, COD_BARRIO, COD_PISO, COD_ESTADO, FECHA_ULT_MANTENIMIENTO)" +
                      "VALUES(@nCancha,@id,@calle,@nroCalle,@barrio,@piso,@estado,@fecha)";
 
                 cmd.Parameters.Clear();
@@ -252,13 +439,28 @@ namespace TrabajoIntegradorG8
         private void CargarCampos(Canchas can)
         {
             txtNroCancha.Text = can.NroCancha.ToString();
-            txtIdClub.Text = can.Idclub.ToString();
+            cmbClub.SelectedValue = can.Idclub;
             txtCalle.Text = can.Calle;   
             txtNroCalle.Text = can.NroCalle.ToString(); 
             txtCodBarrio.Text = can.CodBarrio.ToString();
-            txtCodPiso.Text = can.CodPiso.ToString();
-            txtCodEstado.Text = can.CodEstado.ToString();
-            txtFechaUltMant.Text = can.FechaUltMant.Date.ToShortDateString();
+            cmbTestado.SelectedValue = can.CodEstado;
+            cmbCodPiso.SelectedValue = can.CodPiso;
+            
+            DateTime fecha = can.FechaUltMant;
+            string dia = fecha.Date.Day.ToString();
+            string mes = fecha.Date.Month.ToString();
+            string año = fecha.Date.Year.ToString();
+
+            if (dia.Length == 1)
+            {
+                dia = 0 + dia;
+            }
+            if (mes.Length == 1)
+            {
+                mes = 0 + mes;
+            }
+
+            txtFechaUltMant.Text = dia + mes + año;
 
         }
 
@@ -270,7 +472,7 @@ namespace TrabajoIntegradorG8
             {
                 if (ActualizarCancha(can))
                 {
-                    MessageBox.Show("Club actualizado con exito!!");
+                    MessageBox.Show("Cancha actualizada con exito!!");
                     LimpiarCampos();
                     
                     cargarGrilla();
@@ -290,8 +492,8 @@ namespace TrabajoIntegradorG8
             {
                 SqlCommand cmd = new SqlCommand();
                 string consulta = "UPDATE CANCHAS"+
-                    "SET NRO_CANCHA = @ncancha,ID_CLUB = @id,CALLE = @calle,NRO_CALLE = @nroCalle,"+
-                    "COD_BARRIO = @barrio,COD_PISO = @piso, COD_ESTADO = @estado,FECHA_ULT_MANTENIMIENTO = @fecha";
+                    " SET NRO_CANCHA = @nCancha,ID_CLUB = @id,CALLE = @calle,NRO_CALLE = @nroCalle,COD_BARRIO = @barrio,COD_PISO = @piso,COD_ESTADO = @estado,FECHA_ULT_MANTENIMIENTO = @fecha"+
+                    " WHERE ID_CLUB = @id AND NRO_CANCHA = @nCancha";
 
                 cmd.Parameters.Clear();
 
@@ -322,7 +524,7 @@ namespace TrabajoIntegradorG8
                 cn.Close();
             }
         }
-        private bool borrarCancha()
+        private bool borrarCancha(int idClub, int ncan)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -332,10 +534,12 @@ namespace TrabajoIntegradorG8
 
                 SqlCommand cmd = new SqlCommand();
                 string consulta = "DELETE FROM CANCHAS" +
-                    "              WHERE NRO_CANCHA = @nroCan";
+                    "              WHERE NRO_CANCHA = @nroCan AND ID_CLUB = @id";
 
                 cmd.Parameters.Clear();
-                //cmd.Parameters.AddWithValue("@nroCan", this.id);
+                cmd.Parameters.AddWithValue("@nroCan",ncan);
+                cmd.Parameters.AddWithValue("@id", idClub);
+
 
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
@@ -360,11 +564,12 @@ namespace TrabajoIntegradorG8
 
         private void btnBorrarCancha_Click(object sender, EventArgs e)
         {
+            Canchas can = ObtenerDatosCanchas();
             if (MessageBox.Show("¿Seguro que desea eliminar esta cancha?", "Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 try
                 {
-                    if (borrarCancha())
+                    if (borrarCancha(can.Idclub,can.NroCancha))
                     {
                         MessageBox.Show("Cancha borrada con exito!!");
                         LimpiarCampos();
@@ -381,6 +586,11 @@ namespace TrabajoIntegradorG8
             {
                 MessageBox.Show("No se eliminara la cancha");
             }
+        }
+
+        private void btnLimpiarCampos_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
         }
     }
 }

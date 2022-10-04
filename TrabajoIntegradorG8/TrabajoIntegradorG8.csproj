@@ -158,5 +158,6 @@
   <ItemGroup>
     <None Include="Resources\iconoPartidos.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

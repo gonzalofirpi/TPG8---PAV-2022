@@ -28,45 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblBarrios = new System.Windows.Forms.Label();
+            this.lblCanchas = new System.Windows.Forms.Label();
             this.btnBorrarCancha = new System.Windows.Forms.Button();
             this.btnActualizarCancha = new System.Windows.Forms.Button();
             this.lblListaArbitros = new System.Windows.Forms.Label();
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.btnGuardarCancha = new System.Windows.Forms.Button();
-            this.txtIdClub = new System.Windows.Forms.TextBox();
-            this.lblIdeclub = new System.Windows.Forms.Label();
+            this.lblclub = new System.Windows.Forms.Label();
             this.txtNroCancha = new System.Windows.Forms.TextBox();
             this.lblNrocancha = new System.Windows.Forms.Label();
             this.txtNroCalle = new System.Windows.Forms.TextBox();
             this.lblNroCalle = new System.Windows.Forms.Label();
             this.txtCalle = new System.Windows.Forms.TextBox();
             this.lblCalle = new System.Windows.Forms.Label();
-            this.txtCodPiso = new System.Windows.Forms.TextBox();
             this.lblCodpiso = new System.Windows.Forms.Label();
             this.txtCodBarrio = new System.Windows.Forms.TextBox();
             this.lblCodbarrio = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtCodEstado = new System.Windows.Forms.TextBox();
             this.lblCodigoEstado = new System.Windows.Forms.Label();
             this.grillaCanchas = new System.Windows.Forms.DataGridView();
-            this.txtFechaUltMant = new System.Windows.Forms.MaskedTextBox();
             this.NroCancha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Club = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtFechaUltMant = new System.Windows.Forms.MaskedTextBox();
+            this.cmbCodPiso = new System.Windows.Forms.ComboBox();
+            this.cmbTestado = new System.Windows.Forms.ComboBox();
+            this.cmbClub = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.grillaCanchas)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblBarrios
+            // lblCanchas
             // 
-            this.lblBarrios.AutoSize = true;
-            this.lblBarrios.BackColor = System.Drawing.Color.Transparent;
-            this.lblBarrios.Font = new System.Drawing.Font("Impact", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBarrios.Location = new System.Drawing.Point(37, 24);
-            this.lblBarrios.Name = "lblBarrios";
-            this.lblBarrios.Size = new System.Drawing.Size(154, 43);
-            this.lblBarrios.TabIndex = 23;
-            this.lblBarrios.Text = "CANCHAS";
+            this.lblCanchas.AutoSize = true;
+            this.lblCanchas.BackColor = System.Drawing.Color.Transparent;
+            this.lblCanchas.Font = new System.Drawing.Font("Impact", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCanchas.Location = new System.Drawing.Point(34, 29);
+            this.lblCanchas.Name = "lblCanchas";
+            this.lblCanchas.Size = new System.Drawing.Size(154, 43);
+            this.lblCanchas.TabIndex = 23;
+            this.lblCanchas.Text = "CANCHAS";
             // 
             // btnBorrarCancha
             // 
@@ -108,6 +108,7 @@
             this.btnLimpiarCampos.TabIndex = 18;
             this.btnLimpiarCampos.Text = " Limpiar campos";
             this.btnLimpiarCampos.UseVisualStyleBackColor = true;
+            this.btnLimpiarCampos.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
             // 
             // btnGuardarCancha
             // 
@@ -119,21 +120,14 @@
             this.btnGuardarCancha.UseVisualStyleBackColor = true;
             this.btnGuardarCancha.Click += new System.EventHandler(this.btnGuardarCancha_Click);
             // 
-            // txtIdClub
+            // lblclub
             // 
-            this.txtIdClub.Location = new System.Drawing.Point(206, 130);
-            this.txtIdClub.Name = "txtIdClub";
-            this.txtIdClub.Size = new System.Drawing.Size(171, 20);
-            this.txtIdClub.TabIndex = 16;
-            // 
-            // lblIdeclub
-            // 
-            this.lblIdeclub.AutoSize = true;
-            this.lblIdeclub.Location = new System.Drawing.Point(80, 137);
-            this.lblIdeclub.Name = "lblIdeclub";
-            this.lblIdeclub.Size = new System.Drawing.Size(108, 13);
-            this.lblIdeclub.TabIndex = 15;
-            this.lblIdeclub.Text = "Identificador del club:";
+            this.lblclub.AutoSize = true;
+            this.lblclub.Location = new System.Drawing.Point(80, 137);
+            this.lblclub.Name = "lblclub";
+            this.lblclub.Size = new System.Drawing.Size(108, 13);
+            this.lblclub.TabIndex = 15;
+            this.lblclub.Text = "Identificador del club:";
             // 
             // txtNroCancha
             // 
@@ -183,13 +177,6 @@
             this.lblCalle.TabIndex = 24;
             this.lblCalle.Text = "Calle:";
             // 
-            // txtCodPiso
-            // 
-            this.txtCodPiso.Location = new System.Drawing.Point(206, 269);
-            this.txtCodPiso.Name = "txtCodPiso";
-            this.txtCodPiso.Size = new System.Drawing.Size(171, 20);
-            this.txtCodPiso.TabIndex = 31;
-            // 
             // lblCodpiso
             // 
             this.lblCodpiso.AutoSize = true;
@@ -224,13 +211,6 @@
             this.label5.TabIndex = 34;
             this.label5.Text = "Fecha de ultimo mantenimiento:";
             // 
-            // txtCodEstado
-            // 
-            this.txtCodEstado.Location = new System.Drawing.Point(205, 308);
-            this.txtCodEstado.Name = "txtCodEstado";
-            this.txtCodEstado.Size = new System.Drawing.Size(172, 20);
-            this.txtCodEstado.TabIndex = 33;
-            // 
             // lblCodigoEstado
             // 
             this.lblCodigoEstado.AutoSize = true;
@@ -256,15 +236,6 @@
             this.grillaCanchas.TabIndex = 36;
             this.grillaCanchas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grillaCanchas_CellClick);
             // 
-            // txtFechaUltMant
-            // 
-            this.txtFechaUltMant.Location = new System.Drawing.Point(205, 345);
-            this.txtFechaUltMant.Mask = "00/00/0000";
-            this.txtFechaUltMant.Name = "txtFechaUltMant";
-            this.txtFechaUltMant.Size = new System.Drawing.Size(171, 20);
-            this.txtFechaUltMant.TabIndex = 37;
-            this.txtFechaUltMant.ValidatingType = typeof(System.DateTime);
-            // 
             // NroCancha
             // 
             this.NroCancha.DataPropertyName = "NRO_CANCHA";
@@ -287,17 +258,51 @@
             this.Fecha.Name = "Fecha";
             this.Fecha.ReadOnly = true;
             // 
+            // txtFechaUltMant
+            // 
+            this.txtFechaUltMant.Location = new System.Drawing.Point(205, 345);
+            this.txtFechaUltMant.Mask = "00/00/0000";
+            this.txtFechaUltMant.Name = "txtFechaUltMant";
+            this.txtFechaUltMant.Size = new System.Drawing.Size(171, 20);
+            this.txtFechaUltMant.TabIndex = 37;
+            this.txtFechaUltMant.ValidatingType = typeof(System.DateTime);
+            // 
+            // cmbCodPiso
+            // 
+            this.cmbCodPiso.FormattingEnabled = true;
+            this.cmbCodPiso.Location = new System.Drawing.Point(205, 273);
+            this.cmbCodPiso.Name = "cmbCodPiso";
+            this.cmbCodPiso.Size = new System.Drawing.Size(171, 21);
+            this.cmbCodPiso.TabIndex = 38;
+            // 
+            // cmbTestado
+            // 
+            this.cmbTestado.FormattingEnabled = true;
+            this.cmbTestado.Location = new System.Drawing.Point(206, 312);
+            this.cmbTestado.Name = "cmbTestado";
+            this.cmbTestado.Size = new System.Drawing.Size(171, 21);
+            this.cmbTestado.TabIndex = 39;
+            // 
+            // cmbClub
+            // 
+            this.cmbClub.FormattingEnabled = true;
+            this.cmbClub.Location = new System.Drawing.Point(206, 134);
+            this.cmbClub.Name = "cmbClub";
+            this.cmbClub.Size = new System.Drawing.Size(171, 21);
+            this.cmbClub.TabIndex = 40;
+            // 
             // ABMcanchas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(737, 451);
+            this.Controls.Add(this.cmbClub);
+            this.Controls.Add(this.cmbTestado);
+            this.Controls.Add(this.cmbCodPiso);
             this.Controls.Add(this.txtFechaUltMant);
             this.Controls.Add(this.grillaCanchas);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtCodEstado);
             this.Controls.Add(this.lblCodigoEstado);
-            this.Controls.Add(this.txtCodPiso);
             this.Controls.Add(this.lblCodpiso);
             this.Controls.Add(this.txtCodBarrio);
             this.Controls.Add(this.lblCodbarrio);
@@ -305,14 +310,13 @@
             this.Controls.Add(this.lblNroCalle);
             this.Controls.Add(this.txtCalle);
             this.Controls.Add(this.lblCalle);
-            this.Controls.Add(this.lblBarrios);
+            this.Controls.Add(this.lblCanchas);
             this.Controls.Add(this.btnBorrarCancha);
             this.Controls.Add(this.btnActualizarCancha);
             this.Controls.Add(this.lblListaArbitros);
             this.Controls.Add(this.btnLimpiarCampos);
             this.Controls.Add(this.btnGuardarCancha);
-            this.Controls.Add(this.txtIdClub);
-            this.Controls.Add(this.lblIdeclub);
+            this.Controls.Add(this.lblclub);
             this.Controls.Add(this.txtNroCancha);
             this.Controls.Add(this.lblNrocancha);
             this.Name = "ABMcanchas";
@@ -327,31 +331,31 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblBarrios;
+        private System.Windows.Forms.Label lblCanchas;
         private System.Windows.Forms.Button btnBorrarCancha;
         private System.Windows.Forms.Button btnActualizarCancha;
         private System.Windows.Forms.Label lblListaArbitros;
         private System.Windows.Forms.Button btnLimpiarCampos;
         private System.Windows.Forms.Button btnGuardarCancha;
-        private System.Windows.Forms.TextBox txtIdClub;
-        private System.Windows.Forms.Label lblIdeclub;
+        private System.Windows.Forms.Label lblclub;
         private System.Windows.Forms.TextBox txtNroCancha;
         private System.Windows.Forms.Label lblNrocancha;
         private System.Windows.Forms.TextBox txtNroCalle;
         private System.Windows.Forms.Label lblNroCalle;
         private System.Windows.Forms.TextBox txtCalle;
         private System.Windows.Forms.Label lblCalle;
-        private System.Windows.Forms.TextBox txtCodPiso;
         private System.Windows.Forms.Label lblCodpiso;
         private System.Windows.Forms.TextBox txtCodBarrio;
         private System.Windows.Forms.Label lblCodbarrio;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtCodEstado;
         private System.Windows.Forms.Label lblCodigoEstado;
         private System.Windows.Forms.DataGridView grillaCanchas;
         private System.Windows.Forms.MaskedTextBox txtFechaUltMant;
         private System.Windows.Forms.DataGridViewTextBoxColumn NroCancha;
         private System.Windows.Forms.DataGridViewTextBoxColumn Club;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.ComboBox cmbCodPiso;
+        private System.Windows.Forms.ComboBox cmbTestado;
+        private System.Windows.Forms.ComboBox cmbClub;
     }
 }
