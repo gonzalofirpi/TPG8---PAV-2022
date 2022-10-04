@@ -32,7 +32,7 @@ namespace TrabajoIntegradorG8.Entidades
             set => this.nombre = value;
         }
 
-        public string apellido 
+        public string Apellido 
         {
             get => this.apellido;
             set => this.apellido = value;
@@ -56,7 +56,7 @@ namespace TrabajoIntegradorG8.Entidades
             set => this.barrio = value;
         }
 
-        public DateTime fechaNacimiento
+        public DateTime FechaNacimiento
         {
             get => this.fechaNacimiento;
             set => this.fechaNacimiento = value;

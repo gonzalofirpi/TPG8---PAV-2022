@@ -69,7 +69,7 @@ namespace TrabajoIntegradorG8
                 try
                 {
                     socio.Nombre = txtNombre.Text;
-                    socio.Apellido = long.Parse(txtApellido.Text);
+                    socio.Apellido = txtApellido.Text;
                     socio.Calle = txtCalle.Text;
                     socio.NroCalle = int.Parse(txtNroCalle.Text);
                     socio.Barrio = (int)cmbBarrios.SelectedValue;
@@ -202,14 +202,14 @@ namespace TrabajoIntegradorG8
             int indice = e.RowIndex;
 
             DataGridViewRow filaSeleccionada = grdSocios.Rows[indice];
-            long cuit = long.Parse(filaSeleccionada.Cells["apellido"].Value.ToString());
+            string apellido = filaSeleccionada.Cells["apellido"].Value.ToString();
 
             try
             {
                 limpiarCampos();
                 btnActualizarSocio.Enabled = true;
                 btnBorrarSocio.Enabled = true;
-                cargarCampos(AD_Socios.obtenerSocio(apellido));
+                cargarCampos(AD_Socios.obtenerSocio(this.idSocio));
             }
             catch (Exception ex)
             {

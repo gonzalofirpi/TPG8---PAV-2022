@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TrabajoIntegradorG8.Entidades;
+using System.Runtime.CompilerServices;
 
 namespace TrabajoIntegradorG8.AccesoADatos
 {
@@ -121,7 +122,7 @@ namespace TrabajoIntegradorG8.AccesoADatos
 
         }
 
-        public static Socio obtenerSocio(string apellido)
+        public static Socio obtenerSocio(int idSocio)
         {
 
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
@@ -134,7 +135,7 @@ namespace TrabajoIntegradorG8.AccesoADatos
                 SqlCommand cmd = new SqlCommand();
                 string consulta = "GetSocio";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@cuit", nroCuit);
+                cmd.Parameters.AddWithValue("@id", idSocio);
 
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = consulta;
@@ -148,7 +149,7 @@ namespace TrabajoIntegradorG8.AccesoADatos
                 {
                     socio.Id = int.Parse(dr["ID_SOCIO"].ToString());
                     socio.Nombre = dr["NOMBRE"].ToString();
-                    socio.NroCuit = long.Parse(dr["APELLIDO"].ToString());
+                    socio.Apellido = dr["APELLIDO"].ToString();
                     socio.Calle = dr["CALLE"].ToString();
                     socio.NroCalle = int.Parse(dr["NRO_CALLE"].ToString());
                     socio.Barrio = int.Parse(dr["COD_BARRIO"].ToString());
