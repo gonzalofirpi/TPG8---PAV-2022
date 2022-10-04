@@ -140,7 +140,7 @@ namespace TrabajoIntegradorG8
             int indice = e.RowIndex;
 
             DataGridViewRow filaSeleccionada = grdJugadores.Rows[indice];
-            int idJugador = int.Parse(filaSeleccionada.Cells["idJugador"].Value.ToString());
+            int idJugador = int.Parse(filaSeleccionada.Cells["id"].Value.ToString());
 
             try
             {

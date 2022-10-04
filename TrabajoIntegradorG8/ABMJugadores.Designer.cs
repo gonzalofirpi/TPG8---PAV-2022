@@ -37,9 +37,10 @@ namespace TrabajoIntegradorG8
             this.btnActualizarJugador = new System.Windows.Forms.Button();
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.grdJugadores = new System.Windows.Forms.DataGridView();
-            this.idClub = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnBorrarJugador = new System.Windows.Forms.Button();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idClub = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdJugadores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,29 +131,15 @@ namespace TrabajoIntegradorG8
             this.grdJugadores.AllowUserToAddRows = false;
             this.grdJugadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdJugadores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idClub,
-            this.idSocio});
-            this.grdJugadores.Location = new System.Drawing.Point(294, 83);
+            this.id,
+            this.idSocio,
+            this.idClub});
+            this.grdJugadores.Location = new System.Drawing.Point(265, 84);
             this.grdJugadores.Name = "grdJugadores";
             this.grdJugadores.ReadOnly = true;
-            this.grdJugadores.Size = new System.Drawing.Size(194, 141);
+            this.grdJugadores.Size = new System.Drawing.Size(216, 141);
             this.grdJugadores.TabIndex = 17;
             this.grdJugadores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdJugadores_CellClick);
-            // 
-            // idClub
-            // 
-            this.idClub.DataPropertyName = "ID_CLUB";
-            this.idClub.HeaderText = "idClub";
-            this.idClub.Name = "idClub";
-            this.idClub.ReadOnly = true;
-            this.idClub.Width = 50;
-            // 
-            // idSocio
-            // 
-            this.idSocio.DataPropertyName = "ID_SOCIO";
-            this.idSocio.HeaderText = "idSocio";
-            this.idSocio.Name = "idSocio";
-            this.idSocio.ReadOnly = true;
             // 
             // btnBorrarJugador
             // 
@@ -164,6 +151,30 @@ namespace TrabajoIntegradorG8
             this.btnBorrarJugador.Text = "Borrar Jugador";
             this.btnBorrarJugador.UseVisualStyleBackColor = true;
             this.btnBorrarJugador.Click += new System.EventHandler(this.btnBorrarJugador_Click);
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "ID_JUGADOR";
+            this.id.HeaderText = "Id Jugador";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Width = 75;
+            // 
+            // idSocio
+            // 
+            this.idSocio.DataPropertyName = "ID_SOCIO";
+            this.idSocio.HeaderText = "Id Socio";
+            this.idSocio.Name = "idSocio";
+            this.idSocio.ReadOnly = true;
+            this.idSocio.Width = 50;
+            // 
+            // idClub
+            // 
+            this.idClub.DataPropertyName = "ID_CLUB";
+            this.idClub.HeaderText = "Id Club";
+            this.idClub.Name = "idClub";
+            this.idClub.ReadOnly = true;
+            this.idClub.Width = 50;
             // 
             // frmJugadores
             // 
@@ -202,8 +213,9 @@ namespace TrabajoIntegradorG8
         private System.Windows.Forms.Button btnLimpiarCampos;
         private System.Windows.Forms.DataGridView grdJugadores;
         private System.Windows.Forms.Button btnBorrarJugador;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idClub;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idSocio;
         private System.Windows.Forms.DataGridViewTextBoxColumn localidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idSocio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idClub;
     }
 }
