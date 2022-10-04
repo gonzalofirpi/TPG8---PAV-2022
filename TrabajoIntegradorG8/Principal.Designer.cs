@@ -46,7 +46,6 @@
             this.arbitrosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.cargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultasToolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
             this.barriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.localidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,6 +56,7 @@
             this.consultasToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.observacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -170,7 +170,7 @@
             // consultasToolStripMenuItem2
             // 
             this.consultasToolStripMenuItem2.Name = "consultasToolStripMenuItem2";
-            this.consultasToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem2.Size = new System.Drawing.Size(116, 22);
             this.consultasToolStripMenuItem2.Text = "Agregar";
             this.consultasToolStripMenuItem2.Click += new System.EventHandler(this.consultasToolStripMenuItem2_Click);
             // 
@@ -186,7 +186,7 @@
             // consultasToolStripMenuItem3
             // 
             this.consultasToolStripMenuItem3.Name = "consultasToolStripMenuItem3";
-            this.consultasToolStripMenuItem3.Size = new System.Drawing.Size(126, 22);
+            this.consultasToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.consultasToolStripMenuItem3.Text = "Consultas";
             // 
             // arbitrosToolStripMenuItem1
@@ -201,23 +201,18 @@
             // consultasToolStripMenuItem10
             // 
             this.consultasToolStripMenuItem10.Name = "consultasToolStripMenuItem10";
-            this.consultasToolStripMenuItem10.Size = new System.Drawing.Size(126, 22);
+            this.consultasToolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
             this.consultasToolStripMenuItem10.Text = "Consultas";
+            this.consultasToolStripMenuItem10.Click += new System.EventHandler(this.consultasToolStripMenuItem10_Click);
             // 
             // cargosToolStripMenuItem
             // 
             this.cargosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultasToolStripMenuItem9});
+            this.agregarToolStripMenuItem});
             this.cargosToolStripMenuItem.Image = global::TrabajoIntegradorG8.Properties.Resources.iconoCargos;
             this.cargosToolStripMenuItem.Name = "cargosToolStripMenuItem";
             this.cargosToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.cargosToolStripMenuItem.Text = "Cargos";
-            // 
-            // consultasToolStripMenuItem9
-            // 
-            this.consultasToolStripMenuItem9.Name = "consultasToolStripMenuItem9";
-            this.consultasToolStripMenuItem9.Size = new System.Drawing.Size(126, 22);
-            this.consultasToolStripMenuItem9.Text = "Consultas";
             // 
             // barriosToolStripMenuItem
             // 
@@ -292,6 +287,13 @@
             this.consultasToolStripMenuItem4.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem4.Text = "Consultas";
             // 
+            // agregarToolStripMenuItem
+            // 
+            this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarToolStripMenuItem.Text = "Agregar";
+            this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,7 +331,6 @@
         private System.Windows.Forms.ToolStripMenuItem arbitrosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem10;
         private System.Windows.Forms.ToolStripMenuItem cargosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem barriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem8;
         private System.Windows.Forms.ToolStripMenuItem localidadesToolStripMenuItem;
@@ -340,5 +341,6 @@
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem observacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
     }
 }

@@ -17,155 +17,198 @@ namespace TrabajoIntegradorG8
         {
             InitializeComponent();
             cargarGrilla();
+            btnBorrarCategoria.Enabled = false;
+            btnModificarCategoria.Enabled = false;
         }
-        private void limpiarCampos()
+        public void cargarGrilla()
         {
-            txtCodigoCategoria.Text = "";
-            txtAgregarCtegoria.Text = "";
+            DataTable resultado = new DataTable();
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT COD_CATEGORIA AS 'Codigo Categoria', NOMBRE AS 'Nombre' FROM CATEGORIAS";
+                    command.CommandType = CommandType.Text;
+                    SqlDataReader reader = command.ExecuteReader();
+                    resultado.Load(reader);
+                    dgvCategorias.DataSource = resultado;
+                    btnBorrarCategoria.Enabled = false;
+                    btnModificarCategoria.Enabled = false;
+                }
+            }
+        }
+        public SqlConnection GetConnection()
+        {
+            return new SqlConnection("Data Source=200.69.137.167,11333;Initial Catalog=BD3K3G08_2022;Persist Security Info=True;User ID=BD3K3G08_2022;Password=CLV08_28041");
         }
 
         private void btnAgregarCategoria_Click(object sender, EventArgs e)
         {
-            if (txtAgregarCtegoria.Text == "" || txtCodigoCategoria.Text == "")
+            if (txtNombreCategoria.Text == "")
             {
                 MessageBox.Show("Debe llenar todos los campos");
                 limpiarCampos();
             }
             else
             {
-                string nombreCategoria = txtAgregarCtegoria.Text;
-                int codigoCategoria = int.Parse(txtCodigoCategoria.Text.ToString());
+                string nombre = txtNombreCategoria.Text;
 
-                string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-                SqlConnection cn = new SqlConnection(cadenaConexion);
-
+                limpiarCampos();
                 try
                 {
-                    SqlCommand cmd = new SqlCommand();
-                    string comando = "INSERT INTO CATEGORIAS " +
-                        "VALUES (@codigo, @nombre);";
-
-                    cmd.Parameters.Clear();
-                    cmd.Parameters.AddWithValue("@nombre", nombreCategoria);
-                    cmd.Parameters.AddWithValue("@codigo", codigoCategoria);
-
-                    cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = comando;
-
-                    cn.Open();
-                    cmd.Connection = cn;
-
-                    int resultado = cmd.EndExecuteNonQuery(cmd.BeginExecuteNonQuery());
-                    if (resultado == 0)
+                    using (var connection = GetConnection())
                     {
-                        MessageBox.Show("Hubo un error.");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Categoria creada correctamente.");
-                        cargarGrilla();
-                    }
-                }
+                        connection.Open();
+                        using (var command = new SqlCommand())
+                        {
+                            command.Connection = connection;
+                            command.CommandText = "INSERT INTO CATEGORIAS VALUES (@nombre)";
+                            command.Parameters.Clear();
+                            command.Parameters.AddWithValue("@nombre", nombre);
 
 
-                catch(Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                            command.CommandType = CommandType.Text;
+                            var categoriaCreada = command.EndExecuteNonQuery(command.BeginExecuteNonQuery());
+                            if (categoriaCreada == 1)
+                            {
+                                MessageBox.Show("Categoria creada correctamente");
+                                cargarGrilla();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error, la categoria no pudo ser creada");
+                            }
 
-            }
-            
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            limpiarCampos();
-        }
-
-        private void cargarGrilla()
-        {
-            DataTable tablaCategorias = new DataTable();
-            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-            SqlConnection cn = new SqlConnection(cadenaConexion);
-            try
-            {
-                SqlCommand cmd = new SqlCommand();
-                string comando = "SELECT COD_CATEGORIA AS 'Codigo Categoria', NOMBRE AS 'Nombre Categoria'" +
-                    "FROM CATEGORIAS;";
-
-                cmd.Parameters.Clear();
-
-                cn.Open();
-                cmd.Connection = cn;
-
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = comando;
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                tablaCategorias.Load(reader);
-
-                dgrCategorias.DataSource = tablaCategorias;
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void dgrCategorias_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int indice = e.RowIndex;
-            if (indice == -1)
-            {
-                return;
-            }
-            DataGridViewRow filaSeleccionada = dgrCategorias.Rows[indice];
-            int codCategoria = int.Parse(filaSeleccionada.Cells["Codigo Categoria"].Value.ToString());
-            if (MessageBox.Show("¿Desea eliminar esta categoria?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
-            {
-                string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-                SqlConnection cn = new SqlConnection(cadenaConexion);
-                try
-                {
-                    SqlCommand cmd = new SqlCommand();
-                    string comando = "DELETE FROM CATEGORIAS WHERE COD_CATEGORIA = @codCategoria";
-
-                    cmd.Parameters.Clear();
-                    cmd.Parameters.AddWithValue("@codCategoria", codCategoria);
-
-                    cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = comando;
-
-                    cn.Open();
-                    cmd.Connection = cn;
-
-                    int resultado = cmd.EndExecuteNonQuery(cmd.BeginExecuteNonQuery());
-                    if (resultado == 0)
-                    {
-                        MessageBox.Show("Hubo un error.");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Categoria eliminada correctamente.");
-                        cargarGrilla();
+                        }
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-
+            }
+        }
+        private void btnModificarCategoria_Click(object sender, EventArgs e)
+        {
+            if (txtNombreCategoria.Text == "")
+            {
+                MessageBox.Show("Debe llenar todos los campos");
+                //limpiarCampos();
             }
             else
             {
-                return;
+                string nombre = txtNombreCategoria.Text;
+                int codigo = int.Parse(txtCodCategoria.Text);
+
+                try
+                {
+                    using (var connection = GetConnection())
+                    {
+                        connection.Open();
+                        using (var command = new SqlCommand())
+                        {
+                            command.Connection = connection;
+                            command.CommandText = "UPDATE CATEGORIAS SET NOMBRE = @nombre WHERE COD_CATEGORIA = @cod_categoria";
+                            command.Parameters.AddWithValue("@nombre", nombre);
+                            command.Parameters.AddWithValue("@cod_categoria", codigo);
+
+                            command.CommandType = CommandType.Text;
+                            var resultado = command.EndExecuteNonQuery(command.BeginExecuteNonQuery());
+                            if (resultado == 1)
+                            {
+                                MessageBox.Show("Categoria actualizada");
+                                cargarGrilla();
+                                limpiarCampos();
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error, no se pudo actualizar la categoria");
+                                limpiarCampos();
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
+        private void limpiarCampos()
+        {
+            txtNombreCategoria.Text = "";
+            txtCodCategoria.Text = "";
+        }
+
+        private void dgvCategorias_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indice = e.RowIndex;
+
+            DataGridViewRow filaSeleccionada = dgvCategorias.Rows[indice];;
+            txtNombreCategoria.Text = filaSeleccionada.Cells["Nombre"].Value.ToString();
+            txtCodCategoria.Text = filaSeleccionada.Cells["Codigo Categoria"].Value.ToString();
+            int codigoCargo = int.Parse(filaSeleccionada.Cells["Codigo Categoria"].Value.ToString());
+
+            btnBorrarCategoria.Enabled = true;
+            btnModificarCategoria.Enabled = true;
+        }
+
+        private void btnBorrarCategoria_Click(object sender, EventArgs e)
+        {
+            if (txtNombreCategoria.Text == "")
+            {
+                MessageBox.Show("Debe llenar todos los campos");
+                limpiarCampos();
+            }
+            else
+            {
+                string nombre = txtNombreCategoria.Text;
+                limpiarCampos();
+
+                try
+                {
+                    using (var connection = GetConnection())
+                    {
+                        connection.Open();
+                        using (var command = new SqlCommand())
+                        {
+                            command.Connection = connection;
+                            command.CommandText = "DELETE FROM CATEGORIAS WHERE NOMBRE LIKE @codCategoria";
+                            command.Parameters.Clear();
+                            command.Parameters.AddWithValue("@codCategoria", nombre);
+
+
+                            command.CommandType = CommandType.Text;
+                            var categoriaCreada = command.EndExecuteNonQuery(command.BeginExecuteNonQuery());
+                            if (categoriaCreada == 1)
+                            {
+                                MessageBox.Show("Categoria borrada correctamente");
+                                cargarGrilla();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error, la categoria no pudo ser borrada");
+                            }
+
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void btnLimpiarCampos_Click(object sender, EventArgs e)
+        {
+            limpiarCampos();
+            btnBorrarCategoria .Enabled = false;
+            btnModificarCategoria.Enabled = false;
+        }
+
     }
 }

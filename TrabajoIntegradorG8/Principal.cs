@@ -23,5 +23,17 @@ namespace TrabajoIntegradorG8
             nuevaCategoria.Show();
             this.Hide();
         }
+
+        private void consultasToolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 nuevoCargo = new Form3();
+            nuevoCargo.Show();
+            this.Hide();
+        }
     }
 }
