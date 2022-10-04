@@ -80,8 +80,8 @@ namespace TrabajoIntegradorG8
             {
                 try
                 {
-                    jugador.idSocio = txtIdSocio.Text;
-                    jugador.idClub = txtIdClub.Text;
+                    jugador.IdSocio = int.Parse(txtIdSocio.Text);
+                    jugador.IdClub = int.Parse(txtIdClub.Text);
                     return jugador;
                 }
                 catch (Exception ex)
@@ -106,7 +106,7 @@ namespace TrabajoIntegradorG8
                 {
                     try
                     {
-                         if (AD_Jugador.agregarJugadorBD(jugador))
+                         if (AD_Jugadores.agregarJugadorBD(jugador))
                             {
                                 MessageBox.Show("Jugador cargado con exito!!");
                                 limpiarCampos();
@@ -131,7 +131,7 @@ namespace TrabajoIntegradorG8
             txtIdSocio.Text = jugador.IdSocio.ToString();
             txtIdClub.Text = jugador.IdClub.ToString();
 
-            this.idJugador = jugador.idJugador;
+            this.idJugador = jugador.IdJugador;
         }
 
         private void grdJugadores_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -147,7 +147,7 @@ namespace TrabajoIntegradorG8
                 limpiarCampos();
                 btnActualizarJugador.Enabled = true;
                 btnBorrarJugador.Enabled = true;
-                cargarCampos(AD_Jugador.obtenerJugador(idJugador));
+                cargarCampos(AD_Jugadores.obtenerJugador(idJugador));
             }
             catch (Exception ex)
             {
@@ -166,7 +166,7 @@ namespace TrabajoIntegradorG8
 
                 try
                 {
-                    if (AD_Jugador.actualizarJugador(jugador, this.idJugador))
+                    if (AD_Jugadores.actualizarJugador(jugador, this.idJugador))
                     {
                         MessageBox.Show("Jugador actualizado con exito!!");
                         limpiarCampos();
@@ -192,7 +192,7 @@ namespace TrabajoIntegradorG8
             {
                 try
                 {
-                    if (AD_Jugador.borrarJugador(this.idJugador))
+                    if (AD_Jugadores.borrarJugador(this.idJugador))
                     {
                         MessageBox.Show("Jugador borrado con exito!!");
                         limpiarCampos();

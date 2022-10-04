@@ -33,3 +33,5 @@ C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\G
 C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\Git tp\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\Git tp\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.exe
 C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\Git tp\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.pdb
+C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\Git tp\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.frmJugadores.resources
+C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\Git tp\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.frmSocios.resources

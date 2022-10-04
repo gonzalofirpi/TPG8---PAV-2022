@@ -61,9 +61,8 @@ namespace TrabajoIntegradorG8.AccesoADatos
                 string consulta = "InsertJugador";
 
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@idJugador", jugador.idJugador);
-                cmd.Parameters.AddWithValue("@idSocio", jugador.idSocio);
-                cmd.Parameters.AddWithValue("@idClub", jugador.idClub);
+                cmd.Parameters.AddWithValue("@idSocio", jugador.IdSocio);
+                cmd.Parameters.AddWithValue("@idClub", jugador.IdClub);
 
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = consulta;
@@ -100,7 +99,7 @@ namespace TrabajoIntegradorG8.AccesoADatos
                 string consulta = "GetJugador";
 
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@idJugador", idJugador);
+                cmd.Parameters.AddWithValue("@id", idJugador);
 
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = consulta;
@@ -112,9 +111,9 @@ namespace TrabajoIntegradorG8.AccesoADatos
 
                 if (dr != null && dr.Read())
                 {
-                    jugador.idJugador = int.Parse(dr["ID_JUGADOR"].ToString());
-                    jugador.idSocio = dr["ID_SOCIO"].ToString();
-                    jugador.idClub = int.Parse(dr["ID_CLUB"].ToString());
+                    jugador.IdJugador = int.Parse(dr["ID_JUGADOR"].ToString());
+                    jugador.IdSocio = int.Parse(dr["ID_SOCIO"].ToString());
+                    jugador.IdClub = int.Parse(dr["ID_CLUB"].ToString());
                 }
 
                 return jugador;
@@ -144,8 +143,8 @@ namespace TrabajoIntegradorG8.AccesoADatos
 
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@idJugador", idJugador);
-                cmd.Parameters.AddWithValue("@idSocio", jugador.idSocio);
-                cmd.Parameters.AddWithValue("@idClub", jugador.Club);
+                cmd.Parameters.AddWithValue("@idSocio", jugador.IdSocio);
+                cmd.Parameters.AddWithValue("@idClub", jugador.IdClub);
 
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = consulta;
@@ -179,7 +178,7 @@ namespace TrabajoIntegradorG8.AccesoADatos
                 string consulta = "DeleteJugador";
 
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@idJugador", idJugador);
+                cmd.Parameters.AddWithValue("@id", idJugador);
 
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = consulta;

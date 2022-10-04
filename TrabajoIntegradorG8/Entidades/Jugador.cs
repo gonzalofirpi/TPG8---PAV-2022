@@ -12,7 +12,7 @@ namespace TrabajoIntegradorG8.Entidades
         private int idSocio;
         private int idClub;
 
-        public Barrio() { }
+        public Jugador() { }
 
         public int IdJugador
         {
@@ -20,13 +20,13 @@ namespace TrabajoIntegradorG8.Entidades
             set => this.idJugador = value;
         }
 
-        public string IdSocio 
+        public int IdSocio 
         {
             get => this.idSocio;
             set => this.idSocio = value;
         }
 
-        public int idClub
+        public int IdClub
         {
             get => this.idClub;
             set => this.idClub = value;

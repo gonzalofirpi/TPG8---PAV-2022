@@ -45,32 +45,28 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-  </ItemGroup>  
+  </ItemGroup>
   <ItemGroup>
+    <Compile Include="ABMJugadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMJugadores.Designer.cs">
+      <DependentUpon>ABMJugadores.cs</DependentUpon>
+    </Compile>
     <Compile Include="ABMSocios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ABMSocios.Designer.cs">
       <DependentUpon>ABMSocios.cs</DependentUpon>
     </Compile>
-
-    <Compile Include="ABMJugadores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ABMJugares.Designer.cs">
-      <DependentUpon>ABMJugadores.cs</DependentUpon>
-    </Compile>
     <Compile Include="AccesoADatos\AD_Jugadores.cs" />
     <Compile Include="AccesoADatos\AD_Socios.cs" />
-
-    <EmbeddedResource Include="ABMSocios.resx">
-      <DependentUpon>ABMSocios.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ABMJugadores.resx">
       <DependentUpon>ABMJugadores.cs</DependentUpon>
     </EmbeddedResource>
-
-
+    <EmbeddedResource Include="ABMSocios.resx">
+      <DependentUpon>ABMSocios.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="Entidades\Socio.cs" />
     <Compile Include="Entidades\Jugador.cs" />
     <Compile Include="Form1.cs">

@@ -29,21 +29,17 @@ namespace TrabajoIntegradorG8
         private void InitializeComponent()
         {
             this.lblJugadores = new System.Windows.Forms.Label();
-            this.lblIdJugador = new System.Windows.Forms.Label();
             this.lblIdClub = new System.Windows.Forms.Label();
             this.lblIdSocio = new System.Windows.Forms.Label();
-            
             this.txtIdClub = new System.Windows.Forms.TextBox();
             this.txtIdSocio = new System.Windows.Forms.TextBox();
-
             this.btnGuardarJugador = new System.Windows.Forms.Button();
             this.btnActualizarJugador = new System.Windows.Forms.Button();
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.grdJugadores = new System.Windows.Forms.DataGridView();
-            this.btnBorrarJugador = new System.Windows.Forms.Button();
-            
             this.idClub = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBorrarJugador = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdJugadores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,29 +50,18 @@ namespace TrabajoIntegradorG8
             this.lblJugadores.Font = new System.Drawing.Font("Impact", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJugadores.Location = new System.Drawing.Point(119, 19);
             this.lblJugadores.Name = "lblJugadores";
-            this.lblJugadores.Size = new System.Drawing.Size(147, 43);
+            this.lblJugadores.Size = new System.Drawing.Size(177, 43);
             this.lblJugadores.TabIndex = 7;
             this.lblJugadores.Text = "Jugadores";
-            // 
-            // lblIdJugador
-            // 
-            this.lblIdJugador.AutoSize = true;
-            this.lblIdJugador.BackColor = System.Drawing.Color.Transparent;
-            this.lblIdJugador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdJugador.Location = new System.Drawing.Point(48, 108);
-            this.lblIdJugador.Name = "lblIdJugador";
-            this.lblIdJugador.Size = new System.Drawing.Size(73, 20);
-            this.lblIdJugador.TabIndex = 8;
-            this.lblIdJugador.Text = "ID jugador: ";
             // 
             // lblIdClub
             // 
             this.lblIdClub.AutoSize = true;
             this.lblIdClub.BackColor = System.Drawing.Color.Transparent;
             this.lblIdClub.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdClub.Location = new System.Drawing.Point(34, 160);
+            this.lblIdClub.Location = new System.Drawing.Point(20, 108);
             this.lblIdClub.Name = "lblIdClub";
-            this.lblIdClub.Size = new System.Drawing.Size(85, 20);
+            this.lblIdClub.Size = new System.Drawing.Size(67, 20);
             this.lblIdClub.TabIndex = 9;
             this.lblIdClub.Text = "ID club: ";
             // 
@@ -85,16 +70,16 @@ namespace TrabajoIntegradorG8
             this.lblIdSocio.AutoSize = true;
             this.lblIdSocio.BackColor = System.Drawing.Color.Transparent;
             this.lblIdSocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdSocio.Location = new System.Drawing.Point(7, 204);
+            this.lblIdSocio.Location = new System.Drawing.Point(12, 158);
             this.lblIdSocio.Name = "lblIdSocio";
-            this.lblIdSocio.Size = new System.Drawing.Size(114, 20);
+            this.lblIdSocio.Size = new System.Drawing.Size(75, 20);
             this.lblIdSocio.TabIndex = 10;
             this.lblIdSocio.Text = "ID socio: ";
             // 
             // txtIdClub
             // 
             this.txtIdClub.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdClub.Location = new System.Drawing.Point(127, 102);
+            this.txtIdClub.Location = new System.Drawing.Point(93, 102);
             this.txtIdClub.Name = "txtIdClub";
             this.txtIdClub.Size = new System.Drawing.Size(124, 26);
             this.txtIdClub.TabIndex = 11;
@@ -102,13 +87,10 @@ namespace TrabajoIntegradorG8
             // txtIdSocio
             // 
             this.txtIdSocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdSocio.FormattingEnabled = true;
-            this.txtIdSocio.Location = new System.Drawing.Point(127, 152);
+            this.txtIdSocio.Location = new System.Drawing.Point(93, 152);
             this.txtIdSocio.Name = "txtIdSocio";
-            this.txtIdSocio.Size = new System.Drawing.Size(121, 28);
+            this.txtIdSocio.Size = new System.Drawing.Size(121, 26);
             this.txtIdSocio.TabIndex = 12;
-            // 
-           
             // 
             // btnGuardarJugador
             // 
@@ -149,24 +131,13 @@ namespace TrabajoIntegradorG8
             this.grdJugadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdJugadores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idClub,
-            this.idSocio,});
+            this.idSocio});
             this.grdJugadores.Location = new System.Drawing.Point(294, 83);
             this.grdJugadores.Name = "grdJugadores";
             this.grdJugadores.ReadOnly = true;
-            this.grdJugadores.Size = new System.Drawing.Size(332, 141);
+            this.grdJugadores.Size = new System.Drawing.Size(194, 141);
             this.grdJugadores.TabIndex = 17;
             this.grdJugadores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdJugadores_CellClick);
-            // 
-            // btnBorrarJugador
-            // 
-            this.btnBorrarJugador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrarJugador.Location = new System.Drawing.Point(265, 278);
-            this.btnBorrarJugador.Name = "btnBorrarJugador";
-            this.btnBorrarJugador.Size = new System.Drawing.Size(108, 48);
-            this.btnBorrarJugador.TabIndex = 18;
-            this.btnBorrarJugador.Text = "Borrar Jugador";
-            this.btnBorrarJugador.UseVisualStyleBackColor = true;
-            this.btnBorrarJugador.Click += new System.EventHandler(this.btnBorrarJugador_Click);
             // 
             // idClub
             // 
@@ -183,13 +154,22 @@ namespace TrabajoIntegradorG8
             this.idSocio.Name = "idSocio";
             this.idSocio.ReadOnly = true;
             // 
-
+            // btnBorrarJugador
+            // 
+            this.btnBorrarJugador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrarJugador.Location = new System.Drawing.Point(265, 278);
+            this.btnBorrarJugador.Name = "btnBorrarJugador";
+            this.btnBorrarJugador.Size = new System.Drawing.Size(108, 48);
+            this.btnBorrarJugador.TabIndex = 18;
+            this.btnBorrarJugador.Text = "Borrar Jugador";
+            this.btnBorrarJugador.UseVisualStyleBackColor = true;
+            this.btnBorrarJugador.Click += new System.EventHandler(this.btnBorrarJugador_Click);
             // 
             // frmJugadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(656, 348);
+            this.ClientSize = new System.Drawing.Size(546, 348);
             this.Controls.Add(this.btnBorrarJugador);
             this.Controls.Add(this.grdJugadores);
             this.Controls.Add(this.btnLimpiarCampos);
@@ -199,7 +179,6 @@ namespace TrabajoIntegradorG8
             this.Controls.Add(this.txtIdClub);
             this.Controls.Add(this.lblIdSocio);
             this.Controls.Add(this.lblIdClub);
-            this.Controls.Add(this.lblIdJugador);
             this.Controls.Add(this.lblJugadores);
             this.Name = "frmJugadores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -214,11 +193,10 @@ namespace TrabajoIntegradorG8
         #endregion
 
         private System.Windows.Forms.Label lblJugadores;
-        private System.Windows.Forms.Label lblIdJugador;
         private System.Windows.Forms.Label lblIdClub;
         private System.Windows.Forms.Label lblIdSocio;
         private System.Windows.Forms.TextBox txtIdClub;
-        private System.Windows.Forms.ComboBox txtIdSocio;
+        private System.Windows.Forms.TextBox txtIdSocio;
         private System.Windows.Forms.Button btnGuardarJugador;
         private System.Windows.Forms.Button btnActualizarJugador;
         private System.Windows.Forms.Button btnLimpiarCampos;

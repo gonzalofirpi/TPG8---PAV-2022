@@ -16,21 +16,21 @@ namespace TrabajoIntegradorG8
         {
             InitializeComponent();
         }
+
+        private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSocios ventana = new frmSocios();
+            ventana.Show();
+            this.Hide();
+        }
+
+        private void consultasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmJugadores ventana = new frmJugadores();
+            ventana.Show();
+            this.Hide();
+        }
     }
 
-       private void aBMSociosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            frmSocios ventana = new frmSocios();
-            ventana.Show();
-            this.Hide();
-        }
-
-        private void consultasToolStripMenuItem9_Click(object sender, EventArgs e)
-        {
-
-            frmSocios ventana = new frmSocios();
-            ventana.Show();
-            this.Hide();
-        }
+       
 }
