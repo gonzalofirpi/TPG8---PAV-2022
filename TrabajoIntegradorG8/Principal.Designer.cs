@@ -348,4 +348,3 @@
         private System.Windows.Forms.ToolStripMenuItem observacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem4;
     }
-}
