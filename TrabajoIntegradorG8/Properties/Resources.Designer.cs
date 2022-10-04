@@ -123,6 +123,36 @@ namespace TrabajoIntegradorG8.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondoPrincipal3 {
+            get {
+                object obj = ResourceManager.GetObject("fondoPrincipal3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondoPrincipal4 {
+            get {
+                object obj = ResourceManager.GetObject("fondoPrincipal4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondoPrincipal5 {
+            get {
+                object obj = ResourceManager.GetObject("fondoPrincipal5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconoArbitros {
             get {
                 object obj = ResourceManager.GetObject("iconoArbitros", resourceCulture);

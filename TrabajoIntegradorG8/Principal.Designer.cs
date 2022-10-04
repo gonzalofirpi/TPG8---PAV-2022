@@ -292,7 +292,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::TrabajoIntegradorG8.Properties.Resources.fondoPrincipal2;
+            this.BackgroundImage = global::TrabajoIntegradorG8.Properties.Resources.fondoPrincipal5;
             this.ClientSize = new System.Drawing.Size(1062, 457);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
