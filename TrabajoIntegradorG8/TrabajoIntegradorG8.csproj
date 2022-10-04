@@ -45,8 +45,22 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-  </ItemGroup>
+  </ItemGroup>  
   <ItemGroup>
+    <Compile Include="ABMSocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMSocios.Designer.cs">
+      <DependentUpon>ABMSocios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMSocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMSocios.Designer.cs">
+      <DependentUpon>ABMSocios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Socio.cs" />
+    <Compile Include="Entidades\Jugador.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

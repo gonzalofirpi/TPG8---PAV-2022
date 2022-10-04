@@ -17,4 +17,20 @@ namespace TrabajoIntegradorG8
             InitializeComponent();
         }
     }
+
+       private void aBMSociosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            frmSocios ventana = new frmSocios();
+            ventana.Show();
+            this.Hide();
+        }
+
+        private void consultasToolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+
+            frmSocios ventana = new frmSocios();
+            ventana.Show();
+            this.Hide();
+        }
 }
