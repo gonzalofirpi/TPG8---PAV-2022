@@ -85,14 +85,12 @@ namespace TrabajoIntegradorG8
         {
             PuestosABM ventana = new PuestosABM();
             ventana.Show();
-            this.Hide();
         }
 
-        private void observacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void consultasToolStripMenuItem6_Click(object sender, EventArgs e)
         {
             ABMTipoObservaciones ventana = new ABMTipoObservaciones();
             ventana.Show();
-            this.Hide();
         }
     }
 

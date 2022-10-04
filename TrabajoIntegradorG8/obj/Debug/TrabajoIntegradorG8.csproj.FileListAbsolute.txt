@@ -43,3 +43,5 @@ C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\G
 C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\Git tp\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.ABMarbitros.resources
 C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\Git tp\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.Form2.resources
 C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\Git tp\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.Form3.resources
+C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\Git tp\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.EstadoCancha.ABMTipoObservaciones.resources
+C:\Users\Usuario\Documents\Tercer Año\Programacion de Aplicaciones Visuales I\Git tp\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.Puestos.PuestosABM.resources
