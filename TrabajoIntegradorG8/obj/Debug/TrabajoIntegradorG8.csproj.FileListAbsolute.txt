@@ -44,4 +44,4 @@ C:\Users\daysi\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIn
 C:\Users\daysi\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.csproj.CoreCompileInputs.cache
 C:\Users\daysi\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.exe
 C:\Users\daysi\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.pdb
-C:\Users\daysi\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.Partidos.ABMPartidos.resources
+C:\Users\daysi\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.Puestos.PuestosABM.resources

@@ -43,9 +43,6 @@
             this.consultasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.comisionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.altaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bajaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.arbitrosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.cargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,7 +80,7 @@
             this.observacionesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1333, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1524, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -188,31 +185,10 @@
             // 
             // consultasToolStripMenuItem3
             // 
-            this.consultasToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.altaToolStripMenuItem,
-            this.bajaToolStripMenuItem,
-            this.bajaToolStripMenuItem1});
             this.consultasToolStripMenuItem3.Name = "consultasToolStripMenuItem3";
-            this.consultasToolStripMenuItem3.Size = new System.Drawing.Size(155, 26);
+            this.consultasToolStripMenuItem3.Size = new System.Drawing.Size(224, 26);
             this.consultasToolStripMenuItem3.Text = "Consultas";
-            // 
-            // altaToolStripMenuItem
-            // 
-            this.altaToolStripMenuItem.Name = "altaToolStripMenuItem";
-            this.altaToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
-            this.altaToolStripMenuItem.Text = "Alta";
-            // 
-            // bajaToolStripMenuItem
-            // 
-            this.bajaToolStripMenuItem.Name = "bajaToolStripMenuItem";
-            this.bajaToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
-            this.bajaToolStripMenuItem.Text = "Modificar";
-            // 
-            // bajaToolStripMenuItem1
-            // 
-            this.bajaToolStripMenuItem1.Name = "bajaToolStripMenuItem1";
-            this.bajaToolStripMenuItem1.Size = new System.Drawing.Size(156, 26);
-            this.bajaToolStripMenuItem1.Text = "Baja";
+            this.consultasToolStripMenuItem3.Click += new System.EventHandler(this.consultasToolStripMenuItem3_Click);
             // 
             // arbitrosToolStripMenuItem1
             // 
@@ -288,7 +264,6 @@
             this.consultasToolStripMenuItem6.Name = "consultasToolStripMenuItem6";
             this.consultasToolStripMenuItem6.Size = new System.Drawing.Size(224, 26);
             this.consultasToolStripMenuItem6.Text = "Consultas";
-            this.consultasToolStripMenuItem6.Click += new System.EventHandler(this.consultasToolStripMenuItem6_Click);
             // 
             // observacionesXPartidoToolStripMenuItem
             // 
@@ -322,7 +297,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1333, 554);
+            this.ClientSize = new System.Drawing.Size(1524, 554);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -367,8 +342,5 @@
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem observacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem altaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bajaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bajaToolStripMenuItem1;
     }
 }

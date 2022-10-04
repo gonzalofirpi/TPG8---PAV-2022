@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TrabajoIntegradorG8.Partidos;
+using TrabajoIntegradorG8.Puestos;
 
 namespace TrabajoIntegradorG8
 {
@@ -19,10 +19,13 @@ namespace TrabajoIntegradorG8
         }
 
 
-        private void consultasToolStripMenuItem6_Click(object sender, EventArgs e)
+        
+
+        private void consultasToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            ABMPartidos ventana = new ABMPartidos();
+            PuestosABM ventana = new PuestosABM();
             ventana.Show();
+            this.Hide();
         }
     }
 }
