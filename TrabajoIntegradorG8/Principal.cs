@@ -20,6 +20,7 @@ namespace TrabajoIntegradorG8
         private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmSocios ventana = new frmSocios();
+            ventana.Show();
         }
         
         private void aBMClubesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -27,19 +28,18 @@ namespace TrabajoIntegradorG8
 
             frmClubes ventana = new frmClubes();
             ventana.Show();
-            this.Hide();
         }
 
         private void consultasToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frmJugadores ventana = new frmJugadores();
+            ventana.Show();
         }
         private void consultasToolStripMenuItem8_Click(object sender, EventArgs e)
         {
 
             frmBarrios ventana = new frmBarrios();
             ventana.Show();
-            this.Hide();
         }
     }
 
