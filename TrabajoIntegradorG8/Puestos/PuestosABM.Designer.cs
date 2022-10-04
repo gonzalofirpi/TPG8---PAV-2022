@@ -133,7 +133,7 @@ namespace TrabajoIntegradorG8.Puestos
             this.gridPuesto.ReadOnly = true;
             this.gridPuesto.RowHeadersWidth = 51;
             this.gridPuesto.RowTemplate.Height = 24;
-            this.gridPuesto.Size = new System.Drawing.Size(309, 286);
+            this.gridPuesto.Size = new System.Drawing.Size(334, 298);
             this.gridPuesto.TabIndex = 21;
             this.gridPuesto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridPuesto_CellContentClick);
             // 
@@ -141,7 +141,7 @@ namespace TrabajoIntegradorG8.Puestos
             // 
             this.codigo.DataPropertyName = "COD_PUESTO";
             this.codigo.HeaderText = "CodPuestos";
-            this.codigo.MinimumWidth = 6;
+            this.codigo.MinimumWidth = 10;
             this.codigo.Name = "codigo";
             this.codigo.ReadOnly = true;
             this.codigo.Width = 125;
@@ -150,7 +150,7 @@ namespace TrabajoIntegradorG8.Puestos
             // 
             this.nombre.DataPropertyName = "NOMBRE";
             this.nombre.HeaderText = "Nombre";
-            this.nombre.MinimumWidth = 6;
+            this.nombre.MinimumWidth = 10;
             this.nombre.Name = "nombre";
             this.nombre.ReadOnly = true;
             this.nombre.Width = 125;
@@ -159,7 +159,7 @@ namespace TrabajoIntegradorG8.Puestos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(846, 453);
+            this.ClientSize = new System.Drawing.Size(713, 453);
             this.Controls.Add(this.gridPuesto);
             this.Controls.Add(this.btnGuardarBarrio);
             this.Controls.Add(this.btnBorrarPuesto);
