@@ -41,6 +41,17 @@ namespace TrabajoIntegradorG8
             frmBarrios ventana = new frmBarrios();
             ventana.Show();
         }
+        private void consultasToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            ABMLocalidades ventana = new ABMLocalidades();
+            ventana.Show();
+        }
+
+        private void aBMSociosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABMComisiones ventana = new ABMComisiones();
+            ventana.Show();
+        }
     }
 
        

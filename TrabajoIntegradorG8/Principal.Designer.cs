@@ -111,8 +111,9 @@
             // aBMSociosToolStripMenuItem
             // 
             this.aBMSociosToolStripMenuItem.Name = "aBMSociosToolStripMenuItem";
-            this.aBMSociosToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.aBMSociosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aBMSociosToolStripMenuItem.Text = "Consultas";
+            this.aBMSociosToolStripMenuItem.Click += new System.EventHandler(this.aBMSociosToolStripMenuItem_Click);
             // 
             // canchasToolStripMenuItem
             // 
@@ -203,7 +204,7 @@
             // consultasToolStripMenuItem10
             // 
             this.consultasToolStripMenuItem10.Name = "consultasToolStripMenuItem10";
-            this.consultasToolStripMenuItem10.Size = new System.Drawing.Size(126, 22);
+            this.consultasToolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
             this.consultasToolStripMenuItem10.Text = "Consultas";
             // 
             // cargosToolStripMenuItem
@@ -251,6 +252,7 @@
             this.consultasToolStripMenuItem7.Name = "consultasToolStripMenuItem7";
             this.consultasToolStripMenuItem7.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem7.Text = "Consultas";
+            this.consultasToolStripMenuItem7.Click += new System.EventHandler(this.consultasToolStripMenuItem7_Click);
             // 
             // arbitrosXPartidoToolStripMenuItem
             // 
