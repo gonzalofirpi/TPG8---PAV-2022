@@ -245,12 +245,13 @@ namespace TrabajoIntegradorG8
             txtNroCamiseta.Text = "";
             cmbPuestos.SelectedIndex = -1;
             cmbTitular.SelectedIndex = -1;
-
+            grdJugadores.Rows.Clear();
 
             txtIdArbitro.Text = "";
             txtNombreArbitro.Text = "";
             txtApellidoArbitro.Text = "";
             cmbCargos.SelectedIndex = -1;
+            grdArbitros.Rows.Clear();
         }
 
 
