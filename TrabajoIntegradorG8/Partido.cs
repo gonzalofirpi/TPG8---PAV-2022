@@ -18,60 +18,110 @@ namespace TrabajoIntegradorG8
         {
             InitializeComponent();
 
-            cargarComboClubLocal();
-            cargarComboCategorias();
-            cargarComboCancha();
-            cargarComboPuestos();
-            cargarComboTitular();
+            limpiarCampos();
+
+            try
+            {
+                cargarComboClubLocal();
+                cargarComboCategorias();
+                cargarComboCancha();
+                cargarComboPuestos();
+                cargarComboTitular();
+                cargarComboCargo();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error en la carga de datos");
+            }
+           
         }
 
         public void cargarComboClubLocal() 
         {
-            DataTable table = AD_Partidos.cargarComboClub();
-            cmbClubLocal.DataSource = table;
+            try
+            {
+                DataTable table = AD_Partidos.cargarComboClub();
+                cmbClubLocal.DataSource = table;
 
-            cmbClubLocal.DisplayMember = "NOMBRE";
-            cmbClubLocal.ValueMember = "ID_CLUB";
-            cmbClubLocal.SelectedIndex = -1;
-
+                cmbClubLocal.DisplayMember = "NOMBRE";
+                cmbClubLocal.ValueMember = "ID_CLUB";
+                cmbClubLocal.SelectedIndex = -1;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void cargarComboClubVisitante()
         {
-            DataTable table = AD_Partidos.cargarComboClub2(int.Parse(cmbClubLocal.SelectedValue.ToString()));
+            try
+            {
+                DataTable table = AD_Partidos.cargarComboClub2(int.Parse(cmbClubLocal.SelectedValue.ToString()));
 
-            cmbClubVisitante.DataSource = table;
+                cmbClubVisitante.DataSource = table;
 
-            cmbClubVisitante.DisplayMember = "NOMBRE";
-            cmbClubVisitante.ValueMember = "ID_CLUB";
-            cmbClubVisitante.SelectedIndex = -1;
+                cmbClubVisitante.DisplayMember = "NOMBRE";
+                cmbClubVisitante.ValueMember = "ID_CLUB";
+                cmbClubVisitante.SelectedIndex = -1;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+           
         }
         public void cargarComboCategorias()
         {
-            DataTable table = AD_Partidos.cargarComboCategoria();
+            try
+            {
+                DataTable table = AD_Partidos.cargarComboCategoria();
 
-            cmbCategorias.DataSource = table;
-            cmbCategorias.DisplayMember = "NOMBRE";
-            cmbCategorias.ValueMember = "COD_CATEGORIA";
-            cmbCategorias.SelectedIndex = -1;
+                cmbCategorias.DataSource = table;
+                cmbCategorias.DisplayMember = "NOMBRE";
+                cmbCategorias.ValueMember = "COD_CATEGORIA";
+                cmbCategorias.SelectedIndex = -1;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
         public void cargarComboCancha()
         {
-            DataTable table = AD_Partidos.cargarComboCancha();
+            try
+            {
+                DataTable table = AD_Partidos.cargarComboCancha();
 
-            cmbNroCancha.DataSource = table;
-            cmbNroCancha.DisplayMember = "NRO_CANCHA";
-            cmbNroCancha.ValueMember = "NRO_CANCHA";
-            cmbNroCancha.SelectedIndex = -1;
+                cmbNroCancha.DataSource = table;
+                cmbNroCancha.DisplayMember = "NRO_CANCHA";
+                cmbNroCancha.ValueMember = "NRO_CANCHA";
+                cmbNroCancha.SelectedIndex = -1;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            
         }
         public void cargarComboPuestos()
         {
-            DataTable table = AD_Partidos.cargarComboPuesto();
+            try
+            {
+                DataTable table = AD_Partidos.cargarComboPuesto();
 
-            cmbPuestos.DataSource = table;
-            cmbPuestos.DisplayMember = "NOMBRE";
-            cmbPuestos.ValueMember = "COD_PUESTO";
-            cmbPuestos.SelectedIndex = -1;
+                cmbPuestos.DataSource = table;
+                cmbPuestos.DisplayMember = "NOMBRE";
+                cmbPuestos.ValueMember = "COD_PUESTO";
+                cmbPuestos.SelectedIndex = -1;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            
         }
 
         public void cargarComboTitular()
@@ -80,9 +130,27 @@ namespace TrabajoIntegradorG8
             cmbTitular.Items.Add("Suplente");
         }
 
+        public void cargarComboCargo()
+        {
+            try
+            {
+                DataTable table = AD_Partidos.cargarCargo();
+                cmbCargos.DataSource = table;
+
+                cmbCargos.DisplayMember = "NOMBRE";
+                cmbCargos.ValueMember = "COD_CARGO";
+                cmbCargos.SelectedIndex = -1;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            
+        }
+
         private void cmbClubLocal_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if ( cmbClubLocal.SelectedIndex != -1 )
+            if ( cmbClubLocal.Text != "" )
             {
                 cargarComboClubVisitante();
                 cmbClubVisitante.Enabled = true;
@@ -95,68 +163,132 @@ namespace TrabajoIntegradorG8
         private void btnBuscarJugador_Click(object sender, EventArgs e)
         {
 
-            DataTable table = AD_Partidos.ObtenerJugadorXId(int.Parse(txtIdJugador.Text));
+            try
+            {
+                DataTable table = AD_Partidos.ObtenerJugadorXId(int.Parse(txtIdJugador.Text));
 
-            if (table.Rows.Count > 0)
-            {
-                txtNombreJugador.Text = table.Rows[0][0].ToString();
-                txtApellidoJugador.Text = table.Rows[0][1].ToString();
-                txtClub.Text = table.Rows[0][2].ToString();
+                if (table.Rows.Count > 0)
+                {
+                    txtNombreJugador.Text = table.Rows[0][0].ToString();
+                    txtApellidoJugador.Text = table.Rows[0][1].ToString();
+                    txtClub.Text = table.Rows[0][2].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("No se encontro el jugador");
+                    txtIdJugador.Focus();
+                    txtNombreJugador.Text = "";
+                    txtApellidoJugador.Text = "";
+                    txtClub.Text = "";
+                }
+
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("No se encontro el jugador");
-                txtIdJugador.Focus();
-                txtNombreJugador.Text = "";
-                txtApellidoJugador.Text = "";
-                txtClub.Text = "";
+                MessageBox.Show("Error en el acceso a BD");
             }
+            
         }
 
         private void btnBuscarArbitro_Click(object sender, EventArgs e)
         {
-            DataTable table = AD_Partidos.ObtenerArbitroXId(int.Parse(txtIdArbitro.Text));
 
-            if (table.Rows.Count > 0)
+            try
             {
-                txtNombreArbitro.Text = table.Rows[0][0].ToString();
-                txtApellidoArbitro.Text = table.Rows[0][1].ToString();
+                DataTable table = AD_Partidos.ObtenerArbitroXId(int.Parse(txtIdArbitro.Text));
+
+                if (table.Rows.Count > 0)
+                {
+                    txtNombreArbitro.Text = table.Rows[0][0].ToString();
+                    txtApellidoArbitro.Text = table.Rows[0][1].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("No se encontro el arbitro");
+                    txtIdArbitro.Focus();
+                    txtNombreArbitro.Text = "";
+                    txtApellidoArbitro.Text = "";
+                }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error en acceso a BD");
+            }
+           
+        }
+
+        public bool validarEquipos()
+        {
+            if (txtClub.Text == cmbClubLocal.Text || txtClub.Text == cmbClubVisitante.Text)
+            {
+                return true;
             }
             else
             {
-                MessageBox.Show("No se encontro el arbitro");
-                txtIdArbitro.Focus();
-                txtNombreArbitro.Text = "";
-                txtApellidoArbitro.Text = "";
+                return false;
             }
         }
 
+        public void limpiarCampos()
+        {
+            txtFecha.Text = "";
+            cmbCategorias.SelectedIndex = -1;
+            cmbClubLocal.SelectedIndex = -1;
+            cmbClubVisitante.SelectedIndex = -1;
+            cmbNroCancha.SelectedIndex = -1;
+
+            txtIdJugador.Text = "";
+            txtNombreJugador.Text = "";
+            txtApellidoJugador.Text = "";
+            txtClub.Text = "";
+            txtNroCamiseta.Text = "";
+            cmbPuestos.SelectedIndex = -1;
+            cmbTitular.SelectedIndex = -1;
+
+
+            txtIdArbitro.Text = "";
+            txtNombreArbitro.Text = "";
+            txtApellidoArbitro.Text = "";
+            cmbCargos.SelectedIndex = -1;
+        }
+
+
         private void btnAgregarJugador_Click(object sender, EventArgs e)
         {
-            bool resultado = true;
-
-            for (int i = 0; i < grdArbitros.Rows.Count; i++)
+            if (txtIdJugador.Text != "" && txtNroCamiseta.Text != "" && cmbPuestos.Text != "")
             {
-                if (grdJugadores.Rows[i].Cells[1].Value.ToString() == txtIdJugador.Text)
+                
+                for (int i = 0; i < grdJugadores.Rows.Count; i++)
                 {
-                    resultado = false;
-                }
-            }
+                    if (grdJugadores.Rows[i].Cells[0].Value.ToString() == txtIdJugador.Text)
+                    {
+                        MessageBox.Show("Error jugador repetido");
+                        return;
+                    }
 
-            if (resultado)
-            {
-                if (txtIdJugador.Text != "" && txtNroCamiseta.Text != "" && (int)cmbPuestos.SelectedValue != -1)
+                    if (txtNroCamiseta.Text != "" && grdJugadores.Rows[i].Cells[5].Value.ToString() == txtNroCamiseta.Text && txtClub.Text == grdJugadores.Rows[i].Cells[4].Value.ToString())
+                    {
+                        MessageBox.Show("Error camiseta repetida");
+                        return;
+                    }
+                }
+
+                if (validarEquipos())
                 {
                     grdJugadores.Rows.Add(txtIdJugador.Text, txtNombreJugador.Text, txtApellidoJugador.Text, txtClub.Text, txtNroCamiseta.Text, cmbPuestos.Text);
                 }
                 else
                 {
-                    MessageBox.Show("Error, completar todos los campos");
+                    MessageBox.Show("Error, el jugador debe pertenecer a alguno de los dos equipos del partido");
+                    return;
                 }
+
             }
+
             else
             {
-                MessageBox.Show("Error, ID repetido");
+                MessageBox.Show("Error, completar todos los campos");
             }
 
         }
@@ -164,30 +296,38 @@ namespace TrabajoIntegradorG8
         private void btnAgregarArbitro_Click(object sender, EventArgs e)
         {
 
-            bool resultado = true;
 
-            for (int i = 0; i < grdArbitros.Rows.Count; i++)
+            if ( grdArbitros.Rows.Count == 4 )
             {
-                if (grdArbitros.Rows[i].Cells[1].Value.ToString() == txtIdArbitro.Text)
-                {
-                    resultado = false;
-                }
+                MessageBox.Show("Error, ya estan cargados los 4 arbitros");
+                return;
             }
 
-            if (resultado)
+            if (txtIdArbitro.Text == "" && cmbCargos.Text == "") 
             {
-                if (txtIdArbitro.Text != "" && (int)cmbCargos.SelectedValue != -1)
-                {
-                    grdArbitros.Rows.Add(txtIdArbitro.Text, txtNombreArbitro.Text, txtApellidoArbitro.Text, cmbCargos.Text);
-                }
-                else
-                {
-                    MessageBox.Show("Error, completar todos los campos");
-                }
+                MessageBox.Show("Error, completar todos los campos");
+                return;
             }
             else
             {
-                MessageBox.Show("Error, ID repetido");
+                for (int i = 0; i < grdArbitros.Rows.Count; i++)
+                {
+                    if (grdArbitros.Rows[i].Cells[0].Value.ToString() == txtIdArbitro.Text)
+                    {
+                        MessageBox.Show("Error, ID repetido");
+                        return;
+                    }
+
+                    if (grdArbitros.Rows[i].Cells[3].Value.ToString() == cmbCargos.Text)
+                    {
+                        MessageBox.Show("Error, cargo repetido");
+                        return;
+                    }
+
+                }
+
+                grdArbitros.Rows.Add(txtIdArbitro.Text, txtNombreArbitro.Text, txtApellidoArbitro.Text, cmbCargos.Text);
+
             }
             
         }
@@ -205,19 +345,25 @@ namespace TrabajoIntegradorG8
 
             for (int i = 0; i < grdArbitros.Rows.Count; i++)
             {
-                listaArbitros.Add(int.Parse(grdJugadores.Rows[i].Cells[0].Value.ToString()));
+                listaArbitros.Add(int.Parse(grdArbitros.Rows[i].Cells[0].Value.ToString()));
             }
 
-
-            if (AD_Partidos.altaNuevoPartido(DateTime.Parse(txtFecha.Text), (int) cmbCategorias.SelectedValue, (int) cmbNroCancha.SelectedValue, (int)cmbClubLocal.SelectedValue, (int)cmbClubVisitante.SelectedValue, int.Parse(txtNroCamiseta.Text), (int) cmbPuestos.SelectedValue, cmbTitular.Text, (int) cmbCargos.SelectedValue, listaJugadores, listaArbitros))
+            try
             {
-                MessageBox.Show("Curso dado de alta con exito!!");
+                if (AD_Partidos.altaNuevoPartido(DateTime.Parse(txtFecha.Text), (int)cmbCategorias.SelectedValue, (int)cmbNroCancha.SelectedValue, (int)cmbClubLocal.SelectedValue, (int)cmbClubVisitante.SelectedValue, int.Parse(txtNroCamiseta.Text), (int)cmbPuestos.SelectedValue, cmbTitular.Text, (int)cmbCargos.SelectedValue, listaJugadores, listaArbitros))
+                {
+                    MessageBox.Show("Partido dado de alta con exito!!");
+                }
 
+                limpiarCampos();
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Error en el alta del curso");
+                MessageBox.Show("Error en el alta del partido - " + ex.Message);
             }
+            
+            
+            
         }
     }
 }

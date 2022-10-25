@@ -36,13 +36,7 @@ namespace TrabajoIntegradorG8.AccesoADatos
 
                 return tabla;
 
-                /*
-                cmbClub.DataSource = tabla;
-                cmbClub.DisplayMember = "NOMBRE";
-                cmbClub.ValueMember = "ID_CLUB";
-                cmbClub.SelectedIndex = -1;
-
-                */
+               
             }
             catch (Exception ex)
             {
@@ -78,12 +72,7 @@ namespace TrabajoIntegradorG8.AccesoADatos
                 da.Fill(tabla);
 
                 return tabla;
-                /*
-                cmbClub.DataSource = tabla;
-                cmbClub.DisplayMember = "NOMBRE";
-                cmbClub.ValueMember = "ID_CLUB";
-                cmbClub.SelectedIndex = -1;
-                */
+             
             }
             catch (Exception ex)
             {
@@ -118,12 +107,7 @@ namespace TrabajoIntegradorG8.AccesoADatos
                 da.Fill(tabla);
 
                 return tabla;
-                /*
-                cmbClub.DataSource = tabla;
-                cmbClub.DisplayMember = "NOMBRE";
-                cmbClub.ValueMember = "COD_CATEGORIA";
-                cmbClub.SelectedIndex = -1;
-                */
+                
             }
             catch (Exception ex)
             {
@@ -158,12 +142,7 @@ namespace TrabajoIntegradorG8.AccesoADatos
                 da.Fill(tabla);
 
                 return tabla;
-                /*
-                cmbClub.DataSource = tabla;
-                cmbClub.DisplayMember = "NRO_CANCHA";
-                cmbClub.ValueMember = "NRO_CANCHA";
-                cmbClub.SelectedIndex = -1;
-                */
+                
             }
             catch (Exception ex)
             {
@@ -198,12 +177,8 @@ namespace TrabajoIntegradorG8.AccesoADatos
                 da.Fill(tabla);
 
                 return tabla;
-                /*
-                cmbClub.DataSource = tabla;
-                cmbClub.DisplayMember = "NOMBRE";
-                cmbClub.ValueMember = "COD_PUESTO";
-                cmbClub.SelectedIndex = -1;
-                */
+                
+            
             }
             catch (Exception ex)
             {
@@ -214,6 +189,43 @@ namespace TrabajoIntegradorG8.AccesoADatos
                 cn.Close();
             }
         }
+
+        public static DataTable cargarCargo()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT *" +
+                             "     FROM CARGO";
+
+                cmd.Parameters.Clear();
+
+
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch ( Exception ex )
+            {
+                throw;
+            }
+            finally { cn.Close();  }
+
+
+
+            }
+
         public static DataTable ObtenerJugadorXId(int id)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
