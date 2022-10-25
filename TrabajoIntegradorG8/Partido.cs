@@ -34,12 +34,6 @@ namespace TrabajoIntegradorG8
             cmbClubLocal.ValueMember = "ID_CLUB";
             cmbClubLocal.SelectedIndex = -1;
 
-            /*
-            cmbClubLocal.SelectedItem = null;
-            cmbClubLocal.SelectedText = "--select--";
-            */
-
-
         }
 
         public void cargarComboClubVisitante()
@@ -139,26 +133,63 @@ namespace TrabajoIntegradorG8
 
         private void btnAgregarJugador_Click(object sender, EventArgs e)
         {
-            if ( txtIdJugador.Text != "" && txtNroCamiseta.Text != "" && (int)cmbPuestos.SelectedValue != -1)
+            bool resultado = true;
+
+            for (int i = 0; i < grdArbitros.Rows.Count; i++)
             {
-                grdJugadores.Rows.Add(txtIdJugador.Text, txtNombreJugador.Text, txtApellidoJugador.Text, txtClub.Text, txtNroCamiseta.Text, cmbPuestos.Text);
+                if (grdJugadores.Rows[i].Cells[1].Value.ToString() == txtIdJugador.Text)
+                {
+                    resultado = false;
+                }
+            }
+
+            if (resultado)
+            {
+                if (txtIdJugador.Text != "" && txtNroCamiseta.Text != "" && (int)cmbPuestos.SelectedValue != -1)
+                {
+                    grdJugadores.Rows.Add(txtIdJugador.Text, txtNombreJugador.Text, txtApellidoJugador.Text, txtClub.Text, txtNroCamiseta.Text, cmbPuestos.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Error, completar todos los campos");
+                }
             }
             else
             {
-                MessageBox.Show("Error, completar todos los campos");
+                MessageBox.Show("Error, ID repetido");
             }
+
         }
 
         private void btnAgregarArbitro_Click(object sender, EventArgs e)
         {
-            if (txtIdArbitro.Text != "" && (int)cmbCargos.SelectedValue != -1)
+
+            bool resultado = true;
+
+            for (int i = 0; i < grdArbitros.Rows.Count; i++)
             {
-                grdArbitros.Rows.Add(txtIdArbitro.Text, txtNombreArbitro.Text, txtApellidoArbitro.Text, cmbCargos.Text);
+                if (grdArbitros.Rows[i].Cells[1].Value.ToString() == txtIdArbitro.Text)
+                {
+                    resultado = false;
+                }
+            }
+
+            if (resultado)
+            {
+                if (txtIdArbitro.Text != "" && (int)cmbCargos.SelectedValue != -1)
+                {
+                    grdArbitros.Rows.Add(txtIdArbitro.Text, txtNombreArbitro.Text, txtApellidoArbitro.Text, cmbCargos.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Error, completar todos los campos");
+                }
             }
             else
             {
-                MessageBox.Show("Error, completar todos los campos");
+                MessageBox.Show("Error, ID repetido");
             }
+            
         }
 
         private void btnGuardarPartido_Click(object sender, EventArgs e)
