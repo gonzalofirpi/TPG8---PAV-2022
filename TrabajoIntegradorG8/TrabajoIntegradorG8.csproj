@@ -60,6 +60,7 @@
       <DependentUpon>ABMSocios.cs</DependentUpon>
     </Compile>
     <Compile Include="AccesoADatos\AD_Jugadores.cs" />
+    <Compile Include="AccesoADatos\AD_Partidos.cs" />
     <Compile Include="AccesoADatos\AD_Socios.cs" />
     <EmbeddedResource Include="ABMJugadores.resx">
       <DependentUpon>ABMJugadores.cs</DependentUpon>
@@ -116,6 +117,12 @@
     <Compile Include="AccesoADatos\AD_Puesto.cs" />
     <Compile Include="Entidades\TipoObservaciones.cs" />
     <Compile Include="Entidades\Puesto.cs" />
+    <Compile Include="Partido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partido.Designer.cs">
+      <DependentUpon>Partido.cs</DependentUpon>
+    </Compile>
     <Compile Include="TipoObservaciones\ABMTipoObservaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +189,9 @@
     <Compile Include="Puestos\PuestosABM.Designer.cs">
       <DependentUpon>PuestosABM.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Partido.resx">
+      <DependentUpon>Partido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TipoObservaciones\ABMTipoObservaciones.resx">
       <DependentUpon>ABMTipoObservaciones.cs</DependentUpon>
     </EmbeddedResource>

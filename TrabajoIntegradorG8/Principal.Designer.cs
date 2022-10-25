@@ -55,6 +55,8 @@
             this.consultasToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.observacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.partidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,11 +76,12 @@
             this.barriosToolStripMenuItem,
             this.localidadesToolStripMenuItem,
             this.arbitrosXPartidoToolStripMenuItem,
-            this.observacionesToolStripMenuItem});
+            this.observacionesToolStripMenuItem,
+            this.partidosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1062, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1230, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -270,7 +273,7 @@
             // consultasToolStripMenuItem6
             // 
             this.consultasToolStripMenuItem6.Name = "consultasToolStripMenuItem6";
-            this.consultasToolStripMenuItem6.Size = new System.Drawing.Size(126, 22);
+            this.consultasToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
             this.consultasToolStripMenuItem6.Text = "Consultas";
             this.consultasToolStripMenuItem6.Click += new System.EventHandler(this.consultasToolStripMenuItem6_Click);
             // 
@@ -288,12 +291,27 @@
             this.consultasToolStripMenuItem4.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem4.Text = "Consultas";
             // 
+            // partidosToolStripMenuItem
+            // 
+            this.partidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consultasToolStripMenuItem5});
+            this.partidosToolStripMenuItem.Name = "partidosToolStripMenuItem";
+            this.partidosToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.partidosToolStripMenuItem.Text = "Partidos";
+            // 
+            // consultasToolStripMenuItem5
+            // 
+            this.consultasToolStripMenuItem5.Name = "consultasToolStripMenuItem5";
+            this.consultasToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem5.Text = "Registrar partido";
+            this.consultasToolStripMenuItem5.Click += new System.EventHandler(this.consultasToolStripMenuItem5_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrabajoIntegradorG8.Properties.Resources.fondoPrincipal5;
-            this.ClientSize = new System.Drawing.Size(1062, 457);
+            this.ClientSize = new System.Drawing.Size(1230, 573);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmPrincipal";
@@ -335,5 +353,7 @@
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem observacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem partidosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem5;
     }
 }
