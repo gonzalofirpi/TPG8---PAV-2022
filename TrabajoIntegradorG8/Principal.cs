@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrabajoIntegradorG8.Puestos;
 using TrabajoIntegradorG8.EstadoCancha;
+using TrabajoIntegradorG8.Reportes;
 
 namespace TrabajoIntegradorG8
 {
@@ -96,6 +97,12 @@ namespace TrabajoIntegradorG8
         private void consultasToolStripMenuItem5_Click(object sender, EventArgs e)
         {
             frmPartido ventana = new frmPartido();
+            ventana.ShowDialog();
+        }
+
+        private void reporteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteSocio ventana = new ReporteSocio();
             ventana.ShowDialog();
         }
     }
