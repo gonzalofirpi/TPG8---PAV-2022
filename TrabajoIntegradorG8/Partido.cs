@@ -366,5 +366,10 @@ namespace TrabajoIntegradorG8
             
             
         }
+
+        private void frmPartido_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -55,6 +55,8 @@
             this.consultasToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.partidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ListadoDePartidos = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadisticaDePartidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -277,7 +279,9 @@
             // partidosToolStripMenuItem
             // 
             this.partidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultasToolStripMenuItem5});
+            this.consultasToolStripMenuItem5,
+            this.ListadoDePartidos,
+            this.estadisticaDePartidosToolStripMenuItem});
             this.partidosToolStripMenuItem.Image = global::TrabajoIntegradorG8.Properties.Resources.iconoPartidos;
             this.partidosToolStripMenuItem.Name = "partidosToolStripMenuItem";
             this.partidosToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
@@ -286,9 +290,22 @@
             // consultasToolStripMenuItem5
             // 
             this.consultasToolStripMenuItem5.Name = "consultasToolStripMenuItem5";
-            this.consultasToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem5.Size = new System.Drawing.Size(191, 22);
             this.consultasToolStripMenuItem5.Text = "Registrar partido";
             this.consultasToolStripMenuItem5.Click += new System.EventHandler(this.consultasToolStripMenuItem5_Click);
+            // 
+            // ListadoDePartidos
+            // 
+            this.ListadoDePartidos.Name = "ListadoDePartidos";
+            this.ListadoDePartidos.Size = new System.Drawing.Size(191, 22);
+            this.ListadoDePartidos.Text = "Listado de partidos";
+            this.ListadoDePartidos.Click += new System.EventHandler(this.listadoDePartidostoolStripMenuItem1_Click);
+            // 
+            // estadisticaDePartidosToolStripMenuItem
+            // 
+            this.estadisticaDePartidosToolStripMenuItem.Name = "estadisticaDePartidosToolStripMenuItem";
+            this.estadisticaDePartidosToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.estadisticaDePartidosToolStripMenuItem.Text = "Estadistica de partidos";
             // 
             // frmPrincipal
             // 
@@ -337,5 +354,7 @@
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem partidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem ListadoDePartidos;
+        private System.Windows.Forms.ToolStripMenuItem estadisticaDePartidosToolStripMenuItem;
     }
 }

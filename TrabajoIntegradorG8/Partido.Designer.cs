@@ -623,6 +623,7 @@
             this.Controls.Add(this.lblPartidos);
             this.Name = "frmPartido";
             this.Text = "Partido";
+            this.Load += new System.EventHandler(this.frmPartido_Load);
             this.grbJugadores.ResumeLayout(false);
             this.grbJugadores.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdJugadores)).EndInit();
