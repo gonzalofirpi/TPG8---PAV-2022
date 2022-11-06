@@ -40,9 +40,9 @@ namespace TrabajoIntegradorG8.Reportes
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.rv2 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rv2 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -182,28 +182,6 @@ namespace TrabajoIntegradorG8.Reportes
             this.tabPage2.Text = "Por Apellido ";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // rv2
-            // 
-            this.rv2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rv2.BackColor = System.Drawing.Color.LightGray;
-            this.rv2.Location = new System.Drawing.Point(17, 143);
-            this.rv2.Name = "rv2";
-            this.rv2.ServerReport.BearerToken = null;
-            this.rv2.Size = new System.Drawing.Size(934, 306);
-            this.rv2.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(493, 24);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Haga click en CONSULTAR para obtener el listado :";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -218,11 +196,32 @@ namespace TrabajoIntegradorG8.Reportes
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(13, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(493, 24);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Haga click en CONSULTAR para obtener el listado :";
+            // 
+            // rv2
+            // 
+            this.rv2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rv2.BackColor = System.Drawing.Color.LightGray;
+            this.rv2.Location = new System.Drawing.Point(17, 143);
+            this.rv2.Name = "rv2";
+            this.rv2.ServerReport.BearerToken = null;
+            this.rv2.Size = new System.Drawing.Size(934, 306);
+            this.rv2.TabIndex = 0;
+            // 
             // ReporteSocio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::TrabajoIntegradorG8.Properties.Resources.InShot_20220928_1530501151;
             this.ClientSize = new System.Drawing.Size(1004, 659);
             this.Controls.Add(this.lblsocios);
             this.Controls.Add(this.tabControl1);
