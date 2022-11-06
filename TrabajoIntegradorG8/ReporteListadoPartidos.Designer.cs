@@ -52,7 +52,7 @@
             this.reportViewerPartidos1.ServerReport.BearerToken = null;
             this.reportViewerPartidos1.Size = new System.Drawing.Size(776, 268);
             this.reportViewerPartidos1.TabIndex = 0;
-            this.reportViewerPartidos1.Load += new System.EventHandler(this.reportViewerPartidos1_Load);
+           
             // 
             // lblAño
             // 
@@ -136,6 +136,7 @@
             this.cmbCancha.Name = "cmbCancha";
             this.cmbCancha.Size = new System.Drawing.Size(121, 21);
             this.cmbCancha.TabIndex = 13;
+            this.cmbCancha.Visible = false;
             // 
             // btnBuscar
             // 
@@ -147,6 +148,7 @@
             this.btnBuscar.TabIndex = 14;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // radioButton3RestrFecha
             // 
