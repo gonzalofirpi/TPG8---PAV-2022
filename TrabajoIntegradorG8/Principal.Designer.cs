@@ -55,6 +55,7 @@
             this.consultasToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.partidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoArbitrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -197,7 +198,8 @@
             // arbitrosToolStripMenuItem1
             // 
             this.arbitrosToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultasToolStripMenuItem10});
+            this.consultasToolStripMenuItem10,
+            this.listadoArbitrosToolStripMenuItem});
             this.arbitrosToolStripMenuItem1.Image = global::TrabajoIntegradorG8.Properties.Resources.iconoArbitros;
             this.arbitrosToolStripMenuItem1.Name = "arbitrosToolStripMenuItem1";
             this.arbitrosToolStripMenuItem1.Size = new System.Drawing.Size(81, 24);
@@ -206,7 +208,7 @@
             // consultasToolStripMenuItem10
             // 
             this.consultasToolStripMenuItem10.Name = "consultasToolStripMenuItem10";
-            this.consultasToolStripMenuItem10.Size = new System.Drawing.Size(126, 22);
+            this.consultasToolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
             this.consultasToolStripMenuItem10.Text = "Consultas";
             this.consultasToolStripMenuItem10.Click += new System.EventHandler(this.consultasToolStripMenuItem10_Click);
             // 
@@ -286,9 +288,16 @@
             // consultasToolStripMenuItem5
             // 
             this.consultasToolStripMenuItem5.Name = "consultasToolStripMenuItem5";
-            this.consultasToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem5.Size = new System.Drawing.Size(161, 22);
             this.consultasToolStripMenuItem5.Text = "Registrar partido";
             this.consultasToolStripMenuItem5.Click += new System.EventHandler(this.consultasToolStripMenuItem5_Click);
+            // 
+            // listadoArbitrosToolStripMenuItem
+            // 
+            this.listadoArbitrosToolStripMenuItem.Name = "listadoArbitrosToolStripMenuItem";
+            this.listadoArbitrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listadoArbitrosToolStripMenuItem.Text = "Listado Arbitros";
+            this.listadoArbitrosToolStripMenuItem.Click += new System.EventHandler(this.listadoArbitrosToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -337,5 +346,6 @@
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem partidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem listadoArbitrosToolStripMenuItem;
     }
 }
