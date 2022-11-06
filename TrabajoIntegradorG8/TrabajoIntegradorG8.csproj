@@ -87,7 +87,7 @@
     <EmbeddedResource Include="ABMSocios.resx">
       <DependentUpon>ABMSocios.cs</DependentUpon>
     </EmbeddedResource>
-    <Compile Include="DataSet2.Designer.cs">
+    <Compile Include="Reportes\DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet2.xsd</DependentUpon>
@@ -255,15 +255,15 @@
     <EmbeddedResource Include="Puestos\PuestosABM.resx">
       <DependentUpon>PuestosABM.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataSet2.xsc">
+    <None Include="Reportes\DataSet2.xsc">
       <DependentUpon>DataSet2.xsd</DependentUpon>
     </None>
-    <None Include="DataSet2.xsd">
+    <None Include="Reportes\DataSet2.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DataSet2.xss">
+    <None Include="Reportes\DataSet2.xss">
       <DependentUpon>DataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />

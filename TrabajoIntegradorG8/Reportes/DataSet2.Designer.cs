@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace TrabajoIntegradorG8 {
+namespace TrabajoIntegradorG8.Reportes {
     
     
     /// <summary>
