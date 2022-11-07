@@ -98,6 +98,12 @@ namespace TrabajoIntegradorG8
             frmPartido ventana = new frmPartido();
             ventana.ShowDialog();
         }
+
+        private void listadoClubesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReporteListadoClubesOrdenados ventana = new frmReporteListadoClubesOrdenados();
+            ventana.ShowDialog();
+        }
     }
 
        

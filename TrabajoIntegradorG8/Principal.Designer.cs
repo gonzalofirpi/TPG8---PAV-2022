@@ -55,6 +55,7 @@
             this.consultasToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.partidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoClubesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,7 +86,8 @@
             // clubesToolStripMenuItem
             // 
             this.clubesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aBMClubesToolStripMenuItem});
+            this.aBMClubesToolStripMenuItem,
+            this.listadoClubesToolStripMenuItem});
             this.clubesToolStripMenuItem.Image = global::TrabajoIntegradorG8.Properties.Resources.iconoClubes;
             this.clubesToolStripMenuItem.Name = "clubesToolStripMenuItem";
             this.clubesToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
@@ -94,7 +96,7 @@
             // aBMClubesToolStripMenuItem
             // 
             this.aBMClubesToolStripMenuItem.Name = "aBMClubesToolStripMenuItem";
-            this.aBMClubesToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.aBMClubesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aBMClubesToolStripMenuItem.Text = "Consultas";
             this.aBMClubesToolStripMenuItem.Click += new System.EventHandler(this.aBMClubesToolStripMenuItem_Click);
             // 
@@ -286,9 +288,16 @@
             // consultasToolStripMenuItem5
             // 
             this.consultasToolStripMenuItem5.Name = "consultasToolStripMenuItem5";
-            this.consultasToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem5.Size = new System.Drawing.Size(161, 22);
             this.consultasToolStripMenuItem5.Text = "Registrar partido";
             this.consultasToolStripMenuItem5.Click += new System.EventHandler(this.consultasToolStripMenuItem5_Click);
+            // 
+            // listadoClubesToolStripMenuItem
+            // 
+            this.listadoClubesToolStripMenuItem.Name = "listadoClubesToolStripMenuItem";
+            this.listadoClubesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listadoClubesToolStripMenuItem.Text = "Listado Clubes";
+            this.listadoClubesToolStripMenuItem.Click += new System.EventHandler(this.listadoClubesToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -337,5 +346,6 @@
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem partidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem listadoClubesToolStripMenuItem;
     }
 }
