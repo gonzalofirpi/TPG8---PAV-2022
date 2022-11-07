@@ -92,6 +92,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Estadisticas\DataSet4.cs">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas\DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas\EstadisticaPartidocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estadisticas\EstadisticaPartidocs.Designer.cs">
+      <DependentUpon>EstadisticaPartidocs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estadisticas\EstadisticaSocio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,10 +199,14 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Estadisticas\EstadisticaPartidocs.resx">
+      <DependentUpon>EstadisticaPartidocs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estadisticas\EstadisticaSocio.resx">
       <DependentUpon>EstadisticaSocio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estadisticas\ReportEstadistica.rdlc" />
+    <EmbeddedResource Include="Estadisticas\ReportEstadisticaPartido.rdlc" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -280,6 +298,17 @@
     </None>
     <None Include="Estadisticas\DataSet3.xss">
       <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Estadisticas\DataSet4.xsc">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Estadisticas\DataSet4.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet4.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Estadisticas\DataSet4.xss">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
     </None>
     <None Include="Reportes\DataSet2.xsc">
       <DependentUpon>DataSet2.xsd</DependentUpon>

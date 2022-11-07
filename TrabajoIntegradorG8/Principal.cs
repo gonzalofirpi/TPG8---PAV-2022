@@ -113,6 +113,11 @@ namespace TrabajoIntegradorG8
             ventana.ShowDialog();        
         }
 
+        private void estadisticaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            EstadisticaPartidocs ventana = new EstadisticaPartidocs();
+            ventana.ShowDialog();
+        }
     }
 
        

@@ -83,7 +83,9 @@
                       <ChartDataLabel>
                         <Style />
                       </ChartDataLabel>
-                      <Style />
+                      <Style>
+                        <Color>LightSteelBlue</Color>
+                      </Style>
                       <ChartMarker>
                         <Style />
                       </ChartMarker>
@@ -340,6 +342,7 @@
                 <Style>
                   <BackgroundColor>#00ffffff</BackgroundColor>
                   <BackgroundGradientType>None</BackgroundGradientType>
+                  <ShadowColor>#00ffffff</ShadowColor>
                 </Style>
               </ChartArea>
             </ChartAreas>
@@ -382,7 +385,7 @@
               <Style>
                 <BackgroundColor>Gray</BackgroundColor>
                 <BackgroundGradientType>None</BackgroundGradientType>
-                <Color>White</Color>
+                <Color>LightGrey</Color>
               </Style>
             </ChartBorderSkin>
             <ChartNoDataMessage Name="NoDataMessage">
@@ -396,19 +399,19 @@
             </ChartNoDataMessage>
             <DataSetName>DataSet3</DataSetName>
             <Top>0.8382cm</Top>
-            <Left>2.51037cm</Left>
-            <Height>5cm</Height>
-            <Width>12.43183cm</Width>
+            <Left>0.81704cm</Left>
+            <Height>5.59267cm</Height>
+            <Width>15.60683cm</Width>
             <Style>
               <Border>
                 <Style>Solid</Style>
               </Border>
-              <BackgroundColor>LightBlue</BackgroundColor>
+              <BackgroundColor>Snow</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
         </ReportItems>
-        <Height>2.8735in</Height>
+        <Height>2.85683in</Height>
         <Style>
           <BackgroundColor>LightGrey</BackgroundColor>
         </Style>
@@ -473,8 +476,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>RP3</rd:DefaultName>
-              <Top>2.84311cm</Top>
-              <Left>2.51037cm</Left>
+              <Top>2.73728cm</Top>
+              <Left>0.81704cm</Left>
               <Height>0.6cm</Height>
               <Width>11.2465cm</Width>
               <ZIndex>1</ZIndex>
@@ -496,6 +499,127 @@
             <BackgroundColor>LightGrey</BackgroundColor>
           </Style>
         </PageHeader>
+        <PageFooter>
+          <Height>1.92617cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox2">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!PageNumber</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox2</rd:DefaultName>
+              <Top>0.5104cm</Top>
+              <Left>15.59137cm</Left>
+              <Height>0.6cm</Height>
+              <Width>1.23cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox3">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Pagina:</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox3</rd:DefaultName>
+              <Top>0.5104cm</Top>
+              <Left>13.84631cm</Left>
+              <Height>0.6cm</Height>
+              <Width>1.56867cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox4">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!ExecutionTime</Value>
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox4</rd:DefaultName>
+              <Top>0.5104cm</Top>
+              <Left>0.35983cm</Left>
+              <Height>0.6cm</Height>
+              <Width>5.63267cm</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Line Name="Line1">
+              <Top>0.33401cm</Top>
+              <Height>0cm</Height>
+              <Width>17.16616cm</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                  <Width>2pt</Width>
+                </Border>
+              </Style>
+            </Line>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
         <LeftMargin>2cm</LeftMargin>

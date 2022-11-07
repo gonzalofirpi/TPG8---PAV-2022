@@ -133,3 +133,4 @@ C:\Users\daysi\Source\Repos\gonzalofirpi\TPG8---PAV-2022\TrabajoIntegradorG8\obj
 C:\Users\daysi\Source\Repos\gonzalofirpi\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\RdlCompile.cache
 C:\Users\daysi\Source\Repos\gonzalofirpi\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\RdlCompile.compiled
 C:\Users\daysi\source\repos\gonzalofirpi\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.Estadisticas.EstadisticaSocio.resources
+C:\Users\daysi\source\repos\gonzalofirpi\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.Estadisticas.EstadisticaPartidocs.resources
