@@ -90,7 +90,9 @@
                       <DataElementOutput>Output</DataElementOutput>
                     </ChartDataPoint>
                   </ChartDataPoints>
-                  <Style />
+                  <Style>
+                    <ShadowColor>Black</ShadowColor>
+                  </Style>
                   <ChartEmptyPoints>
                     <Style />
                     <ChartMarker>
@@ -376,6 +378,7 @@
             </ChartTitles>
             <Palette>Pacific</Palette>
             <ChartBorderSkin>
+              <ChartBorderSkinType>Emboss</ChartBorderSkinType>
               <Style>
                 <BackgroundColor>Gray</BackgroundColor>
                 <BackgroundGradientType>None</BackgroundGradientType>
@@ -393,21 +396,22 @@
             </ChartNoDataMessage>
             <DataSetName>DataSet3</DataSetName>
             <Top>0.8382cm</Top>
-            <Left>1.93887cm</Left>
+            <Left>2.51037cm</Left>
             <Height>5cm</Height>
             <Width>12.43183cm</Width>
             <Style>
               <Border>
-                <Color>LightGrey</Color>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
-              <BackgroundColor>White</BackgroundColor>
+              <BackgroundColor>LightBlue</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
         </ReportItems>
         <Height>2.8735in</Height>
-        <Style />
+        <Style>
+          <BackgroundColor>LightGrey</BackgroundColor>
+        </Style>
       </Body>
       <Width>6.75833in</Width>
       <Page>
@@ -437,9 +441,8 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.6477cm</Top>
-              <Left>0.4572cm</Left>
               <Height>1.235cm</Height>
-              <Width>16.11017cm</Width>
+              <Width>17.16616cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -470,8 +473,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>RP3</rd:DefaultName>
-              <Top>2.53153cm</Top>
-              <Left>3.3782cm</Left>
+              <Top>2.84311cm</Top>
+              <Left>2.51037cm</Left>
               <Height>0.6cm</Height>
               <Width>11.2465cm</Width>
               <ZIndex>1</ZIndex>
@@ -490,6 +493,7 @@
             <Border>
               <Style>None</Style>
             </Border>
+            <BackgroundColor>LightGrey</BackgroundColor>
           </Style>
         </PageHeader>
         <PageHeight>29.7cm</PageHeight>

@@ -39,7 +39,7 @@ namespace TrabajoIntegradorG8.Estadisticas
             this.rv3.Location = new System.Drawing.Point(0, 0);
             this.rv3.Name = "rv3";
             this.rv3.ServerReport.BearerToken = null;
-            this.rv3.Size = new System.Drawing.Size(800, 450);
+            this.rv3.Size = new System.Drawing.Size(869, 579);
             this.rv3.TabIndex = 0;
             this.rv3.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
@@ -47,7 +47,7 @@ namespace TrabajoIntegradorG8.Estadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(869, 579);
             this.Controls.Add(this.rv3);
             this.Name = "EstadisticaSocio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
