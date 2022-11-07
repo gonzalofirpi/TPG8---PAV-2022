@@ -40,15 +40,15 @@ namespace TrabajoIntegradorG8.Reportes
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.rv2 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.txtletra = new System.Windows.Forms.MaskedTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbu03 = new System.Windows.Forms.RadioButton();
             this.rbu02 = new System.Windows.Forms.RadioButton();
             this.rbu01 = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtletra = new System.Windows.Forms.MaskedTextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rv2 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -82,7 +82,7 @@ namespace TrabajoIntegradorG8.Reportes
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(969, 461);
+            this.tabPage1.Size = new System.Drawing.Size(969, 505);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Por Fecha Alta";
             // 
@@ -192,6 +192,76 @@ namespace TrabajoIntegradorG8.Reportes
             this.tabPage2.Text = "Por Apellido ";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // txtletra
+            // 
+            this.txtletra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtletra.Location = new System.Drawing.Point(467, 54);
+            this.txtletra.Mask = "L";
+            this.txtletra.Name = "txtletra";
+            this.txtletra.Size = new System.Drawing.Size(60, 30);
+            this.txtletra.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(393, 54);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 25);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Letra: ";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rbu03);
+            this.groupBox1.Controls.Add(this.rbu02);
+            this.groupBox1.Controls.Add(this.rbu01);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(17, 54);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(338, 109);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tipo Cálculo";
+            // 
+            // rbu03
+            // 
+            this.rbu03.AutoSize = true;
+            this.rbu03.Location = new System.Drawing.Point(25, 71);
+            this.rbu03.Margin = new System.Windows.Forms.Padding(4);
+            this.rbu03.Name = "rbu03";
+            this.rbu03.Size = new System.Drawing.Size(198, 29);
+            this.rbu03.TabIndex = 2;
+            this.rbu03.TabStop = true;
+            this.rbu03.Text = "Todos los usuarios";
+            this.rbu03.UseVisualStyleBackColor = true;
+            // 
+            // rbu02
+            // 
+            this.rbu02.AutoSize = true;
+            this.rbu02.Location = new System.Drawing.Point(25, 47);
+            this.rbu02.Margin = new System.Windows.Forms.Padding(4);
+            this.rbu02.Name = "rbu02";
+            this.rbu02.Size = new System.Drawing.Size(219, 29);
+            this.rbu02.TabIndex = 1;
+            this.rbu02.TabStop = true;
+            this.rbu02.Text = "Que contenga la letra";
+            this.rbu02.UseVisualStyleBackColor = true;
+            // 
+            // rbu01
+            // 
+            this.rbu01.AutoSize = true;
+            this.rbu01.Location = new System.Drawing.Point(25, 23);
+            this.rbu01.Margin = new System.Windows.Forms.Padding(4);
+            this.rbu01.Name = "rbu01";
+            this.rbu01.Size = new System.Drawing.Size(311, 29);
+            this.rbu01.TabIndex = 0;
+            this.rbu01.TabStop = true;
+            this.rbu01.Text = "Que el apellido inicie con la letra";
+            this.rbu01.UseVisualStyleBackColor = true;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -227,75 +297,6 @@ namespace TrabajoIntegradorG8.Reportes
             this.rv2.ServerReport.BearerToken = null;
             this.rv2.Size = new System.Drawing.Size(934, 291);
             this.rv2.TabIndex = 0;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.rbu03);
-            this.groupBox1.Controls.Add(this.rbu02);
-            this.groupBox1.Controls.Add(this.rbu01);
-            this.groupBox1.Location = new System.Drawing.Point(17, 54);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(338, 109);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tipo Cálculo";
-            // 
-            // rbu03
-            // 
-            this.rbu03.AutoSize = true;
-            this.rbu03.Location = new System.Drawing.Point(25, 71);
-            this.rbu03.Margin = new System.Windows.Forms.Padding(4);
-            this.rbu03.Name = "rbu03";
-            this.rbu03.Size = new System.Drawing.Size(149, 21);
-            this.rbu03.TabIndex = 2;
-            this.rbu03.TabStop = true;
-            this.rbu03.Text = "Todos los usuarios";
-            this.rbu03.UseVisualStyleBackColor = true;
-            // 
-            // rbu02
-            // 
-            this.rbu02.AutoSize = true;
-            this.rbu02.Location = new System.Drawing.Point(25, 47);
-            this.rbu02.Margin = new System.Windows.Forms.Padding(4);
-            this.rbu02.Name = "rbu02";
-            this.rbu02.Size = new System.Drawing.Size(166, 21);
-            this.rbu02.TabIndex = 1;
-            this.rbu02.TabStop = true;
-            this.rbu02.Text = "Que contenga la letra";
-            this.rbu02.UseVisualStyleBackColor = true;
-            // 
-            // rbu01
-            // 
-            this.rbu01.AutoSize = true;
-            this.rbu01.Location = new System.Drawing.Point(25, 23);
-            this.rbu01.Margin = new System.Windows.Forms.Padding(4);
-            this.rbu01.Name = "rbu01";
-            this.rbu01.Size = new System.Drawing.Size(234, 21);
-            this.rbu01.TabIndex = 0;
-            this.rbu01.TabStop = true;
-            this.rbu01.Text = "Que el apellido inicie con la letra";
-            this.rbu01.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(393, 54);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 25);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Letra: ";
-            // 
-            // txtletra
-            // 
-            this.txtletra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtletra.Location = new System.Drawing.Point(467, 54);
-            this.txtletra.Mask = "L";
-            this.txtletra.Name = "txtletra";
-            this.txtletra.Size = new System.Drawing.Size(60, 30);
-            this.txtletra.TabIndex = 17;
             // 
             // ReporteSocio
             // 
