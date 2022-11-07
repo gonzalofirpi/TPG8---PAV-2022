@@ -43,9 +43,16 @@ namespace TrabajoIntegradorG8.Reportes
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.rv2 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbu03 = new System.Windows.Forms.RadioButton();
+            this.rbu02 = new System.Windows.Forms.RadioButton();
+            this.rbu01 = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtletra = new System.Windows.Forms.MaskedTextBox();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblsocios
@@ -164,20 +171,23 @@ namespace TrabajoIntegradorG8.Reportes
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 157);
+            this.tabControl1.Location = new System.Drawing.Point(12, 113);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(977, 490);
+            this.tabControl1.Size = new System.Drawing.Size(977, 534);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.txtletra);
+            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.rv2);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(969, 461);
+            this.tabPage2.Size = new System.Drawing.Size(969, 505);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Por Apellido ";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -202,9 +212,9 @@ namespace TrabajoIntegradorG8.Reportes
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(13, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(493, 24);
+            this.label4.Size = new System.Drawing.Size(181, 24);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Haga click en CONSULTAR para obtener el listado :";
+            this.label4.Text = "Listado de Socios ";
             // 
             // rv2
             // 
@@ -212,11 +222,80 @@ namespace TrabajoIntegradorG8.Reportes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rv2.BackColor = System.Drawing.Color.LightGray;
-            this.rv2.Location = new System.Drawing.Point(17, 143);
+            this.rv2.Location = new System.Drawing.Point(17, 202);
             this.rv2.Name = "rv2";
             this.rv2.ServerReport.BearerToken = null;
-            this.rv2.Size = new System.Drawing.Size(934, 306);
+            this.rv2.Size = new System.Drawing.Size(934, 291);
             this.rv2.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rbu03);
+            this.groupBox1.Controls.Add(this.rbu02);
+            this.groupBox1.Controls.Add(this.rbu01);
+            this.groupBox1.Location = new System.Drawing.Point(17, 54);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(338, 109);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tipo Cálculo";
+            // 
+            // rbu03
+            // 
+            this.rbu03.AutoSize = true;
+            this.rbu03.Location = new System.Drawing.Point(25, 71);
+            this.rbu03.Margin = new System.Windows.Forms.Padding(4);
+            this.rbu03.Name = "rbu03";
+            this.rbu03.Size = new System.Drawing.Size(149, 21);
+            this.rbu03.TabIndex = 2;
+            this.rbu03.TabStop = true;
+            this.rbu03.Text = "Todos los usuarios";
+            this.rbu03.UseVisualStyleBackColor = true;
+            // 
+            // rbu02
+            // 
+            this.rbu02.AutoSize = true;
+            this.rbu02.Location = new System.Drawing.Point(25, 47);
+            this.rbu02.Margin = new System.Windows.Forms.Padding(4);
+            this.rbu02.Name = "rbu02";
+            this.rbu02.Size = new System.Drawing.Size(166, 21);
+            this.rbu02.TabIndex = 1;
+            this.rbu02.TabStop = true;
+            this.rbu02.Text = "Que contenga la letra";
+            this.rbu02.UseVisualStyleBackColor = true;
+            // 
+            // rbu01
+            // 
+            this.rbu01.AutoSize = true;
+            this.rbu01.Location = new System.Drawing.Point(25, 23);
+            this.rbu01.Margin = new System.Windows.Forms.Padding(4);
+            this.rbu01.Name = "rbu01";
+            this.rbu01.Size = new System.Drawing.Size(234, 21);
+            this.rbu01.TabIndex = 0;
+            this.rbu01.TabStop = true;
+            this.rbu01.Text = "Que el apellido inicie con la letra";
+            this.rbu01.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(393, 54);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 25);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Letra: ";
+            // 
+            // txtletra
+            // 
+            this.txtletra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtletra.Location = new System.Drawing.Point(467, 54);
+            this.txtletra.Mask = "L";
+            this.txtletra.Name = "txtletra";
+            this.txtletra.Size = new System.Drawing.Size(60, 30);
+            this.txtletra.TabIndex = 17;
             // 
             // ReporteSocio
             // 
@@ -234,6 +313,8 @@ namespace TrabajoIntegradorG8.Reportes
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,5 +336,11 @@ namespace TrabajoIntegradorG8.Reportes
         private Microsoft.Reporting.WinForms.ReportViewer rv2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MaskedTextBox txtletra;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rbu03;
+        private System.Windows.Forms.RadioButton rbu02;
+        private System.Windows.Forms.RadioButton rbu01;
     }
 }

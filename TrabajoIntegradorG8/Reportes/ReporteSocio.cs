@@ -84,27 +84,42 @@ namespace TrabajoIntegradorG8.Reportes
 
         private void button1_Click(object sender, EventArgs e)
         {
-        
+            CalcularDatosSocios();   
+        }
 
+        private void CalcularDatosSocios()
+        {
+            AD_Socios socios = new AD_Socios();
+            DataTable tabla = new DataTable();
+            if (rbu01.Checked == true)
+            {
+                ArmarReporteUsuario01(socios.BuscarSocioxLetra1(txtletra.Text));
+                txtletra.Text = " ";
+            }
+            if (rbu02.Checked == true)
+            {
+                ArmarReporteUsuario01(socios.BuscarSocioxLetra2(txtletra.Text));
+                txtletra.Text = " ";
+            }
+            if (rbu03.Checked == true)
+            {
+                ArmarReporteUsuario01(socios.BuscarSocioXapellido());
+            }
 
-                    AD_Socios socios = new AD_Socios();
-                    DataTable tabla = socios.BuscarSocioXapellido();
-                    //tabla = socios.BuscarSocioxFecha(txtYear1.Text, txtYear2.Text);
-                    ReportDataSource datos = new ReportDataSource("DataSet2", tabla);
-                    rv2.LocalReport.ReportEmbeddedResource = "TrabajoIntegradorG8.Reportes.ReportSocioApellido.rdlc";
-                    ReportParameter[] parametro = new ReportParameter[1];
-                    parametro[0] = new ReportParameter("RP02", "Listado de socios ordenados alfabeticamente: ");
-                    rv2.LocalReport.SetParameters(parametro);
-                    rv2.LocalReport.DataSources.Clear();
-                    rv2.LocalReport.DataSources.Add(datos);
-                    rv2.RefreshReport();
-                    
-                
-            
-
-            
 
         }
-        
+
+        private void ArmarReporteUsuario01(DataTable tabla)
+        {
+            ReportDataSource datos = new ReportDataSource("DataSet2", tabla);
+            rv2.LocalReport.ReportEmbeddedResource = "TrabajoIntegradorG8.Reportes.ReportSocioApellido.rdlc";
+            ReportParameter[] parametro = new ReportParameter[1];
+            parametro[0] = new ReportParameter("RP02", "Listado de socios ordenados alfabeticamente: ");
+            rv2.LocalReport.SetParameters(parametro);
+            rv2.LocalReport.DataSources.Clear();
+            rv2.LocalReport.DataSources.Add(datos);
+            rv2.RefreshReport();
+        }
+
     }
 }

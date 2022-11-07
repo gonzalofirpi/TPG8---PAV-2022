@@ -37,6 +37,7 @@
             this.aBMCanchasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jugadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbitrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,7 +56,7 @@
             this.consultasToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.partidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadisticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -135,7 +136,8 @@
             // 
             this.jugadoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consultasToolStripMenuItem,
-            this.reporteToolStripMenuItem});
+            this.reporteToolStripMenuItem,
+            this.estadisticaToolStripMenuItem});
             this.jugadoresToolStripMenuItem.Image = global::TrabajoIntegradorG8.Properties.Resources.iconoSocios;
             this.jugadoresToolStripMenuItem.Name = "jugadoresToolStripMenuItem";
             this.jugadoresToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
@@ -147,6 +149,13 @@
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.consultasToolStripMenuItem.Text = "Consultas";
             this.consultasToolStripMenuItem.Click += new System.EventHandler(this.consultasToolStripMenuItem_Click);
+            // 
+            // reporteToolStripMenuItem
+            // 
+            this.reporteToolStripMenuItem.Name = "reporteToolStripMenuItem";
+            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.reporteToolStripMenuItem.Text = "Reporte";
+            this.reporteToolStripMenuItem.Click += new System.EventHandler(this.reporteToolStripMenuItem_Click);
             // 
             // arbitrosToolStripMenuItem
             // 
@@ -292,12 +301,12 @@
             this.consultasToolStripMenuItem5.Text = "Registrar partido";
             this.consultasToolStripMenuItem5.Click += new System.EventHandler(this.consultasToolStripMenuItem5_Click);
             // 
-            // reporteToolStripMenuItem
+            // estadisticaToolStripMenuItem
             // 
-            this.reporteToolStripMenuItem.Name = "reporteToolStripMenuItem";
-            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.reporteToolStripMenuItem.Text = "Reporte";
-            this.reporteToolStripMenuItem.Click += new System.EventHandler(this.reporteToolStripMenuItem_Click);
+            this.estadisticaToolStripMenuItem.Name = "estadisticaToolStripMenuItem";
+            this.estadisticaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.estadisticaToolStripMenuItem.Text = "Estadistica";
+            this.estadisticaToolStripMenuItem.Click += new System.EventHandler(this.estadisticaToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -307,7 +316,7 @@
             this.ClientSize = new System.Drawing.Size(1529, 705);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
@@ -348,5 +357,6 @@
         private System.Windows.Forms.ToolStripMenuItem partidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadisticaToolStripMenuItem;
     }
 }

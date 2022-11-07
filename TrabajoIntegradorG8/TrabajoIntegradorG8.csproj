@@ -87,6 +87,17 @@
     <EmbeddedResource Include="ABMSocios.resx">
       <DependentUpon>ABMSocios.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="Estadisticas\DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas\EstadisticaSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estadisticas\EstadisticaSocio.Designer.cs">
+      <DependentUpon>EstadisticaSocio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -174,6 +185,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Estadisticas\EstadisticaSocio.resx">
+      <DependentUpon>EstadisticaSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estadisticas\ReportEstadistica.rdlc" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +270,17 @@
     <EmbeddedResource Include="Puestos\PuestosABM.resx">
       <DependentUpon>PuestosABM.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Estadisticas\DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Estadisticas\DataSet3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Estadisticas\DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
     <None Include="Reportes\DataSet2.xsc">
       <DependentUpon>DataSet2.xsd</DependentUpon>
     </None>
