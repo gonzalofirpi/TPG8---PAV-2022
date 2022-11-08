@@ -92,6 +92,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD3K3G08_2022DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ConjuntoDatos\DatosEstadisticaAsistencia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosEstadisticaAsistencia.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\Socio.cs" />
     <Compile Include="Entidades\Jugador.cs" />
     <Compile Include="ABMBarrios.cs">
@@ -141,6 +146,12 @@
     <Compile Include="AccesoADatos\AD_Puesto.cs" />
     <Compile Include="Entidades\TipoObservaciones.cs" />
     <Compile Include="Entidades\Puesto.cs" />
+    <Compile Include="EstadisticaTipoCancha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstadisticaTipoCancha.Designer.cs">
+      <DependentUpon>EstadisticaTipoCancha.cs</DependentUpon>
+    </Compile>
     <Compile Include="Partido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +177,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EstadisticaCantTipoCancha.rdlc" />
+    <EmbeddedResource Include="EstadisticaTipoCancha.resx">
+      <DependentUpon>EstadisticaTipoCancha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,6 +271,17 @@
     </None>
     <None Include="BD3K3G08_2022DataSet.xss">
       <DependentUpon>BD3K3G08_2022DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ConjuntoDatos\DatosEstadisticaAsistencia.xsc">
+      <DependentUpon>DatosEstadisticaAsistencia.xsd</DependentUpon>
+    </None>
+    <None Include="ConjuntoDatos\DatosEstadisticaAsistencia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosEstadisticaAsistencia.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ConjuntoDatos\DatosEstadisticaAsistencia.xss">
+      <DependentUpon>DatosEstadisticaAsistencia.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

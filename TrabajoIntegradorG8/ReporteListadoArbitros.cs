@@ -55,6 +55,7 @@ namespace TrabajoIntegradorG8
                 reportViewer1.LocalReport.DataSources.Add(ds);
                 //reportViewer1.LocalReport.Refresh();
                 reportViewer1.RefreshReport();
+                txtApellidoArbitro.Text = "";
             }
         }
 
@@ -63,16 +64,13 @@ namespace TrabajoIntegradorG8
             if (rbArbitrosAlfabeticamente.Checked)
             {
                 btnBuscar.Enabled = true;
+                txtApellidoArbitro.Enabled = false;
+                txtApellidoArbitro.Text = "";
             }
-        }
-
-        public DataTable rpt_arbitrosletra()
-        {
-            string letra = "";
-            DataTable tabla = new DataTable();
-            tabla = AD_Arbitros.obtenerListadoArbitrosLetra(letra);
-            return tabla;
-
+            else
+            {
+                btnBuscar.Enabled = false;
+            }
         }
 
         private void rbArbitrosLetra_CheckedChanged(object sender, EventArgs e)
@@ -81,6 +79,11 @@ namespace TrabajoIntegradorG8
             {
                 btnBuscar.Enabled = true;
                 txtApellidoArbitro.Enabled = true;
+            }
+            else
+            {
+                btnBuscar.Enabled = false;
+                txtApellidoArbitro.Enabled = false;
             }
         }
     }

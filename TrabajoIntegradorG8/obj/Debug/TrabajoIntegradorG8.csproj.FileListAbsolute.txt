@@ -125,3 +125,4 @@ C:\Users\tobia\Desktop\UNIVERSIDAD\TERCER AÑO\PAV\TP\TrabajoIntegradorG8\bin\De
 C:\Users\tobia\Desktop\UNIVERSIDAD\TERCER AÑO\PAV\TP\TrabajoIntegradorG8\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\tobia\Desktop\UNIVERSIDAD\TERCER AÑO\PAV\TP\TrabajoIntegradorG8\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\tobia\Desktop\UNIVERSIDAD\TERCER AÑO\PAV\TP\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.csproj.CopyComplete
+C:\Users\tobia\Desktop\UNIVERSIDAD\TERCER AÑO\PAV\TP\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.EstadisticaTipoCancha.resources

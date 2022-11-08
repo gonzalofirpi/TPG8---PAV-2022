@@ -105,6 +105,12 @@ namespace TrabajoIntegradorG8
             ventana.ShowDialog();
 
         }
+
+        private void cantidadDeCanchasPorTipoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EstadisticaTipoCancha ventana = new EstadisticaTipoCancha();
+            ventana.ShowDialog();
+        }
     }
 
        

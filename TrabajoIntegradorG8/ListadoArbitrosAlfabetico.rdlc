@@ -9,7 +9,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Listado de Arbitros Ordenado Alfabeticamente</Value>
+                <Value>Listado de Arbitros </Value>
                 <Style>
                   <FontFamily>Arial Black</FontFamily>
                   <FontSize>15pt</FontSize>
@@ -29,10 +29,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>0.42016cm</Top>
-        <Left>1.18745cm</Left>
+        <Top>0.39426cm</Top>
+        <Left>5.94995cm</Left>
         <Height>0.94396cm</Height>
-        <Width>13.55958cm</Width>
+        <Width>5.91312cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -203,8 +203,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DatosArbitros</DataSetName>
-        <Top>1.54051cm</Top>
-        <Left>1.18745cm</Left>
+        <Top>2.89044cm</Top>
+        <Left>6.21453cm</Left>
         <Height>1.2cm</Height>
         <Width>5cm</Width>
         <ZIndex>1</ZIndex>
@@ -214,6 +214,19 @@
           </Border>
         </Style>
       </Tablix>
+      <Line Name="Line1">
+        <Top>2.27224cm</Top>
+        <Height>0cm</Height>
+        <Width>19.45599cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Color>Green</Color>
+            <Style>Solid</Style>
+            <Width>2pt</Width>
+          </Border>
+        </Style>
+      </Line>
     </ReportItems>
     <Height>2in</Height>
     <Style />

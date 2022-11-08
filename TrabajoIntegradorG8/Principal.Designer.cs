@@ -45,6 +45,7 @@
             this.consultasToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.arbitrosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoArbitrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
             this.barriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,7 +56,8 @@
             this.consultasToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.partidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.listadoArbitrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadisticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cantidadDeCanchasPorTipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,7 +120,8 @@
             // canchasToolStripMenuItem
             // 
             this.canchasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aBMCanchasToolStripMenuItem});
+            this.aBMCanchasToolStripMenuItem,
+            this.estadisticasToolStripMenuItem});
             this.canchasToolStripMenuItem.Image = global::TrabajoIntegradorG8.Properties.Resources.iconoCanchas;
             this.canchasToolStripMenuItem.Name = "canchasToolStripMenuItem";
             this.canchasToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
@@ -127,7 +130,7 @@
             // aBMCanchasToolStripMenuItem
             // 
             this.aBMCanchasToolStripMenuItem.Name = "aBMCanchasToolStripMenuItem";
-            this.aBMCanchasToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.aBMCanchasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aBMCanchasToolStripMenuItem.Text = "Consultas";
             this.aBMCanchasToolStripMenuItem.Click += new System.EventHandler(this.aBMCanchasToolStripMenuItem_Click);
             // 
@@ -208,9 +211,16 @@
             // consultasToolStripMenuItem10
             // 
             this.consultasToolStripMenuItem10.Name = "consultasToolStripMenuItem10";
-            this.consultasToolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem10.Size = new System.Drawing.Size(157, 22);
             this.consultasToolStripMenuItem10.Text = "Consultas";
             this.consultasToolStripMenuItem10.Click += new System.EventHandler(this.consultasToolStripMenuItem10_Click);
+            // 
+            // listadoArbitrosToolStripMenuItem
+            // 
+            this.listadoArbitrosToolStripMenuItem.Name = "listadoArbitrosToolStripMenuItem";
+            this.listadoArbitrosToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.listadoArbitrosToolStripMenuItem.Text = "Listado Arbitros";
+            this.listadoArbitrosToolStripMenuItem.Click += new System.EventHandler(this.listadoArbitrosToolStripMenuItem_Click);
             // 
             // cargosToolStripMenuItem
             // 
@@ -292,12 +302,20 @@
             this.consultasToolStripMenuItem5.Text = "Registrar partido";
             this.consultasToolStripMenuItem5.Click += new System.EventHandler(this.consultasToolStripMenuItem5_Click);
             // 
-            // listadoArbitrosToolStripMenuItem
+            // estadisticasToolStripMenuItem
             // 
-            this.listadoArbitrosToolStripMenuItem.Name = "listadoArbitrosToolStripMenuItem";
-            this.listadoArbitrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.listadoArbitrosToolStripMenuItem.Text = "Listado Arbitros";
-            this.listadoArbitrosToolStripMenuItem.Click += new System.EventHandler(this.listadoArbitrosToolStripMenuItem_Click);
+            this.estadisticasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cantidadDeCanchasPorTipoToolStripMenuItem});
+            this.estadisticasToolStripMenuItem.Name = "estadisticasToolStripMenuItem";
+            this.estadisticasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.estadisticasToolStripMenuItem.Text = "Estadisticas";
+            // 
+            // cantidadDeCanchasPorTipoToolStripMenuItem
+            // 
+            this.cantidadDeCanchasPorTipoToolStripMenuItem.Name = "cantidadDeCanchasPorTipoToolStripMenuItem";
+            this.cantidadDeCanchasPorTipoToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.cantidadDeCanchasPorTipoToolStripMenuItem.Text = "Cantidad de canchas por tipo";
+            this.cantidadDeCanchasPorTipoToolStripMenuItem.Click += new System.EventHandler(this.cantidadDeCanchasPorTipoToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -347,5 +365,7 @@
         private System.Windows.Forms.ToolStripMenuItem partidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem listadoArbitrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadisticasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cantidadDeCanchasPorTipoToolStripMenuItem;
     }
 }
