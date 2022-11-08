@@ -94,6 +94,10 @@
       <DependentUpon>BD3K3G08_2022DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="DatosEstadistica.Designer.cs">
+    <Compile Include="ConjuntoDeDatos\DatosEstadistica.cs">
+      <DependentUpon>DatosEstadistica.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConjuntoDeDatos\DatosEstadistica.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DatosEstadistica.xsd</DependentUpon>
@@ -232,6 +236,23 @@
     </Compile>
     <Compile Include="Reportes\ReporteSocio.Designer.cs">
       <DependentUpon>ReporteSocio.cs</DependentUpon>
+    <Compile Include="ReporteEstadistica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEstadistica.Designer.cs">
+      <DependentUpon>ReporteEstadistica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteEstadisticaFastGol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEstadisticaFastGol.Designer.cs">
+      <DependentUpon>ReporteEstadisticaFastGol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteListadoClubes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteListadoClubes.Designer.cs">
+      <DependentUpon>ReporteListadoClubes.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="TipoObservaciones\ABMTipoObservaciones.cs">
@@ -258,6 +279,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Estadisticas\ReportEstadistica.rdlc" />
     <EmbeddedResource Include="Estadisticas\ReportEstadisticaPartido.rdlc" />
+    <EmbeddedResource Include="EstadisticaGol.rdlc" />
+    <EmbeddedResource Include="EstadisticaGolesClub.rdlc" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -340,6 +363,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportSocioApellido.rdlc" />
     <EmbeddedResource Include="Reportes\ReportSocios.rdlc" />
+    <EmbeddedResource Include="ListadoDeClubes.rdlc" />
+    <EmbeddedResource Include="Partido.resx">
+      <DependentUpon>Partido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEstadistica.resx">
+      <DependentUpon>ReporteEstadistica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEstadisticaFastGol.resx">
+      <DependentUpon>ReporteEstadisticaFastGol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteListadoClubes.resx">
+      <DependentUpon>ReporteListadoClubes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TipoObservaciones\ABMTipoObservaciones.resx">
       <DependentUpon>ABMTipoObservaciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -367,7 +403,11 @@
     <None Include="DatosEstadistica.xsc">
       <DependentUpon>DatosEstadistica.xsd</DependentUpon>
     </None>
-    <None Include="DatosEstadistica.xsd">
+    <None Include="DatosEstadistica.xsd"></None>
+    <None Include="ConjuntoDeDatos\DatosEstadistica.xsc">
+      <DependentUpon>DatosEstadistica.xsd</DependentUpon>
+    </None>
+    <None Include="ConjuntoDeDatos\DatosEstadistica.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DatosEstadistica.Designer.cs</LastGenOutput>
@@ -407,6 +447,9 @@
     </None>
     <None Include="Reportes\DataSet2.xss">
       <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ConjuntoDeDatos\DatosEstadistica.xss">
+      <DependentUpon>DatosEstadistica.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

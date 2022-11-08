@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.clubesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMClubesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoClubesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMSociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadísticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,6 +61,8 @@
             this.estadisticaDeObservacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadísticaDeGolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadísticaDeExpulsionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadisticaGolMasRapidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadisticaGoleadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.partidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.ListadoDePartidos = new System.Windows.Forms.ToolStripMenuItem();
@@ -99,6 +102,9 @@
             this.clubesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aBMClubesToolStripMenuItem});
             //this.clubesToolStripMenuItem.Image = global::TrabajoIntegradorG8.Properties.Resources.iconoClubes;
+            this.aBMClubesToolStripMenuItem,
+            this.listadoClubesToolStripMenuItem});
+            this.clubesToolStripMenuItem.Image = global::TrabajoIntegradorG8.Properties.Resources.iconoClubes;
             this.clubesToolStripMenuItem.Name = "clubesToolStripMenuItem";
             this.clubesToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
             this.clubesToolStripMenuItem.Text = "Clubes";
@@ -107,8 +113,16 @@
             // 
             this.aBMClubesToolStripMenuItem.Name = "aBMClubesToolStripMenuItem";
             this.aBMClubesToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
+            this.aBMClubesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aBMClubesToolStripMenuItem.Text = "Consultas";
             this.aBMClubesToolStripMenuItem.Click += new System.EventHandler(this.aBMClubesToolStripMenuItem_Click);
+            // 
+            // listadoClubesToolStripMenuItem
+            // 
+            this.listadoClubesToolStripMenuItem.Name = "listadoClubesToolStripMenuItem";
+            this.listadoClubesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listadoClubesToolStripMenuItem.Text = "Listado Clubes";
+            this.listadoClubesToolStripMenuItem.Click += new System.EventHandler(this.listadoClubesToolStripMenuItem_Click);
             // 
             // sociosToolStripMenuItem
             // 
@@ -312,6 +326,9 @@
             this.consultasToolStripMenuItem6,
             this.estadisticaDeObservacionesToolStripMenuItem});
             //this.arbitrosXPartidoToolStripMenuItem.Image = global::TrabajoIntegradorG8.Properties.Resources.iconoPartidos;
+            this.estadisticaGolMasRapidoToolStripMenuItem,
+            this.estadisticaGoleadorToolStripMenuItem});
+            this.arbitrosXPartidoToolStripMenuItem.Image = global::TrabajoIntegradorG8.Properties.Resources.iconoPartidos;
             this.arbitrosXPartidoToolStripMenuItem.Name = "arbitrosXPartidoToolStripMenuItem";
             this.arbitrosXPartidoToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.arbitrosXPartidoToolStripMenuItem.Text = "Observaciones";
@@ -347,6 +364,23 @@
             this.estadísticaDeExpulsionesToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.estadísticaDeExpulsionesToolStripMenuItem.Text = "Estadística de expulsiones";
             this.estadísticaDeExpulsionesToolStripMenuItem.Click += new System.EventHandler(this.estadísticaDeExpulsionesToolStripMenuItem_Click);
+            this.consultasToolStripMenuItem6.Size = new System.Drawing.Size(211, 22);
+            this.consultasToolStripMenuItem6.Text = "Consultas";
+            this.consultasToolStripMenuItem6.Click += new System.EventHandler(this.consultasToolStripMenuItem6_Click);
+            // 
+            // estadisticaGolMasRapidoToolStripMenuItem
+            // 
+            this.estadisticaGolMasRapidoToolStripMenuItem.Name = "estadisticaGolMasRapidoToolStripMenuItem";
+            this.estadisticaGolMasRapidoToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.estadisticaGolMasRapidoToolStripMenuItem.Text = "Estadistica gol mas rapido";
+            this.estadisticaGolMasRapidoToolStripMenuItem.Click += new System.EventHandler(this.estadisticaGolMasRapidoToolStripMenuItem_Click);
+            // 
+            // estadisticaGoleadorToolStripMenuItem
+            // 
+            this.estadisticaGoleadorToolStripMenuItem.Name = "estadisticaGoleadorToolStripMenuItem";
+            this.estadisticaGoleadorToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.estadisticaGoleadorToolStripMenuItem.Text = "Estadistica Goleador";
+            this.estadisticaGoleadorToolStripMenuItem.Click += new System.EventHandler(this.estadisticaGoleadorToolStripMenuItem_Click);
             // 
             // partidosToolStripMenuItem
             // 
@@ -463,5 +497,8 @@
         private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem estadisticaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem estadisticaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem listadoClubesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadisticaGolMasRapidoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadisticaGoleadorToolStripMenuItem;
     }
 }

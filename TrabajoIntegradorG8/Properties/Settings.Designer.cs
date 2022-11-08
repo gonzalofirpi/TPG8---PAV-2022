@@ -28,6 +28,8 @@ namespace TrabajoIntegradorG8.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=200.69.137.167,11333;Initial Catalog=BD3K3G08_2022;User ID=BD3K3G08_2" +
             "022;Password=CLV08_28041")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=200.69.137.167,11333;Initial Catalog=BD3K3G08_2022;Persist Security I" +
+            "nfo=True;User ID=BD3K3G08_2022;Password=CLV08_28041")]
         public string BD3K3G08_2022ConnectionString {
             get {
                 return ((string)(this["BD3K3G08_2022ConnectionString"]));

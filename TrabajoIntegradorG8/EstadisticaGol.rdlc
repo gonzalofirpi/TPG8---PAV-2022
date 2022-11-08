@@ -7,16 +7,11 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>c97c9551-d352-4260-aae3-1019fbea46c5</rd:DataSourceID>
+      <rd:DataSourceID>1dc61db3-e096-453f-ac71-64286dd693b0</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DatosEstadisticosGolesClub">
-      <rd:DataSourceID>67b384c9-24c9-48c3-8edf-3ca30e559db0</rd:DataSourceID>
-    </DataSource>
-  </DataSources>
-  <DataSets>
-    <DataSet Name="DatosEstadisticaGolesdeClub">
+    <DataSet Name="EstadisticaFastGol">
       <Query>
         <DataSourceName>DatosEstadistica</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -26,19 +21,15 @@
           <DataField>Nombre</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Cantidad">
-          <DataField>Cantidad</DataField>
-        <Field Name="Goles">
-          <DataField>Goles</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="Tiempo">
+          <DataField>Tiempo</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DatosEstadistica</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Usuario\Documents\PAV\TrabajoIntegradorG8\DatosEstadistica.xsd</rd:SchemaPath>
-        <rd:TableName>TablaEstadisticaGolClub</rd:TableName>
         <rd:SchemaPath>C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\ConjuntoDeDatos\DatosEstadistica.xsd</rd:SchemaPath>
-        <rd:TableName>TablaEstadistica</rd:TableName>
+        <rd:TableName>TablaGoles</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
         <rd:TableAdapterName />
@@ -56,52 +47,10 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>GOLES POR CLUB</Value>
+                    <Value>GOLES MAS RAPIDOS
+</Value>
                     <Style>
                       <FontSize>20pt</FontSize>
-                      <TextDecoration>Underline</TextDecoration>
-                      <Color>White</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.50697cm</Top>
-            <Height>0.97042cm</Height>
-            <Width>19.87871cm</Width>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <LeftBorder>
-                <Color>Black</Color>
-              </LeftBorder>
-              <BackgroundColor>DarkGreen</BackgroundColor>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox2">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>EN LOS ÚLTIMOS 5 AÑOS</Value>
-                    <Style>
-                      <FontSize>14pt</FontSize>
-                      <TextDecoration>Underline</TextDecoration>
-                      <Color>White</Color>
-                    <Value>GOLEADOR POR CLUB</Value>
-                    <Style>
-                      <FontSize>14pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -110,40 +59,38 @@
                   <TextAlign>Center</TextAlign>
                 </Style>
               </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontSize>20pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>1.77697cm</Top>
-            <Height>0.7323cm</Height>
-            <Width>19.87871cm</Width>
-            <ZIndex>1</ZIndex>
-            <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>1.08162cm</Top>
-            <Left>4.12433cm</Left>
-            <Height>0.6cm</Height>
-            <Width>12.36896cm</Width>
+            <Top>0.47307cm</Top>
+            <Left>2.48391cm</Left>
+            <Height>1.04979cm</Height>
+            <Width>12.10438cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <LeftBorder>
-                <Color>Black</Color>
-              </LeftBorder>
-              <BackgroundColor>Black</BackgroundColor>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Chart Name="Chart1">
-            <ChartCategoryHierarchy>
-              <ChartMembers>
-                <ChartMember>
-                  <Group Name="Chart1_CategoryGroup">
           <Line Name="Line1">
-            <Top>2.45745cm</Top>
+            <Top>2.03412cm</Top>
             <Height>0cm</Height>
-            <Width>20.25037cm</Width>
+            <Width>16.51cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -151,11 +98,11 @@
               </Border>
             </Style>
           </Line>
-          <Chart Name="Chart2">
+          <Chart Name="Chart1">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart2_CategoryGroup">
+                  <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
                       <GroupExpression>=Fields!Nombre.Value</GroupExpression>
                     </GroupExpressions>
@@ -172,28 +119,17 @@
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label>Cantidad</Label>
-                  <Label>Goles</Label>
+                  <Label>Tiempo</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="Cantidad">
+                <ChartSeries Name="Tiempo">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!Cantidad.Value)</Y>
-                      </ChartDataPointValues>
-                      <ChartDataLabel>
-                        <Style />
-                        <UseValueAsLabel>true</UseValueAsLabel>
-                        <Visible>true</Visible>
-                <ChartSeries Name="Goles">
-                  <ChartDataPoints>
-                    <ChartDataPoint>
-                      <ChartDataPointValues>
-                        <Y>=Sum(Fields!Goles.Value)</Y>
+                        <Y>=Count(Fields!Tiempo.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -205,7 +141,6 @@
                       <DataElementOutput>Output</DataElementOutput>
                     </ChartDataPoint>
                   </ChartDataPoints>
-                  <Type>Shape</Type>
                   <Style />
                   <ChartEmptyPoints>
                     <Style />
@@ -478,8 +413,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Goles por club en los últimos 5 años</Caption>
-                <Caption>Mayor goleador por club</Caption>
+                <Caption>GOLES</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -491,7 +425,6 @@
                 <Position>TopLeft</Position>
               </ChartTitle>
             </ChartTitles>
-            <Palette>SeaGreen</Palette>
             <Palette>Pacific</Palette>
             <ChartBorderSkin>
               <Style>
@@ -509,16 +442,11 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DatosEstadisticosGolesClub</DataSetName>
-            <Top>2.85433cm</Top>
-            <Left>5.63245cm</Left>
-            <Height>5.84667cm</Height>
-            <Width>8.26729cm</Width>
-            <DataSetName>DatosEstadisticaGolesdeClub</DataSetName>
-            <Top>2.88078cm</Top>
-            <Left>5.55308cm</Left>
-            <Height>5.82021cm</Height>
-            <Width>9.32562cm</Width>
+            <DataSetName>EstadisticaFastGol</DataSetName>
+            <Top>2.48391cm</Top>
+            <Left>1.29328cm</Left>
+            <Height>6.40229cm</Height>
+            <Width>13.98229cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -530,14 +458,10 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>3.42559in</Height>
+        <Height>3.75892in</Height>
         <Style />
       </Body>
-      <Width>7.82626in</Width>
-        <Height>3.89434in</Height>
-        <Style />
-      </Body>
-      <Width>7.99342in</Width>
+      <Width>6.60776in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
@@ -557,6 +481,5 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>9e5b7c3d-a95b-447d-a184-9fb95b02c0c1</rd:ReportID>
-  <rd:ReportID>e4818244-5d18-4e3a-8ba3-fb4c748fd9e3</rd:ReportID>
+  <rd:ReportID>c1d3666d-2499-43c5-b3ce-56150509e11a</rd:ReportID>
 </Report>
