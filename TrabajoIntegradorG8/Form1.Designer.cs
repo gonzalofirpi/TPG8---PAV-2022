@@ -102,7 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::TrabajoIntegradorG8.Properties.Resources.InShot_20220928_1530501151;
+            //this.BackgroundImage = global::TrabajoIntegradorG8.Properties.Resources.InShot_20220928_1530501151;
             this.ClientSize = new System.Drawing.Size(405, 342);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.txtPassword);

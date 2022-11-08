@@ -392,7 +392,6 @@ namespace TrabajoIntegradorG8.AccesoADatos
 
         }
 
-        public static DataTable obtenerListadoDePartidos() {}
         public DataTable EstadisticaPartido(string year)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
