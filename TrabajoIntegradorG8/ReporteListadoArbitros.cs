@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,36 +16,46 @@ namespace TrabajoIntegradorG8
 {
     public partial class ReporteListadoArbitros : Form
     {
-        DataTable Tabla = new DataTable();
-        string alcance = "";
 
         public ReporteListadoArbitros()
         {
             InitializeComponent();
             btnBuscar.Enabled = false;  
+            txtApellidoArbitro.Enabled = false;
         }
 
         private void ReporteListadoArbitros_Load(object sender, EventArgs e)
         {
 
-            this.reportViewer1.RefreshReport();
-        }
-
-        private void reportViewer1_Load(object sender, EventArgs e)
-        {
-            DataTable tabla = new DataTable();
-            tabla = AD_Arbitros.obtenerListadoArbitrosOrdenado(); 
-
-            ReportDataSource ds = new ReportDataSource("DatosArbitros", tabla);
-
-            reportViewer1.LocalReport.DataSources.Clear();
-            reportViewer1.LocalReport.DataSources.Add(ds);
-            reportViewer1.LocalReport.Refresh();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            
+            if (rbArbitrosAlfabeticamente.Checked)
+            {
+                DataTable tabla = new DataTable();
+                tabla = AD_Arbitros.obtenerListadoArbitrosOrdenado();
+
+                ReportDataSource ds = new ReportDataSource("DatosArbitros", tabla);
+
+                reportViewer1.LocalReport.DataSources.Clear();
+                reportViewer1.LocalReport.DataSources.Add(ds);
+                //reportViewer1.LocalReport.Refresh();
+                reportViewer1.RefreshReport();
+            }
+            if (rbArbitrosLetra.Checked && txtApellidoArbitro.Text != "")
+            {
+                string letra = txtApellidoArbitro.Text;
+                DataTable tabla = new DataTable();
+                tabla = AD_Arbitros.obtenerListadoArbitrosLetra(letra);
+
+                ReportDataSource ds = new ReportDataSource("DatosArbitros", tabla);
+
+                reportViewer1.LocalReport.DataSources.Clear();
+                reportViewer1.LocalReport.DataSources.Add(ds);
+                //reportViewer1.LocalReport.Refresh();
+                reportViewer1.RefreshReport();
+            }
         }
 
         private void rbArbitrosAlfabeticamente_CheckedChanged(object sender, EventArgs e)
@@ -52,6 +63,24 @@ namespace TrabajoIntegradorG8
             if (rbArbitrosAlfabeticamente.Checked)
             {
                 btnBuscar.Enabled = true;
+            }
+        }
+
+        public DataTable rpt_arbitrosletra()
+        {
+            string letra = "";
+            DataTable tabla = new DataTable();
+            tabla = AD_Arbitros.obtenerListadoArbitrosLetra(letra);
+            return tabla;
+
+        }
+
+        private void rbArbitrosLetra_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbArbitrosLetra.Checked)
+            {
+                btnBuscar.Enabled = true;
+                txtApellidoArbitro.Enabled = true;
             }
         }
     }

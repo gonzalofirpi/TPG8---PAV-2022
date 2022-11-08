@@ -32,17 +32,19 @@
             this.lblReporteArbitros = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.rbArbitrosAlfabeticamente = new System.Windows.Forms.RadioButton();
+            this.rbArbitrosLetra = new System.Windows.Forms.RadioButton();
+            this.txtApellidoArbitro = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
+            this.reportViewer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "TrabajoIntegradorG8.ListadoArbitrosAlfabetico.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(1, 189);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(799, 263);
             this.reportViewer1.TabIndex = 0;
-            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // lblReporteArbitros
             // 
@@ -57,7 +59,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(661, 104);
+            this.btnBuscar.Location = new System.Drawing.Point(660, 92);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(115, 33);
             this.btnBuscar.TabIndex = 2;
@@ -78,11 +80,34 @@
             this.rbArbitrosAlfabeticamente.UseVisualStyleBackColor = true;
             this.rbArbitrosAlfabeticamente.CheckedChanged += new System.EventHandler(this.rbArbitrosAlfabeticamente_CheckedChanged);
             // 
+            // rbArbitrosLetra
+            // 
+            this.rbArbitrosLetra.AutoSize = true;
+            this.rbArbitrosLetra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbArbitrosLetra.Location = new System.Drawing.Point(30, 113);
+            this.rbArbitrosLetra.Name = "rbArbitrosLetra";
+            this.rbArbitrosLetra.Size = new System.Drawing.Size(167, 24);
+            this.rbArbitrosLetra.TabIndex = 5;
+            this.rbArbitrosLetra.TabStop = true;
+            this.rbArbitrosLetra.Text = "Arbitros por apellido";
+            this.rbArbitrosLetra.UseVisualStyleBackColor = true;
+            this.rbArbitrosLetra.CheckedChanged += new System.EventHandler(this.rbArbitrosLetra_CheckedChanged);
+            // 
+            // txtApellidoArbitro
+            // 
+            this.txtApellidoArbitro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidoArbitro.Location = new System.Drawing.Point(239, 111);
+            this.txtApellidoArbitro.Name = "txtApellidoArbitro";
+            this.txtApellidoArbitro.Size = new System.Drawing.Size(169, 26);
+            this.txtApellidoArbitro.TabIndex = 6;
+            // 
             // ReporteListadoArbitros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtApellidoArbitro);
+            this.Controls.Add(this.rbArbitrosLetra);
             this.Controls.Add(this.rbArbitrosAlfabeticamente);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblReporteArbitros);
@@ -102,5 +127,7 @@
         private System.Windows.Forms.Label lblReporteArbitros;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.RadioButton rbArbitrosAlfabeticamente;
+        private System.Windows.Forms.RadioButton rbArbitrosLetra;
+        private System.Windows.Forms.TextBox txtApellidoArbitro;
     }
 }
