@@ -93,10 +93,16 @@ namespace TrabajoIntegradorG8
         {
             if (rdbtnBarrio.Checked == true)
             {
-                
-                
-                int barrio = Convert.ToInt32(cmbBarrios.SelectedValue.ToString());
-                Tabla = Rpt_Clubes01(barrio);
+
+                if (cmbBarrios.SelectedIndex != -1)
+                {
+                    int barrio = Convert.ToInt32(cmbBarrios.SelectedValue.ToString());
+                    Tabla = Rpt_Clubes01(barrio);
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione algun barrio");
+                }
             }
             if (rdbtnAntiguedad.Checked == true)
             {
@@ -155,17 +161,36 @@ namespace TrabajoIntegradorG8
 
 
             Restriccion();
+            if (rdbtnBarrio.Checked == true)
+            {
+
+                if (cmbBarrios.SelectedIndex != -1)
+                {
+                    cargarReporte();
+
+                }
+
+            }
+            if (rdbtnAntiguedad.Checked == true)
+            {     
+                cargarReporte();
+            
 
 
+            }
+
+        }
+        private void cargarReporte()
+        {
             ReportDataSource Datos = new ReportDataSource("DATOSCLUBES", Tabla);
             reportViewer1.LocalReport.ReportEmbeddedResource = "TrabajoIntegradorG8.ListadoDeClubes.rdlc";
 
             reportViewer1.LocalReport.DataSources.Clear();
             reportViewer1.LocalReport.DataSources.Add(Datos);
-            
+
             reportViewer1.RefreshReport();
 
-
         }
+
     }
 }

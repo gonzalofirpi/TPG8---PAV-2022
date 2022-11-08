@@ -91,6 +91,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD3K3G08_2022DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ConjuntoDeDatos\DatosEstadistica.cs">
+      <DependentUpon>DatosEstadistica.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConjuntoDeDatos\DatosEstadistica.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosEstadistica.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\Socio.cs" />
     <Compile Include="Entidades\Jugador.cs" />
     <Compile Include="ABMBarrios.cs">
@@ -146,6 +154,18 @@
     <Compile Include="Partido.Designer.cs">
       <DependentUpon>Partido.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReporteEstadistica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEstadistica.Designer.cs">
+      <DependentUpon>ReporteEstadistica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteEstadisticaFastGol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEstadisticaFastGol.Designer.cs">
+      <DependentUpon>ReporteEstadisticaFastGol.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReporteListadoClubes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +185,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EstadisticaGol.rdlc" />
+    <EmbeddedResource Include="EstadisticaGolesClub.rdlc" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +245,12 @@
     <EmbeddedResource Include="Partido.resx">
       <DependentUpon>Partido.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEstadistica.resx">
+      <DependentUpon>ReporteEstadistica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEstadisticaFastGol.resx">
+      <DependentUpon>ReporteEstadisticaFastGol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReporteListadoClubes.resx">
       <DependentUpon>ReporteListadoClubes.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +283,17 @@
     </None>
     <None Include="BD3K3G08_2022DataSet.xss">
       <DependentUpon>BD3K3G08_2022DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ConjuntoDeDatos\DatosEstadistica.xsc">
+      <DependentUpon>DatosEstadistica.xsd</DependentUpon>
+    </None>
+    <None Include="ConjuntoDeDatos\DatosEstadistica.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosEstadistica.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ConjuntoDeDatos\DatosEstadistica.xss">
+      <DependentUpon>DatosEstadistica.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -357,8 +396,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ConjuntoDeDatos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

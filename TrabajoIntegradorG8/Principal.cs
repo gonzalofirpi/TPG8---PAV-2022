@@ -104,6 +104,20 @@ namespace TrabajoIntegradorG8
             frmReporteListadoClubesOrdenados ventana = new frmReporteListadoClubesOrdenados();
             ventana.ShowDialog();
         }
+
+       
+
+        private void estadisticaGoleadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteEstadistica ventana = new ReporteEstadistica();
+            ventana.ShowDialog();
+        }
+
+        private void estadisticaGolMasRapidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteEstadisticaFastGol ventana = new ReporteEstadisticaFastGol();
+            ventana.ShowDialog();
+        }
     }
 
        

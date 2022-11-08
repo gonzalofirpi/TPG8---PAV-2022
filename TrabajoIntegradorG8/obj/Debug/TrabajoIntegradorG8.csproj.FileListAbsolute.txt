@@ -125,3 +125,5 @@ C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\bin\Debug\ru\Micr
 C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.csproj.CopyComplete
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.ReporteEstadistica.resources
+C:\Users\Usuario\Documents\TPG8---PAV-2022\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.ReporteEstadisticaFastGol.resources
