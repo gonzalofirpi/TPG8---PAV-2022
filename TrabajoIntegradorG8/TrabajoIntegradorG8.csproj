@@ -186,7 +186,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="EstadisticaGol.rdlc" />
-    <EmbeddedResource Include="EstadisticaGolesClub.rdlc" />
+    <EmbeddedResource Include="EstadisticaGolesClubJ.rdlc" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

@@ -52,7 +52,7 @@ namespace TrabajoIntegradorG8
         private void reportViewer1_Load(object sender, EventArgs e)
         {
             ReportDataSource Datos = new ReportDataSource("DatosEstadisticaGolesdeClub", ObtenerEstadisticaGoles());
-            reportViewer1.LocalReport.ReportEmbeddedResource = "TrabajoIntegradorG8.EstadisticaGolesClub.rdlc";
+            reportViewer1.LocalReport.ReportEmbeddedResource = "TrabajoIntegradorG8.EstadisticaGolesClubJ.rdlc";
 
             reportViewer1.LocalReport.DataSources.Clear();
             reportViewer1.LocalReport.DataSources.Add(Datos);
