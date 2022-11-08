@@ -104,6 +104,36 @@ namespace TrabajoIntegradorG8
             ReporteListadoPartidos ventana = new ReporteListadoPartidos();
             ventana.ShowDialog();
         }
+
+        private void listadoDeCanchasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteListadoCanchas ventana = new ReporteListadoCanchas();
+            ventana.ShowDialog();
+        }
+
+        private void estadísticasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteEstadisticaComisiones ventana = new ReporteEstadisticaComisiones();
+            ventana.ShowDialog();
+        }
+
+        private void estadísticaDeGolesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteEstadisticaGolesClub ventana = new ReporteEstadisticaGolesClub();
+            ventana.ShowDialog();
+        }
+
+        private void estadísticaDeExpulsionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteEstadisticaExpCate ventana = new ReporteEstadisticaExpCate();
+            ventana.ShowDialog();
+        }
+
+        private void estadísticaDeTopGoleadoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteEstadisticaTopGoleadores ventana = new ReporteEstadisticaTopGoleadores();
+            ventana.ShowDialog();
+        }
     }
 
        

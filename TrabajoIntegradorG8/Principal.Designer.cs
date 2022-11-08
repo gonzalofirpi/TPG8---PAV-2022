@@ -33,8 +33,10 @@
             this.aBMClubesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMSociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadísticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.canchasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMCanchasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoDeCanchasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jugadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbitrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,10 +55,15 @@
             this.consultasToolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.arbitrosXPartidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadisticaDeObservacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadísticaDeGolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadísticaDeExpulsionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.partidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.ListadoDePartidos = new System.Windows.Forms.ToolStripMenuItem();
             this.estadisticaDePartidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadisticasJugadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadísticaDeTopGoleadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,7 +110,8 @@
             // sociosToolStripMenuItem
             // 
             this.sociosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aBMSociosToolStripMenuItem});
+            this.aBMSociosToolStripMenuItem,
+            this.estadísticasToolStripMenuItem});
             this.sociosToolStripMenuItem.Image = global::TrabajoIntegradorG8.Properties.Resources.iconoComisiones;
             this.sociosToolStripMenuItem.Name = "sociosToolStripMenuItem";
             this.sociosToolStripMenuItem.Size = new System.Drawing.Size(101, 24);
@@ -112,14 +120,22 @@
             // aBMSociosToolStripMenuItem
             // 
             this.aBMSociosToolStripMenuItem.Name = "aBMSociosToolStripMenuItem";
-            this.aBMSociosToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.aBMSociosToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.aBMSociosToolStripMenuItem.Text = "Consultas";
             this.aBMSociosToolStripMenuItem.Click += new System.EventHandler(this.aBMSociosToolStripMenuItem_Click);
+            // 
+            // estadísticasToolStripMenuItem
+            // 
+            this.estadísticasToolStripMenuItem.Name = "estadísticasToolStripMenuItem";
+            this.estadísticasToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.estadísticasToolStripMenuItem.Text = "Estadística de comisiones";
+            this.estadísticasToolStripMenuItem.Click += new System.EventHandler(this.estadísticasToolStripMenuItem_Click);
             // 
             // canchasToolStripMenuItem
             // 
             this.canchasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aBMCanchasToolStripMenuItem});
+            this.aBMCanchasToolStripMenuItem,
+            this.listadoDeCanchasToolStripMenuItem});
             this.canchasToolStripMenuItem.Image = global::TrabajoIntegradorG8.Properties.Resources.iconoCanchas;
             this.canchasToolStripMenuItem.Name = "canchasToolStripMenuItem";
             this.canchasToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
@@ -128,9 +144,16 @@
             // aBMCanchasToolStripMenuItem
             // 
             this.aBMCanchasToolStripMenuItem.Name = "aBMCanchasToolStripMenuItem";
-            this.aBMCanchasToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.aBMCanchasToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.aBMCanchasToolStripMenuItem.Text = "Consultas";
             this.aBMCanchasToolStripMenuItem.Click += new System.EventHandler(this.aBMCanchasToolStripMenuItem_Click);
+            // 
+            // listadoDeCanchasToolStripMenuItem
+            // 
+            this.listadoDeCanchasToolStripMenuItem.Name = "listadoDeCanchasToolStripMenuItem";
+            this.listadoDeCanchasToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.listadoDeCanchasToolStripMenuItem.Text = "Listado de Canchas";
+            this.listadoDeCanchasToolStripMenuItem.Click += new System.EventHandler(this.listadoDeCanchasToolStripMenuItem_Click);
             // 
             // jugadoresToolStripMenuItem
             // 
@@ -151,7 +174,8 @@
             // arbitrosToolStripMenuItem
             // 
             this.arbitrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultasToolStripMenuItem1});
+            this.consultasToolStripMenuItem1,
+            this.estadisticasJugadoresToolStripMenuItem});
             this.arbitrosToolStripMenuItem.Image = global::TrabajoIntegradorG8.Properties.Resources.iconoJugadores;
             this.arbitrosToolStripMenuItem.Name = "arbitrosToolStripMenuItem";
             this.arbitrosToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
@@ -160,7 +184,7 @@
             // consultasToolStripMenuItem1
             // 
             this.consultasToolStripMenuItem1.Name = "consultasToolStripMenuItem1";
-            this.consultasToolStripMenuItem1.Size = new System.Drawing.Size(126, 22);
+            this.consultasToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
             this.consultasToolStripMenuItem1.Text = "Consultas";
             this.consultasToolStripMenuItem1.Click += new System.EventHandler(this.consultasToolStripMenuItem1_Click);
             // 
@@ -263,7 +287,8 @@
             // arbitrosXPartidoToolStripMenuItem
             // 
             this.arbitrosXPartidoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultasToolStripMenuItem6});
+            this.consultasToolStripMenuItem6,
+            this.estadisticaDeObservacionesToolStripMenuItem});
             this.arbitrosXPartidoToolStripMenuItem.Image = global::TrabajoIntegradorG8.Properties.Resources.iconoPartidos;
             this.arbitrosXPartidoToolStripMenuItem.Name = "arbitrosXPartidoToolStripMenuItem";
             this.arbitrosXPartidoToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
@@ -272,9 +297,33 @@
             // consultasToolStripMenuItem6
             // 
             this.consultasToolStripMenuItem6.Name = "consultasToolStripMenuItem6";
-            this.consultasToolStripMenuItem6.Size = new System.Drawing.Size(126, 22);
+            this.consultasToolStripMenuItem6.Size = new System.Drawing.Size(225, 22);
             this.consultasToolStripMenuItem6.Text = "Consultas";
             this.consultasToolStripMenuItem6.Click += new System.EventHandler(this.consultasToolStripMenuItem6_Click);
+            // 
+            // estadisticaDeObservacionesToolStripMenuItem
+            // 
+            this.estadisticaDeObservacionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.estadísticaDeGolesToolStripMenuItem,
+            this.estadísticaDeExpulsionesToolStripMenuItem,
+            this.estadísticaDeTopGoleadoresToolStripMenuItem});
+            this.estadisticaDeObservacionesToolStripMenuItem.Name = "estadisticaDeObservacionesToolStripMenuItem";
+            this.estadisticaDeObservacionesToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.estadisticaDeObservacionesToolStripMenuItem.Text = "Estadistica de Observaciones";
+            // 
+            // estadísticaDeGolesToolStripMenuItem
+            // 
+            this.estadísticaDeGolesToolStripMenuItem.Name = "estadísticaDeGolesToolStripMenuItem";
+            this.estadísticaDeGolesToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.estadísticaDeGolesToolStripMenuItem.Text = "Estadística de goles";
+            this.estadísticaDeGolesToolStripMenuItem.Click += new System.EventHandler(this.estadísticaDeGolesToolStripMenuItem_Click);
+            // 
+            // estadísticaDeExpulsionesToolStripMenuItem
+            // 
+            this.estadísticaDeExpulsionesToolStripMenuItem.Name = "estadísticaDeExpulsionesToolStripMenuItem";
+            this.estadísticaDeExpulsionesToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.estadísticaDeExpulsionesToolStripMenuItem.Text = "Estadística de expulsiones";
+            this.estadísticaDeExpulsionesToolStripMenuItem.Click += new System.EventHandler(this.estadísticaDeExpulsionesToolStripMenuItem_Click);
             // 
             // partidosToolStripMenuItem
             // 
@@ -306,6 +355,19 @@
             this.estadisticaDePartidosToolStripMenuItem.Name = "estadisticaDePartidosToolStripMenuItem";
             this.estadisticaDePartidosToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.estadisticaDePartidosToolStripMenuItem.Text = "Estadistica de partidos";
+            // 
+            // estadisticasJugadoresToolStripMenuItem
+            // 
+            this.estadisticasJugadoresToolStripMenuItem.Name = "estadisticasJugadoresToolStripMenuItem";
+            this.estadisticasJugadoresToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.estadisticasJugadoresToolStripMenuItem.Text = "Estadisticas Jugadores";
+            // 
+            // estadísticaDeTopGoleadoresToolStripMenuItem
+            // 
+            this.estadísticaDeTopGoleadoresToolStripMenuItem.Name = "estadísticaDeTopGoleadoresToolStripMenuItem";
+            this.estadísticaDeTopGoleadoresToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.estadísticaDeTopGoleadoresToolStripMenuItem.Text = "Estadística de top goleadores";
+            this.estadísticaDeTopGoleadoresToolStripMenuItem.Click += new System.EventHandler(this.estadísticaDeTopGoleadoresToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -356,5 +418,12 @@
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem ListadoDePartidos;
         private System.Windows.Forms.ToolStripMenuItem estadisticaDePartidosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listadoDeCanchasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadísticasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadisticaDeObservacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadísticaDeGolesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadísticaDeExpulsionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadisticasJugadoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadísticaDeTopGoleadoresToolStripMenuItem;
     }
 }

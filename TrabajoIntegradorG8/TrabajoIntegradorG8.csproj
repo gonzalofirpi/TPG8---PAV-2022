@@ -77,6 +77,7 @@
     <Compile Include="ABMSocios.Designer.cs">
       <DependentUpon>ABMSocios.cs</DependentUpon>
     </Compile>
+    <Compile Include="AccesoADatos\AD_Comisiones.cs" />
     <Compile Include="AccesoADatos\AD_Jugadores.cs" />
     <Compile Include="AccesoADatos\AD_Partidos.cs" />
     <Compile Include="AccesoADatos\AD_Socios.cs" />
@@ -90,6 +91,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BD3K3G08_2022DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatosEstadistica.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosEstadistica.xsd</DependentUpon>
     </Compile>
     <Compile Include="Entidades\Socio.cs" />
     <Compile Include="Entidades\Jugador.cs" />
@@ -146,6 +152,36 @@
     <Compile Include="Partido.Designer.cs">
       <DependentUpon>Partido.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReporteEstadisticaComisiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEstadisticaComisiones.Designer.cs">
+      <DependentUpon>ReporteEstadisticaComisiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteEstadisticaExpCate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEstadisticaExpCate.Designer.cs">
+      <DependentUpon>ReporteEstadisticaExpCate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteEstadisticaGolesClub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEstadisticaGolesClub.Designer.cs">
+      <DependentUpon>ReporteEstadisticaGolesClub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteEstadisticaTopGoleadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEstadisticaTopGoleadores.Designer.cs">
+      <DependentUpon>ReporteEstadisticaTopGoleadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteListadoCanchas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteListadoCanchas.Designer.cs">
+      <DependentUpon>ReporteListadoCanchas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReporteListadoPartidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +201,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EstadisticaComisiones.rdlc" />
+    <EmbeddedResource Include="EstadisticaExpulsionesCat.rdlc" />
+    <EmbeddedResource Include="EstadisticaGolesClub.rdlc" />
+    <EmbeddedResource Include="EstadisticaTopGoleadores.rdlc" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,9 +259,25 @@
     <Compile Include="Puestos\PuestosABM.Designer.cs">
       <DependentUpon>PuestosABM.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ListadoDeCanchas.rdlc" />
     <EmbeddedResource Include="ListadoDePartidos.rdlc" />
     <EmbeddedResource Include="Partido.resx">
       <DependentUpon>Partido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEstadisticaComisiones.resx">
+      <DependentUpon>ReporteEstadisticaComisiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEstadisticaExpCate.resx">
+      <DependentUpon>ReporteEstadisticaExpCate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEstadisticaGolesClub.resx">
+      <DependentUpon>ReporteEstadisticaGolesClub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEstadisticaTopGoleadores.resx">
+      <DependentUpon>ReporteEstadisticaTopGoleadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteListadoCanchas.resx">
+      <DependentUpon>ReporteListadoCanchas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteListadoPartidos.resx">
       <DependentUpon>ReporteListadoPartidos.cs</DependentUpon>
@@ -255,6 +311,17 @@
     </None>
     <None Include="BD3K3G08_2022DataSet.xss">
       <DependentUpon>BD3K3G08_2022DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatosEstadistica.xsc">
+      <DependentUpon>DatosEstadistica.xsd</DependentUpon>
+    </None>
+    <None Include="DatosEstadistica.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosEstadistica.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DatosEstadistica.xss">
+      <DependentUpon>DatosEstadistica.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

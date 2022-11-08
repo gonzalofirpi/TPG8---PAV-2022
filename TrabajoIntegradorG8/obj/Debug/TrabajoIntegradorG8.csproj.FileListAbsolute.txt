@@ -204,3 +204,8 @@ C:\Users\Usuario\Documents\PAV\TrabajoIntegradorG8\bin\Debug\ru\Microsoft.Report
 C:\Users\Usuario\Documents\PAV\TrabajoIntegradorG8\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Usuario\Documents\PAV\TrabajoIntegradorG8\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Usuario\Documents\PAV\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.csproj.CopyComplete
+C:\Users\Usuario\Documents\PAV\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.ReporteListadoCanchas.resources
+C:\Users\Usuario\Documents\PAV\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.ReporteEstadisticaComisiones.resources
+C:\Users\Usuario\Documents\PAV\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.ReporteEstadisticaGolesClub.resources
+C:\Users\Usuario\Documents\PAV\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.ReporteEstadisticaExpCate.resources
+C:\Users\Usuario\Documents\PAV\TrabajoIntegradorG8\obj\Debug\TrabajoIntegradorG8.ReporteEstadisticaTopGoleadores.resources

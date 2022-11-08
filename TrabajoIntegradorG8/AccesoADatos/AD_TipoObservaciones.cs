@@ -179,5 +179,68 @@ namespace TrabajoIntegradorG8.AccesoDatos
                 cn.Close();
             }
         }
+
+        public static DataTable ObtenerEstadisticasGoles()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            SqlCommand cmd = new SqlCommand();
+            string consulta = "SELECT C.NOMBRE as Nombre, COUNT(O.COD_OBSERVACION) as Cantidad FROM CLUBES C join OBSERVACIONESXPARTIDO O on (C.ID_CLUB = O.ID_CLUB) WHERE O.COD_OBSERVACION = 1 AND (YEAR(GETDATE()) - YEAR(O.FECHA) <= 5) GROUP BY C.NOMBRE";
+
+            cmd.Parameters.Clear();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = consulta;
+
+            cn.Open();
+            cmd.Connection = cn;
+
+            DataTable Tabla = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(Tabla);
+
+            return Tabla;
+        }
+
+        public static DataTable ObtenerEstadisticasExpulsiones()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            SqlCommand cmd = new SqlCommand();
+            string consulta = "SELECT C.NOMBRE as Nombre, COUNT(O.COD_OBSERVACION) as Cantidad FROM CATEGORIAS C join OBSERVACIONESXPARTIDO O on (C.COD_CATEGORIA = O.COD_CATEGORIA) WHERE O.COD_OBSERVACION = 2 GROUP BY C.NOMBRE";
+
+            cmd.Parameters.Clear();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = consulta;
+
+            cn.Open();
+            cmd.Connection = cn;
+
+            DataTable Tabla = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(Tabla);
+
+            return Tabla;
+        }
+
+        public static DataTable ObtenerEstadisticasTopGoleadores()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            SqlCommand cmd = new SqlCommand();
+            string consulta = "SELECT S.NOMBRE AS NOMBRE, COUNT(O.COD_OBSERVACION) AS GOLES \r\nFROM SOCIOS S JOIN OBSERVACIONESXPARTIDO O ON (S.ID_SOCIO =O.ID_SOCIO) WHERE O.COD_OBSERVACION = 1 AND (YEAR(GETDATE()) - YEAR(O.FECHA) <=10) GROUP BY S.NOMBRE ORDER BY GOLES desc";
+
+            cmd.Parameters.Clear();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = consulta;
+
+            cn.Open();
+            cmd.Connection = cn;
+
+            DataTable Tabla = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(Tabla);
+
+            return Tabla;
+        }
     }
 }

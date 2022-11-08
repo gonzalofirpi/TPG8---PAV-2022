@@ -552,7 +552,7 @@
             </TablixRowHierarchy>
             <DataSetName>DatosPartidos</DataSetName>
             <Top>3.70361cm</Top>
-            <Left>1.41391cm</Left>
+            <Left>1.00598cm</Left>
             <Height>1.2cm</Height>
             <Width>16.48105cm</Width>
             <ZIndex>2</ZIndex>
@@ -581,7 +581,7 @@
             </Paragraphs>
             <rd:DefaultName>ReportParameter1</rd:DefaultName>
             <Top>2.28106cm</Top>
-            <Left>1.41391cm</Left>
+            <Left>1.00598cm</Left>
             <Height>0.87312cm</Height>
             <Width>16.07312cm</Width>
             <ZIndex>3</ZIndex>
