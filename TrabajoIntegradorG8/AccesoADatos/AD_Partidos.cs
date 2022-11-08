@@ -392,16 +392,16 @@ namespace TrabajoIntegradorG8.AccesoADatos
 
         }
 
-        public static DataTable obtenerListadoDePartidos()
+        public static DataTable obtenerListadoDePartidos() {}
+        public DataTable EstadisticaPartido(string year)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
 
             try
             {
-
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT * FROM PARTIDOS";
+                string consulta = "select COUNT(YEAR(FECHA)) AS CANTIDAD, ID_CLUBLOCAL  FROM  PARTIDOS  WHERE YEAR(FECHA) = " + year + " GROUP BY YEAR(FECHA), ID_CLUBLOCAL";
 
                 cmd.Parameters.Clear();
 
@@ -416,6 +416,8 @@ namespace TrabajoIntegradorG8.AccesoADatos
                 da.Fill(tabla);
 
                 return tabla;
+
+
             }
             catch (Exception ex)
             {

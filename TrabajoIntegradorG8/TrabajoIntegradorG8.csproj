@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>TrabajoIntegradorG8</RootNamespace>
     <AssemblyName>TrabajoIntegradorG8</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -96,6 +97,36 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DatosEstadistica.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas\DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas\DataSet4.cs">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas\DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas\EstadisticaPartidocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estadisticas\EstadisticaPartidocs.Designer.cs">
+      <DependentUpon>EstadisticaPartidocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas\EstadisticaSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estadisticas\EstadisticaSocio.Designer.cs">
+      <DependentUpon>EstadisticaSocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Entidades\Socio.cs" />
     <Compile Include="Entidades\Jugador.cs" />
@@ -187,6 +218,20 @@
     </Compile>
     <Compile Include="ReporteListadoPartidos.Designer.cs">
       <DependentUpon>ReporteListadoPartidos.cs</DependentUpon>
+      </Compile>
+    <Compile Include="Reportes\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteSocio.Designer.cs">
+      <DependentUpon>ReporteSocio.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="TipoObservaciones\ABMTipoObservaciones.cs">
@@ -205,6 +250,14 @@
     <EmbeddedResource Include="EstadisticaExpulsionesCat.rdlc" />
     <EmbeddedResource Include="EstadisticaGolesClub.rdlc" />
     <EmbeddedResource Include="EstadisticaTopGoleadores.rdlc" />
+    <EmbeddedResource Include="Estadisticas\EstadisticaPartidocs.resx">
+      <DependentUpon>EstadisticaPartidocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estadisticas\EstadisticaSocio.resx">
+      <DependentUpon>EstadisticaSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estadisticas\ReportEstadistica.rdlc" />
+    <EmbeddedResource Include="Estadisticas\ReportEstadisticaPartido.rdlc" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,6 +335,11 @@
     <EmbeddedResource Include="ReporteListadoPartidos.resx">
       <DependentUpon>ReporteListadoPartidos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteSocio.resx">
+      <DependentUpon>ReporteSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportSocioApellido.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportSocios.rdlc" />
     <EmbeddedResource Include="TipoObservaciones\ABMTipoObservaciones.resx">
       <DependentUpon>ABMTipoObservaciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -323,6 +381,39 @@
     <None Include="DatosEstadistica.xss">
       <DependentUpon>DatosEstadistica.xsd</DependentUpon>
     </None>
+    <None Include="Estadisticas\DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Estadisticas\DataSet3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Estadisticas\DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Estadisticas\DataSet4.xsc">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Estadisticas\DataSet4.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet4.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Estadisticas\DataSet4.xss">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -338,6 +429,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Reportes\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Resources\ae1df7c238e6d190de5247a381cc719d.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -411,6 +513,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondo.jpg" />
+    <None Include="Resources\pexels-tembela-bohle-1884574.jpg" />
+    <None Include="Resources\pexels-tembela-bohle-1884574 nuevo.jpg" />
+    <None Include="Resources\pexels-tembela-bohle-1884576 este.jpg" />
+    <None Include="Resources\pexels-tembela-bohle-1884576 ok.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

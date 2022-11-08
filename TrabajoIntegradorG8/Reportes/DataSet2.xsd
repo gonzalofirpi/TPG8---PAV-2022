@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet2" msprop:Generator_UserDSName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="APELLIDO" msprop:Generator_TableClassName="APELLIDODataTable" msprop:Generator_TableVarName="tableAPELLIDO" msprop:Generator_TablePropName="APELLIDO" msprop:Generator_RowDeletingName="APELLIDORowDeleting" msprop:Generator_RowChangingName="APELLIDORowChanging" msprop:Generator_RowEvHandlerName="APELLIDORowChangeEventHandler" msprop:Generator_RowDeletedName="APELLIDORowDeleted" msprop:Generator_UserTableName="APELLIDO" msprop:Generator_RowChangedName="APELLIDORowChanged" msprop:Generator_RowEvArgName="APELLIDORowChangeEvent" msprop:Generator_RowClassName="APELLIDORow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="APELLIDO" msprop:Generator_ColumnVarNameInTable="columnAPELLIDO" msprop:Generator_ColumnPropNameInRow="APELLIDO" msprop:Generator_ColumnPropNameInTable="APELLIDOColumn" msprop:Generator_UserColumnName="APELLIDO" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRE" msprop:Generator_ColumnVarNameInTable="columnNOMBRE" msprop:Generator_ColumnPropNameInRow="NOMBRE" msprop:Generator_ColumnPropNameInTable="NOMBREColumn" msprop:Generator_UserColumnName="NOMBRE" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_ALTA" msprop:Generator_ColumnVarNameInTable="columnFECHA_ALTA" msprop:Generator_ColumnPropNameInRow="FECHA_ALTA" msprop:Generator_ColumnPropNameInTable="FECHA_ALTAColumn" msprop:Generator_UserColumnName="FECHA_ALTA" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ID_SOCIO" msprop:Generator_ColumnVarNameInTable="columnID_SOCIO" msprop:Generator_ColumnPropNameInRow="ID_SOCIO" msprop:Generator_ColumnPropNameInTable="ID_SOCIOColumn" msprop:Generator_UserColumnName="ID_SOCIO" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

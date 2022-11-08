@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrabajoIntegradorG8.Puestos;
 using TrabajoIntegradorG8.EstadoCancha;
+using TrabajoIntegradorG8.Reportes;
+using TrabajoIntegradorG8.Estadisticas;
 
 namespace TrabajoIntegradorG8
 {
@@ -132,6 +134,22 @@ namespace TrabajoIntegradorG8
         private void estadísticaDeTopGoleadoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ReporteEstadisticaTopGoleadores ventana = new ReporteEstadisticaTopGoleadores();
+        }
+        private void reporteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteSocio ventana = new ReporteSocio();
+            ventana.ShowDialog();
+        }
+
+        private void estadisticaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EstadisticaSocio ventana = new EstadisticaSocio();
+            ventana.ShowDialog();        
+        }
+
+        private void estadisticaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            EstadisticaPartidocs ventana = new EstadisticaPartidocs();
             ventana.ShowDialog();
         }
     }

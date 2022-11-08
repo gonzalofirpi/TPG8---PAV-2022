@@ -180,6 +180,8 @@
   </data>
   <data name="iconoCanchas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconoCanchas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fondoPrincipal2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondoPrincipal2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -192,5 +194,79 @@
   </data>
   <data name="fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pexels-tembela-bohle-1884574" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-tembela-bohle-1884574.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoBarrios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoBarrios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pexels-tembela-bohle-1884576 este" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-tembela-bohle-1884576 este.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoSocios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoSocios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InShot_20220928_1530501151" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InShot_20220928_1530501151.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoLocalidades" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoLocalidades.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoArbitros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoArbitros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo4.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoComisiones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoComisiones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo5.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="predio_1440x810_wmk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\predio_1440x810_wmk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoCategorias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoCategorias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ae1df7c238e6d190de5247a381cc719d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ae1df7c238e6d190de5247a381cc719d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoPrincipal5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoPrincipal5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pexels-tembela-bohle-1884574 nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-tembela-bohle-1884574 nuevo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoPrincipal2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoPrincipal2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoPrincipal4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoPrincipal4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InShot_20220928_153050115" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InShot_20220928_153050115.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoPrincipal3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoPrincipal3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoPartidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoPartidos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoCanchas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoCanchas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoCargos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoCargos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo3.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconoPuestos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoPuestos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pexels-tembela-bohle-1884576 ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-tembela-bohle-1884576 ok.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
