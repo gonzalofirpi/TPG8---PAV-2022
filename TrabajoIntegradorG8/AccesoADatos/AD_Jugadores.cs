@@ -48,7 +48,42 @@ namespace TrabajoIntegradorG8.AccesoADatos
             }
         }
 
-       
+        public static DataTable obtenerJgadoresxSocioxClub()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+
+            try
+            {
+
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT ID_JUGADOR, clu.NOMBRE as CLUB, soc.NOMBRE as SOCIO\r\n  FROM [BD3K3G08_2022].[dbo].JUGADORES jug\r\n  JOIN [BD3K3G08_2022].[dbo].SOCIOS soc ON jug.ID_SOCIO=soc.ID_SOCIO\r\n  JOIN [BD3K3G08_2022].[dbo].CLUBES clu ON jug.ID_CLUB=clu.ID_CLUB";
+
+                cmd.Parameters.Clear();
+
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+
         public static bool agregarJugadorBD(Jugador jugador)
         {
 
@@ -200,5 +235,6 @@ namespace TrabajoIntegradorG8.AccesoADatos
             }
 
         }
+
     }
 }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,6 +30,8 @@ namespace TrabajoIntegradorG8
 
             try
             {
+                cargarCombClubes();
+                cargarCombSocios();
                 cargarGrilla();
 
             }
@@ -40,10 +43,10 @@ namespace TrabajoIntegradorG8
 
         private void limpiarCampos()
         {
-            txtIdSocio.Text = "";
-            txtIdClub.Text = "";
+            cmbSocio.SelectedIndex= -1;
+            cmbClub.SelectedIndex= -1;
 
-            txtIdSocio.Focus();
+            cmbSocio.Focus();
             this.idJugador = 0;
 
             btnBorrarJugador.Enabled = false;
@@ -55,12 +58,46 @@ namespace TrabajoIntegradorG8
             limpiarCampos();
         }
 
+        private void cargarCombClubes()
+        {
+            try
+            {
+
+                cmbClub.DataSource = AD_Clubes.obtenerClubes();
+                cmbClub.DisplayMember = "NOMBRE";
+                cmbClub.ValueMember = "ID_CLUB";
+                cmbClub.SelectedIndex = -1;
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        private void cargarCombSocios()
+        {
+            try
+            {
+
+                cmbSocio.DataSource = AD_Socios.obtenerSocios();
+                cmbSocio.DisplayMember = "NOMBRE";
+                cmbSocio.ValueMember = "ID_SOCIO";
+                cmbSocio.SelectedIndex = -1;
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
 
         private void cargarGrilla()
         {
             try
             {
-                grdJugadores.DataSource = AD_Jugadores.obtenerListadoJugadores();
+                grdJugadores.DataSource = AD_Jugadores.obtenerJgadoresxSocioxClub();
             }
             catch (Exception ex)
             {
@@ -71,8 +108,7 @@ namespace TrabajoIntegradorG8
         private Jugador obtenerDatosJugador()
         {
             Jugador jugador = new Jugador();
-
-            if (txtIdSocio.Text.Equals("") || txtIdClub.Text.Equals(""))
+            if (cmbSocio.SelectedIndex == -1 || cmbClub.SelectedIndex == -1)
             {
                 return null;
             }
@@ -80,8 +116,8 @@ namespace TrabajoIntegradorG8
             {
                 try
                 {
-                    jugador.IdSocio = int.Parse(txtIdSocio.Text);
-                    jugador.IdClub = int.Parse(txtIdClub.Text);
+                    jugador.IdSocio = int.Parse(cmbSocio.SelectedValue.ToString());
+                    jugador.IdClub = int.Parse(cmbClub.SelectedValue.ToString());
                     return jugador;
                 }
                 catch (Exception ex)
@@ -128,8 +164,8 @@ namespace TrabajoIntegradorG8
         
         private void cargarCampos(Jugador jugador)
         {
-            txtIdSocio.Text = jugador.IdSocio.ToString();
-            txtIdClub.Text = jugador.IdClub.ToString();
+            cmbSocio.SelectedValue= jugador.IdSocio;
+            cmbClub.SelectedValue = jugador.IdClub;
 
             this.idJugador = jugador.IdJugador;
         }
@@ -211,6 +247,31 @@ namespace TrabajoIntegradorG8
             }
 
 
+
+        }
+
+        private void txtIdClub_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblIdClub_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblIdSocio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbClub_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbSocio_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -32,7 +32,7 @@ namespace TrabajoIntegradorG8.AccesoADatos
                 DataTable tabla = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(tabla);
-
+                cn.Close();
                 return tabla;
             }
             catch (Exception ex)
@@ -41,7 +41,7 @@ namespace TrabajoIntegradorG8.AccesoADatos
             }
             finally
             {
-                cn.Close();
+                //cn.Close();
             }
         }
 
@@ -59,6 +59,41 @@ namespace TrabajoIntegradorG8.AccesoADatos
                 cmd.Parameters.Clear();
 
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        public static DataTable obtenerClubes()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+
+            try
+            {
+
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM CLUBES";
+
+                cmd.Parameters.Clear();
+
+                cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
 
                 cn.Open();

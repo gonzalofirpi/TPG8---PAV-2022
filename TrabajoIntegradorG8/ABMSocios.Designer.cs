@@ -45,7 +45,6 @@ namespace TrabajoIntegradorG8
             this.btnActualizarSocio = new System.Windows.Forms.Button();
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.grdSocios = new System.Windows.Forms.DataGridView();
-            this.btnBorrarSocio = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,6 +52,7 @@ namespace TrabajoIntegradorG8
             this.calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nroCalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.barrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBorrarSocio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdSocios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,9 +61,10 @@ namespace TrabajoIntegradorG8
             this.lblSocios.AutoSize = true;
             this.lblSocios.BackColor = System.Drawing.Color.Transparent;
             this.lblSocios.Font = new System.Drawing.Font("Impact", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSocios.Location = new System.Drawing.Point(176, 24);
+            this.lblSocios.Location = new System.Drawing.Point(264, 37);
+            this.lblSocios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSocios.Name = "lblSocios";
-            this.lblSocios.Size = new System.Drawing.Size(128, 43);
+            this.lblSocios.Size = new System.Drawing.Size(190, 65);
             this.lblSocios.TabIndex = 6;
             this.lblSocios.Text = "SOCIOS";
             // 
@@ -72,9 +73,10 @@ namespace TrabajoIntegradorG8
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(104, 110);
+            this.lblNombre.Location = new System.Drawing.Point(156, 169);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(73, 20);
+            this.lblNombre.Size = new System.Drawing.Size(113, 29);
             this.lblNombre.TabIndex = 7;
             this.lblNombre.Text = "Nombre: ";
             // 
@@ -83,9 +85,10 @@ namespace TrabajoIntegradorG8
             this.lblApellido.AutoSize = true;
             this.lblApellido.BackColor = System.Drawing.Color.Transparent;
             this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellido.Location = new System.Drawing.Point(100, 155);
+            this.lblApellido.Location = new System.Drawing.Point(150, 238);
+            this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(73, 20);
+            this.lblApellido.Size = new System.Drawing.Size(114, 29);
             this.lblApellido.TabIndex = 8;
             this.lblApellido.Text = "Apellido: ";
             // 
@@ -94,9 +97,10 @@ namespace TrabajoIntegradorG8
             this.lblFechaNacimiento.AutoSize = true;
             this.lblFechaNacimiento.BackColor = System.Drawing.Color.Transparent;
             this.lblFechaNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(8, 243);
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(12, 374);
+            this.lblFechaNacimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFechaNacimiento.Name = "lblFechaNacimiento";
-            this.lblFechaNacimiento.Size = new System.Drawing.Size(165, 20);
+            this.lblFechaNacimiento.Size = new System.Drawing.Size(249, 29);
             this.lblFechaNacimiento.TabIndex = 10;
             this.lblFechaNacimiento.Text = "Fecha de nacimiento: ";
             // 
@@ -105,9 +109,10 @@ namespace TrabajoIntegradorG8
             this.lblBarrio.AutoSize = true;
             this.lblBarrio.BackColor = System.Drawing.Color.Transparent;
             this.lblBarrio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBarrio.Location = new System.Drawing.Point(114, 327);
+            this.lblBarrio.Location = new System.Drawing.Point(171, 503);
+            this.lblBarrio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBarrio.Name = "lblBarrio";
-            this.lblBarrio.Size = new System.Drawing.Size(59, 20);
+            this.lblBarrio.Size = new System.Drawing.Size(90, 29);
             this.lblBarrio.TabIndex = 9;
             this.lblBarrio.Text = "Barrio: ";
             // 
@@ -116,9 +121,10 @@ namespace TrabajoIntegradorG8
             this.lblNroCalle.AutoSize = true;
             this.lblNroCalle.BackColor = System.Drawing.Color.Transparent;
             this.lblNroCalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNroCalle.Location = new System.Drawing.Point(42, 282);
+            this.lblNroCalle.Location = new System.Drawing.Point(63, 434);
+            this.lblNroCalle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroCalle.Name = "lblNroCalle";
-            this.lblNroCalle.Size = new System.Drawing.Size(131, 20);
+            this.lblNroCalle.Size = new System.Drawing.Size(203, 29);
             this.lblNroCalle.TabIndex = 11;
             this.lblNroCalle.Text = "Número de calle: ";
             // 
@@ -127,71 +133,81 @@ namespace TrabajoIntegradorG8
             this.lblCalle.AutoSize = true;
             this.lblCalle.BackColor = System.Drawing.Color.Transparent;
             this.lblCalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCalle.Location = new System.Drawing.Point(121, 201);
+            this.lblCalle.Location = new System.Drawing.Point(182, 309);
+            this.lblCalle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCalle.Name = "lblCalle";
-            this.lblCalle.Size = new System.Drawing.Size(52, 20);
+            this.lblCalle.Size = new System.Drawing.Size(81, 29);
             this.lblCalle.TabIndex = 12;
             this.lblCalle.Text = "Calle: ";
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(183, 104);
+            this.txtNombre.Location = new System.Drawing.Point(274, 160);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(124, 26);
+            this.txtNombre.Size = new System.Drawing.Size(184, 35);
             this.txtNombre.TabIndex = 1;
             // 
             // txtApellido
             // 
             this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellido.Location = new System.Drawing.Point(183, 149);
+            this.txtApellido.Location = new System.Drawing.Point(274, 229);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(124, 26);
+            this.txtApellido.Size = new System.Drawing.Size(184, 35);
             this.txtApellido.TabIndex = 3;
             // 
             // txtFechaNacimiento
             // 
             this.txtFechaNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFechaNacimiento.Location = new System.Drawing.Point(184, 237);
+            this.txtFechaNacimiento.Location = new System.Drawing.Point(276, 365);
+            this.txtFechaNacimiento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtFechaNacimiento.Mask = "00/00/0000";
             this.txtFechaNacimiento.Name = "txtFechaNacimiento";
-            this.txtFechaNacimiento.Size = new System.Drawing.Size(93, 26);
+            this.txtFechaNacimiento.Size = new System.Drawing.Size(138, 35);
             this.txtFechaNacimiento.TabIndex = 6;
             this.txtFechaNacimiento.ValidatingType = typeof(System.DateTime);
             // 
             // txtCalle
             // 
             this.txtCalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCalle.Location = new System.Drawing.Point(183, 195);
+            this.txtCalle.Location = new System.Drawing.Point(274, 300);
+            this.txtCalle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCalle.Name = "txtCalle";
-            this.txtCalle.Size = new System.Drawing.Size(136, 26);
+            this.txtCalle.Size = new System.Drawing.Size(202, 35);
             this.txtCalle.TabIndex = 3;
             // 
             // txtNroCalle
             // 
             this.txtNroCalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNroCalle.Location = new System.Drawing.Point(184, 276);
+            this.txtNroCalle.Location = new System.Drawing.Point(276, 425);
+            this.txtNroCalle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNroCalle.Mask = "99999";
             this.txtNroCalle.Name = "txtNroCalle";
-            this.txtNroCalle.Size = new System.Drawing.Size(52, 26);
+            this.txtNroCalle.Size = new System.Drawing.Size(76, 35);
             this.txtNroCalle.TabIndex = 4;
             this.txtNroCalle.ValidatingType = typeof(int);
             // 
             // cmbBarrios
             // 
+            this.cmbBarrios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBarrios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbBarrios.FormattingEnabled = true;
-            this.cmbBarrios.Location = new System.Drawing.Point(184, 319);
+            this.cmbBarrios.Location = new System.Drawing.Point(276, 491);
+            this.cmbBarrios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbBarrios.Name = "cmbBarrios";
-            this.cmbBarrios.Size = new System.Drawing.Size(121, 28);
+            this.cmbBarrios.Size = new System.Drawing.Size(180, 37);
             this.cmbBarrios.TabIndex = 5;
+            this.cmbBarrios.SelectedIndexChanged += new System.EventHandler(this.cmbBarrios_SelectedIndexChanged);
             // 
             // btnGuardarSocio
             // 
             this.btnGuardarSocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarSocio.Location = new System.Drawing.Point(401, 391);
+            this.btnGuardarSocio.Location = new System.Drawing.Point(602, 602);
+            this.btnGuardarSocio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGuardarSocio.Name = "btnGuardarSocio";
-            this.btnGuardarSocio.Size = new System.Drawing.Size(108, 48);
+            this.btnGuardarSocio.Size = new System.Drawing.Size(162, 74);
             this.btnGuardarSocio.TabIndex = 7;
             this.btnGuardarSocio.Text = "Guardar socio";
             this.btnGuardarSocio.UseVisualStyleBackColor = true;
@@ -200,9 +216,10 @@ namespace TrabajoIntegradorG8
             // btnActualizarSocio
             // 
             this.btnActualizarSocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarSocio.Location = new System.Drawing.Point(138, 391);
+            this.btnActualizarSocio.Location = new System.Drawing.Point(207, 602);
+            this.btnActualizarSocio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnActualizarSocio.Name = "btnActualizarSocio";
-            this.btnActualizarSocio.Size = new System.Drawing.Size(108, 48);
+            this.btnActualizarSocio.Size = new System.Drawing.Size(162, 74);
             this.btnActualizarSocio.TabIndex = 8;
             this.btnActualizarSocio.Text = "Actualizar socio";
             this.btnActualizarSocio.UseVisualStyleBackColor = true;
@@ -211,9 +228,10 @@ namespace TrabajoIntegradorG8
             // btnLimpiarCampos
             // 
             this.btnLimpiarCampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarCampos.Location = new System.Drawing.Point(12, 391);
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(18, 602);
+            this.btnLimpiarCampos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
-            this.btnLimpiarCampos.Size = new System.Drawing.Size(108, 48);
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(162, 74);
             this.btnLimpiarCampos.TabIndex = 9;
             this.btnLimpiarCampos.Text = "Limpiar campos";
             this.btnLimpiarCampos.UseVisualStyleBackColor = true;
@@ -231,28 +249,20 @@ namespace TrabajoIntegradorG8
             this.calle,
             this.nroCalle,
             this.barrio});
-            this.grdSocios.Location = new System.Drawing.Point(367, 104);
+            this.grdSocios.Location = new System.Drawing.Point(525, 160);
+            this.grdSocios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grdSocios.Name = "grdSocios";
             this.grdSocios.ReadOnly = true;
-            this.grdSocios.Size = new System.Drawing.Size(421, 255);
+            this.grdSocios.RowHeadersWidth = 62;
+            this.grdSocios.Size = new System.Drawing.Size(632, 392);
             this.grdSocios.TabIndex = 15;
             this.grdSocios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdSocios_CellClick);
-            // 
-            // btnBorrarSocio
-            // 
-            this.btnBorrarSocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrarSocio.Location = new System.Drawing.Point(269, 391);
-            this.btnBorrarSocio.Name = "btnBorrarSocio";
-            this.btnBorrarSocio.Size = new System.Drawing.Size(108, 48);
-            this.btnBorrarSocio.TabIndex = 18;
-            this.btnBorrarSocio.Text = "Borrar socio";
-            this.btnBorrarSocio.UseVisualStyleBackColor = true;
-            this.btnBorrarSocio.Click += new System.EventHandler(this.btnBorrarSocio_Click);
             // 
             // id
             // 
             this.id.DataPropertyName = "ID_SOCIO";
             this.id.HeaderText = "ID";
+            this.id.MinimumWidth = 8;
             this.id.Name = "id";
             this.id.ReadOnly = true;
             this.id.Width = 35;
@@ -261,49 +271,73 @@ namespace TrabajoIntegradorG8
             // 
             this.nombre.DataPropertyName = "NOMBRE";
             this.nombre.HeaderText = "Nombre";
+            this.nombre.MinimumWidth = 8;
             this.nombre.Name = "nombre";
             this.nombre.ReadOnly = true;
+            this.nombre.Width = 150;
             // 
             // apellido
             // 
             this.apellido.DataPropertyName = "APELLIDO";
             this.apellido.HeaderText = "Apellido";
+            this.apellido.MinimumWidth = 8;
             this.apellido.Name = "apellido";
             this.apellido.ReadOnly = true;
+            this.apellido.Width = 150;
             // 
             // fechaNacimiento
             // 
             this.fechaNacimiento.DataPropertyName = "FECHA_NACIMIENTO";
             this.fechaNacimiento.HeaderText = "Fecha Nacimiento";
+            this.fechaNacimiento.MinimumWidth = 8;
             this.fechaNacimiento.Name = "fechaNacimiento";
             this.fechaNacimiento.ReadOnly = true;
+            this.fechaNacimiento.Width = 150;
             // 
             // calle
             // 
             this.calle.DataPropertyName = "CALLE";
             this.calle.HeaderText = "Calle";
+            this.calle.MinimumWidth = 8;
             this.calle.Name = "calle";
             this.calle.ReadOnly = true;
+            this.calle.Width = 150;
             // 
             // nroCalle
             // 
             this.nroCalle.DataPropertyName = "NRO_CALLE";
             this.nroCalle.HeaderText = "Numero";
+            this.nroCalle.MinimumWidth = 8;
             this.nroCalle.Name = "nroCalle";
             this.nroCalle.ReadOnly = true;
+            this.nroCalle.Width = 150;
             // 
             // barrio
             // 
             this.barrio.DataPropertyName = "BARRIO";
             this.barrio.HeaderText = "Barrio";
+            this.barrio.MinimumWidth = 8;
             this.barrio.Name = "barrio";
             this.barrio.ReadOnly = true;
+            this.barrio.Width = 150;
+            // 
+            // btnBorrarSocio
+            // 
+            this.btnBorrarSocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrarSocio.Location = new System.Drawing.Point(404, 602);
+            this.btnBorrarSocio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBorrarSocio.Name = "btnBorrarSocio";
+            this.btnBorrarSocio.Size = new System.Drawing.Size(162, 74);
+            this.btnBorrarSocio.TabIndex = 18;
+            this.btnBorrarSocio.Text = "Borrar socio";
+            this.btnBorrarSocio.UseVisualStyleBackColor = true;
+            this.btnBorrarSocio.Click += new System.EventHandler(this.btnBorrarSocio_Click);
             // 
             // frmSocios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 469);
+            this.ClientSize = new System.Drawing.Size(1200, 722);
             this.Controls.Add(this.btnBorrarSocio);
             this.Controls.Add(this.grdSocios);
             this.Controls.Add(this.btnLimpiarCampos);
@@ -322,6 +356,7 @@ namespace TrabajoIntegradorG8
             this.Controls.Add(this.lblCalle);
             this.Controls.Add(this.lblNroCalle);
             this.Controls.Add(this.lblBarrio);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmSocios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Socios";

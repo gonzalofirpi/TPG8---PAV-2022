@@ -60,9 +60,10 @@
             this.lblClubes.AutoSize = true;
             this.lblClubes.BackColor = System.Drawing.Color.Transparent;
             this.lblClubes.Font = new System.Drawing.Font("Impact", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClubes.Location = new System.Drawing.Point(295, 36);
+            this.lblClubes.Location = new System.Drawing.Point(442, 55);
+            this.lblClubes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClubes.Name = "lblClubes";
-            this.lblClubes.Size = new System.Drawing.Size(128, 43);
+            this.lblClubes.Size = new System.Drawing.Size(190, 65);
             this.lblClubes.TabIndex = 6;
             this.lblClubes.Text = "CLUBES";
             // 
@@ -71,9 +72,10 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(104, 110);
+            this.lblNombre.Location = new System.Drawing.Point(156, 169);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(73, 20);
+            this.lblNombre.Size = new System.Drawing.Size(113, 29);
             this.lblNombre.TabIndex = 7;
             this.lblNombre.Text = "Nombre: ";
             // 
@@ -82,9 +84,10 @@
             this.lblNroCuit.AutoSize = true;
             this.lblNroCuit.BackColor = System.Drawing.Color.Transparent;
             this.lblNroCuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNroCuit.Location = new System.Drawing.Point(41, 155);
+            this.lblNroCuit.Location = new System.Drawing.Point(62, 238);
+            this.lblNroCuit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroCuit.Name = "lblNroCuit";
-            this.lblNroCuit.Size = new System.Drawing.Size(136, 20);
+            this.lblNroCuit.Size = new System.Drawing.Size(208, 29);
             this.lblNroCuit.TabIndex = 8;
             this.lblNroCuit.Text = "Número de CUIT: ";
             // 
@@ -93,9 +96,10 @@
             this.lblBarrio.AutoSize = true;
             this.lblBarrio.BackColor = System.Drawing.Color.Transparent;
             this.lblBarrio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBarrio.Location = new System.Drawing.Point(118, 292);
+            this.lblBarrio.Location = new System.Drawing.Point(177, 449);
+            this.lblBarrio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBarrio.Name = "lblBarrio";
-            this.lblBarrio.Size = new System.Drawing.Size(59, 20);
+            this.lblBarrio.Size = new System.Drawing.Size(90, 29);
             this.lblBarrio.TabIndex = 9;
             this.lblBarrio.Text = "Barrio: ";
             // 
@@ -104,9 +108,10 @@
             this.lblFechaFundacion.AutoSize = true;
             this.lblFechaFundacion.BackColor = System.Drawing.Color.Transparent;
             this.lblFechaFundacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaFundacion.Location = new System.Drawing.Point(41, 339);
+            this.lblFechaFundacion.Location = new System.Drawing.Point(62, 522);
+            this.lblFechaFundacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFechaFundacion.Name = "lblFechaFundacion";
-            this.lblFechaFundacion.Size = new System.Drawing.Size(136, 20);
+            this.lblFechaFundacion.Size = new System.Drawing.Size(202, 29);
             this.lblFechaFundacion.TabIndex = 10;
             this.lblFechaFundacion.Text = "Fecha fundación: ";
             // 
@@ -115,9 +120,10 @@
             this.lblNroCalle.AutoSize = true;
             this.lblNroCalle.BackColor = System.Drawing.Color.Transparent;
             this.lblNroCalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNroCalle.Location = new System.Drawing.Point(46, 248);
+            this.lblNroCalle.Location = new System.Drawing.Point(69, 382);
+            this.lblNroCalle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroCalle.Name = "lblNroCalle";
-            this.lblNroCalle.Size = new System.Drawing.Size(131, 20);
+            this.lblNroCalle.Size = new System.Drawing.Size(203, 29);
             this.lblNroCalle.TabIndex = 11;
             this.lblNroCalle.Text = "Número de calle: ";
             // 
@@ -126,35 +132,39 @@
             this.lblCalle.AutoSize = true;
             this.lblCalle.BackColor = System.Drawing.Color.Transparent;
             this.lblCalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCalle.Location = new System.Drawing.Point(125, 201);
+            this.lblCalle.Location = new System.Drawing.Point(188, 309);
+            this.lblCalle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCalle.Name = "lblCalle";
-            this.lblCalle.Size = new System.Drawing.Size(52, 20);
+            this.lblCalle.Size = new System.Drawing.Size(81, 29);
             this.lblCalle.TabIndex = 12;
             this.lblCalle.Text = "Calle: ";
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(183, 104);
+            this.txtNombre.Location = new System.Drawing.Point(274, 160);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(124, 26);
+            this.txtNombre.Size = new System.Drawing.Size(184, 35);
             this.txtNombre.TabIndex = 1;
             // 
             // txtCalle
             // 
             this.txtCalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCalle.Location = new System.Drawing.Point(183, 195);
+            this.txtCalle.Location = new System.Drawing.Point(274, 300);
+            this.txtCalle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCalle.Name = "txtCalle";
-            this.txtCalle.Size = new System.Drawing.Size(136, 26);
+            this.txtCalle.Size = new System.Drawing.Size(202, 35);
             this.txtCalle.TabIndex = 3;
             // 
             // txtNroCalle
             // 
             this.txtNroCalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNroCalle.Location = new System.Drawing.Point(183, 242);
+            this.txtNroCalle.Location = new System.Drawing.Point(274, 372);
+            this.txtNroCalle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNroCalle.Mask = "99999";
             this.txtNroCalle.Name = "txtNroCalle";
-            this.txtNroCalle.Size = new System.Drawing.Size(52, 26);
+            this.txtNroCalle.Size = new System.Drawing.Size(76, 35);
             this.txtNroCalle.TabIndex = 4;
             this.txtNroCalle.ValidatingType = typeof(int);
             // 
@@ -162,27 +172,31 @@
             // 
             this.cmbBarrios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbBarrios.FormattingEnabled = true;
-            this.cmbBarrios.Location = new System.Drawing.Point(183, 284);
+            this.cmbBarrios.Location = new System.Drawing.Point(274, 437);
+            this.cmbBarrios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbBarrios.Name = "cmbBarrios";
-            this.cmbBarrios.Size = new System.Drawing.Size(121, 28);
+            this.cmbBarrios.Size = new System.Drawing.Size(180, 37);
             this.cmbBarrios.TabIndex = 5;
+            this.cmbBarrios.SelectedIndexChanged += new System.EventHandler(this.cmbBarrios_SelectedIndexChanged);
             // 
             // txtFechaFundacion
             // 
             this.txtFechaFundacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFechaFundacion.Location = new System.Drawing.Point(183, 333);
+            this.txtFechaFundacion.Location = new System.Drawing.Point(274, 512);
+            this.txtFechaFundacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtFechaFundacion.Mask = "00/00/0000";
             this.txtFechaFundacion.Name = "txtFechaFundacion";
-            this.txtFechaFundacion.Size = new System.Drawing.Size(93, 26);
+            this.txtFechaFundacion.Size = new System.Drawing.Size(138, 35);
             this.txtFechaFundacion.TabIndex = 6;
             this.txtFechaFundacion.ValidatingType = typeof(System.DateTime);
             // 
             // btnGuardarClub
             // 
             this.btnGuardarClub.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarClub.Location = new System.Drawing.Point(401, 391);
+            this.btnGuardarClub.Location = new System.Drawing.Point(602, 602);
+            this.btnGuardarClub.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGuardarClub.Name = "btnGuardarClub";
-            this.btnGuardarClub.Size = new System.Drawing.Size(108, 48);
+            this.btnGuardarClub.Size = new System.Drawing.Size(162, 74);
             this.btnGuardarClub.TabIndex = 7;
             this.btnGuardarClub.Text = "Guardar club";
             this.btnGuardarClub.UseVisualStyleBackColor = true;
@@ -191,9 +205,10 @@
             // btnActualizarClub
             // 
             this.btnActualizarClub.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarClub.Location = new System.Drawing.Point(138, 391);
+            this.btnActualizarClub.Location = new System.Drawing.Point(207, 602);
+            this.btnActualizarClub.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnActualizarClub.Name = "btnActualizarClub";
-            this.btnActualizarClub.Size = new System.Drawing.Size(108, 48);
+            this.btnActualizarClub.Size = new System.Drawing.Size(162, 74);
             this.btnActualizarClub.TabIndex = 8;
             this.btnActualizarClub.Text = "Actualizar club";
             this.btnActualizarClub.UseVisualStyleBackColor = true;
@@ -202,9 +217,10 @@
             // btnLimpiarCampos
             // 
             this.btnLimpiarCampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarCampos.Location = new System.Drawing.Point(12, 391);
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(18, 602);
+            this.btnLimpiarCampos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
-            this.btnLimpiarCampos.Size = new System.Drawing.Size(108, 48);
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(162, 74);
             this.btnLimpiarCampos.TabIndex = 9;
             this.btnLimpiarCampos.Text = "Limpiar campos";
             this.btnLimpiarCampos.UseVisualStyleBackColor = true;
@@ -221,10 +237,12 @@
             this.nroCalle,
             this.barrio,
             this.fechaFundacion});
-            this.grdClubes.Location = new System.Drawing.Point(367, 104);
+            this.grdClubes.Location = new System.Drawing.Point(550, 160);
+            this.grdClubes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grdClubes.Name = "grdClubes";
             this.grdClubes.ReadOnly = true;
-            this.grdClubes.Size = new System.Drawing.Size(421, 255);
+            this.grdClubes.RowHeadersWidth = 62;
+            this.grdClubes.Size = new System.Drawing.Size(632, 392);
             this.grdClubes.TabIndex = 15;
             this.grdClubes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdClubes_CellClick);
             // 
@@ -232,6 +250,7 @@
             // 
             this.nombre.DataPropertyName = "NOMBRE";
             this.nombre.HeaderText = "Nombre";
+            this.nombre.MinimumWidth = 8;
             this.nombre.Name = "nombre";
             this.nombre.ReadOnly = true;
             this.nombre.Width = 65;
@@ -240,6 +259,7 @@
             // 
             this.nroCuit.DataPropertyName = "NROCUIT";
             this.nroCuit.HeaderText = "CUIT";
+            this.nroCuit.MinimumWidth = 8;
             this.nroCuit.Name = "nroCuit";
             this.nroCuit.ReadOnly = true;
             this.nroCuit.Width = 75;
@@ -248,13 +268,16 @@
             // 
             this.calle.DataPropertyName = "CALLE";
             this.calle.HeaderText = "Calle";
+            this.calle.MinimumWidth = 8;
             this.calle.Name = "calle";
             this.calle.ReadOnly = true;
+            this.calle.Width = 150;
             // 
             // nroCalle
             // 
             this.nroCalle.DataPropertyName = "NRO_CALLE";
             this.nroCalle.HeaderText = "Numero";
+            this.nroCalle.MinimumWidth = 8;
             this.nroCalle.Name = "nroCalle";
             this.nroCalle.ReadOnly = true;
             this.nroCalle.Width = 55;
@@ -263,6 +286,7 @@
             // 
             this.barrio.DataPropertyName = "BARRIO";
             this.barrio.HeaderText = "Barrio";
+            this.barrio.MinimumWidth = 8;
             this.barrio.Name = "barrio";
             this.barrio.ReadOnly = true;
             this.barrio.Width = 60;
@@ -271,6 +295,7 @@
             // 
             this.fechaFundacion.DataPropertyName = "FECHA_FUNDACION";
             this.fechaFundacion.HeaderText = "Fecha Fundacion";
+            this.fechaFundacion.MinimumWidth = 8;
             this.fechaFundacion.Name = "fechaFundacion";
             this.fechaFundacion.ReadOnly = true;
             this.fechaFundacion.Width = 75;
@@ -278,19 +303,21 @@
             // txtNroCuit
             // 
             this.txtNroCuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNroCuit.Location = new System.Drawing.Point(184, 149);
+            this.txtNroCuit.Location = new System.Drawing.Point(276, 229);
+            this.txtNroCuit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNroCuit.Mask = "99999999999";
             this.txtNroCuit.Name = "txtNroCuit";
-            this.txtNroCuit.Size = new System.Drawing.Size(108, 26);
+            this.txtNroCuit.Size = new System.Drawing.Size(160, 35);
             this.txtNroCuit.TabIndex = 2;
             this.txtNroCuit.ValidatingType = typeof(int);
             // 
             // btnBorrarClub
             // 
             this.btnBorrarClub.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrarClub.Location = new System.Drawing.Point(269, 391);
+            this.btnBorrarClub.Location = new System.Drawing.Point(404, 602);
+            this.btnBorrarClub.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBorrarClub.Name = "btnBorrarClub";
-            this.btnBorrarClub.Size = new System.Drawing.Size(108, 48);
+            this.btnBorrarClub.Size = new System.Drawing.Size(162, 74);
             this.btnBorrarClub.TabIndex = 16;
             this.btnBorrarClub.Text = "Borrar club";
             this.btnBorrarClub.UseVisualStyleBackColor = true;
@@ -298,10 +325,10 @@
             // 
             // frmClubes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(800, 469);
+            this.ClientSize = new System.Drawing.Size(1200, 722);
             this.Controls.Add(this.btnBorrarClub);
             this.Controls.Add(this.txtNroCuit);
             this.Controls.Add(this.grdClubes);
@@ -320,6 +347,7 @@
             this.Controls.Add(this.lblNroCuit);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblClubes);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmClubes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clubes";

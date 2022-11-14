@@ -257,6 +257,11 @@ namespace TrabajoIntegradorG8
             }
 
         }
+
+        private void cmbBarrios_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
