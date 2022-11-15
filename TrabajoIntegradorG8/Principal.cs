@@ -141,12 +141,6 @@ namespace TrabajoIntegradorG8
             ventana.ShowDialog();
         }
 
-        private void estadisticaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            EstadisticaSocio ventana = new EstadisticaSocio();
-            ventana.ShowDialog();        
-        }
-
         private void estadisticaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             EstadisticaPartidocs ventana = new EstadisticaPartidocs();
@@ -171,7 +165,17 @@ namespace TrabajoIntegradorG8
             ventana.ShowDialog();
             
         }
-    }
 
-       
+        private void cantidadDeSociosPorAñoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EstadisticaSocio ventana = new EstadisticaSocio();
+            ventana.ShowDialog();
+        }
+
+        private void sociosEnLaUltimaDecadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EstadisticaSociosDecada ventana = new EstadisticaSociosDecada();
+            ventana.ShowDialog();
+        }
+    }       
 }

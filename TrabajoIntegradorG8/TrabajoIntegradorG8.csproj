@@ -93,6 +93,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD3K3G08_2022DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BD3K3G08_2022DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD3K3G08_2022DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DatosEstadistica.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -113,6 +118,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DatosEstadisticaPromedioEdadPorCategoriaUltimosCincoAnios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EstadisticaSociosDecada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstadisticaSociosDecada.Designer.cs">
+      <DependentUpon>EstadisticaSociosDecada.cs</DependentUpon>
     </Compile>
     <Compile Include="Estadisticas\DataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -267,6 +278,11 @@
     <Compile Include="Reportes\ReporteSocio.Designer.cs">
       <DependentUpon>ReporteSocio.cs</DependentUpon>
     </Compile>
+    <Compile Include="SociosDecada.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SociosDecada.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="TipoObservaciones\ABMTipoObservaciones.cs">
       <SubType>Form</SubType>
@@ -285,6 +301,10 @@
     <EmbeddedResource Include="EstadisticaGolesClub.rdlc" />
     <EmbeddedResource Include="EstadisticaPartidosConMenosGoles.rdlc" />
     <EmbeddedResource Include="EstadisticaPromedioEdadPorCategoriaUltimosCincoAnios.rdlc" />
+    <EmbeddedResource Include="EstadisticaSociosDeDecada.rdlc" />
+    <EmbeddedResource Include="EstadisticaSociosDecada.resx">
+      <DependentUpon>EstadisticaSociosDecada.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EstadisticaTopGoleadores.rdlc" />
     <EmbeddedResource Include="Estadisticas\EstadisticaPartidocs.resx">
       <DependentUpon>EstadisticaPartidocs.cs</DependentUpon>
@@ -410,6 +430,17 @@
     <None Include="BD3K3G08_2022DataSet.xss">
       <DependentUpon>BD3K3G08_2022DataSet.xsd</DependentUpon>
     </None>
+    <None Include="BD3K3G08_2022DataSet1.xsc">
+      <DependentUpon>BD3K3G08_2022DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BD3K3G08_2022DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD3K3G08_2022DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD3K3G08_2022DataSet1.xss">
+      <DependentUpon>BD3K3G08_2022DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="DatosEstadistica.xsc">
       <DependentUpon>DatosEstadistica.xsd</DependentUpon>
     </None>
@@ -486,6 +517,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SociosDecada.xsc">
+      <DependentUpon>SociosDecada.xsd</DependentUpon>
+    </None>
+    <None Include="SociosDecada.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SociosDecada.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SociosDecada.xss">
+      <DependentUpon>SociosDecada.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

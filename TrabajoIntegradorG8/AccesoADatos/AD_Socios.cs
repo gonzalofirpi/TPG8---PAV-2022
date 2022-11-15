@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TrabajoIntegradorG8.Entidades;
 using System.Runtime.CompilerServices;
+using System.Net.NetworkInformation;
 
 namespace TrabajoIntegradorG8.AccesoADatos
 {
@@ -459,9 +460,38 @@ namespace TrabajoIntegradorG8.AccesoADatos
             }
         }
 
+        public static DataTable SociosDeLaUltimaDecada()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
 
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "select  YEAR(FECHA_ALTA) AS AÑO, COUNT (ID_SOCIO) AS CANTIDAD FROM SOCIOS WHERE ((YEAR(GETDATE()) - YEAR(FECHA_ALTA) >= 0)) GROUP BY YEAR(FECHA_ALTA)";
 
+                cmd.Parameters.Clear();
 
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
 
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
     }
 }
