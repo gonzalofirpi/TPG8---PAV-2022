@@ -119,6 +119,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatosEstadisticaPromedioEdadPorCategoriaUltimosCincoAnios.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EstadisticaGolesYClub.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstadisticaGolesYClub.xsd</DependentUpon>
+    </Compile>
     <Compile Include="EstadisticaSociosDecada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,11 +155,28 @@
     <Compile Include="Estadisticas\EstadisticaSocio.Designer.cs">
       <DependentUpon>EstadisticaSocio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ReporteComisiones.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ReporteComisiones.Designer.cs">
       <DependentUpon>ReporteComisiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteEstadisticaFastGol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEstadisticaFastGol.Designer.cs">
+      <DependentUpon>ReporteEstadisticaFastGol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteEstadisticaGolClub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEstadisticaGolClub.Designer.cs">
+      <DependentUpon>ReporteEstadisticaGolClub.cs</DependentUpon>
     </Compile>
     <Compile Include="ReporteEstadisticaPartidosConMenosGoles.cs">
       <SubType>Form</SubType>
@@ -167,6 +189,12 @@
     </Compile>
     <Compile Include="ReporteEstadisticaPromedioEdadCategoriaUltimosCincoAnios.Designer.cs">
       <DependentUpon>ReporteEstadisticaPromedioEdadCategoriaUltimosCincoAnios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteListadoClubes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteListadoClubes.Designer.cs">
+      <DependentUpon>ReporteListadoClubes.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -314,6 +342,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Estadisticas\ReportEstadistica.rdlc" />
     <EmbeddedResource Include="Estadisticas\ReportEstadisticaPartido.rdlc" />
+    <EmbeddedResource Include="EstatdisticaFastGol.rdlc" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -383,6 +412,12 @@
     <EmbeddedResource Include="ReporteEstadisticaExpCate.resx">
       <DependentUpon>ReporteEstadisticaExpCate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEstadisticaFastGol.resx">
+      <DependentUpon>ReporteEstadisticaFastGol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEstadisticaGolClub.resx">
+      <DependentUpon>ReporteEstadisticaGolClub.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReporteEstadisticaGolesClub.resx">
       <DependentUpon>ReporteEstadisticaGolesClub.cs</DependentUpon>
     </EmbeddedResource>
@@ -398,6 +433,9 @@
     <EmbeddedResource Include="ReporteListadoCanchas.resx">
       <DependentUpon>ReporteListadoCanchas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteListadoClubes.resx">
+      <DependentUpon>ReporteListadoClubes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReporteListadoPartidos.resx">
       <DependentUpon>ReporteListadoPartidos.cs</DependentUpon>
     </EmbeddedResource>
@@ -406,6 +444,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportSocioApellido.rdlc" />
     <EmbeddedResource Include="Reportes\ReportSocios.rdlc" />
+    <EmbeddedResource Include="ReportGolesCclub.rdlc" />
+    <EmbeddedResource Include="ReportListadoClubes.rdlc" />
     <EmbeddedResource Include="TipoObservaciones\ABMTipoObservaciones.resx">
       <DependentUpon>ABMTipoObservaciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -415,6 +455,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Puestos\PuestosABM.resx">
       <DependentUpon>PuestosABM.cs</DependentUpon>
@@ -473,6 +514,17 @@
     </None>
     <None Include="DatosEstadisticaPromedioEdadPorCategoriaUltimosCincoAnios.xss">
       <DependentUpon>DatosEstadisticaPromedioEdadPorCategoriaUltimosCincoAnios.xsd</DependentUpon>
+    </None>
+    <None Include="EstadisticaGolesYClub.xsc">
+      <DependentUpon>EstadisticaGolesYClub.xsd</DependentUpon>
+    </None>
+    <None Include="EstadisticaGolesYClub.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstadisticaGolesYClub.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="EstadisticaGolesYClub.xss">
+      <DependentUpon>EstadisticaGolesYClub.xsd</DependentUpon>
     </None>
     <None Include="Estadisticas\DataSet3.xsc">
       <DependentUpon>DataSet3.xsd</DependentUpon>
@@ -621,6 +673,9 @@
     <None Include="Resources\pexels-tembela-bohle-1884574 nuevo.jpg" />
     <None Include="Resources\pexels-tembela-bohle-1884576 este.jpg" />
     <None Include="Resources\pexels-tembela-bohle-1884576 ok.jpg" />
+    <None Include="Resources\LineaBlanca.jpg" />
+    <None Include="Resources\fondoPrincipal - copia.jpeg" />
+    <None Include="Resources\fondo - copia.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

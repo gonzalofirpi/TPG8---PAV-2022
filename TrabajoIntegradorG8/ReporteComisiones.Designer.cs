@@ -45,21 +45,19 @@
             this.lblRepComisiones.AutoSize = true;
             this.lblRepComisiones.BackColor = System.Drawing.Color.Transparent;
             this.lblRepComisiones.Font = new System.Drawing.Font("Impact", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRepComisiones.Location = new System.Drawing.Point(317, 9);
-            this.lblRepComisiones.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRepComisiones.Location = new System.Drawing.Point(211, 6);
             this.lblRepComisiones.Name = "lblRepComisiones";
-            this.lblRepComisiones.Size = new System.Drawing.Size(588, 65);
+            this.lblRepComisiones.Size = new System.Drawing.Size(398, 43);
             this.lblRepComisiones.TabIndex = 10;
             this.lblRepComisiones.Text = "REPORTES DE COMISIONES";
             this.lblRepComisiones.Click += new System.EventHandler(this.lblRepCanchas_Click);
             // 
             // reportViewerComisiones
             // 
-            this.reportViewerComisiones.Location = new System.Drawing.Point(56, 258);
-            this.reportViewerComisiones.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.reportViewerComisiones.Location = new System.Drawing.Point(37, 168);
             this.reportViewerComisiones.Name = "reportViewerComisiones";
             this.reportViewerComisiones.ServerReport.BearerToken = null;
-            this.reportViewerComisiones.Size = new System.Drawing.Size(1107, 401);
+            this.reportViewerComisiones.Size = new System.Drawing.Size(739, 261);
             this.reportViewerComisiones.TabIndex = 23;
             this.reportViewerComisiones.Load += new System.EventHandler(this.reportViewerCanchas_Load);
             // 
@@ -68,10 +66,9 @@
             this.radioButtonRestringidoPorFecha.AutoSize = true;
             this.radioButtonRestringidoPorFecha.BackColor = System.Drawing.Color.Transparent;
             this.radioButtonRestringidoPorFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonRestringidoPorFecha.Location = new System.Drawing.Point(118, 123);
-            this.radioButtonRestringidoPorFecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonRestringidoPorFecha.Location = new System.Drawing.Point(79, 80);
             this.radioButtonRestringidoPorFecha.Name = "radioButtonRestringidoPorFecha";
-            this.radioButtonRestringidoPorFecha.Size = new System.Drawing.Size(226, 30);
+            this.radioButtonRestringidoPorFecha.Size = new System.Drawing.Size(156, 22);
             this.radioButtonRestringidoPorFecha.TabIndex = 24;
             this.radioButtonRestringidoPorFecha.TabStop = true;
             this.radioButtonRestringidoPorFecha.Text = "Restringido por año";
@@ -83,10 +80,9 @@
             this.radioButtonRestringidoEntreFechas.AutoSize = true;
             this.radioButtonRestringidoEntreFechas.BackColor = System.Drawing.Color.Transparent;
             this.radioButtonRestringidoEntreFechas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonRestringidoEntreFechas.Location = new System.Drawing.Point(118, 192);
-            this.radioButtonRestringidoEntreFechas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonRestringidoEntreFechas.Location = new System.Drawing.Point(79, 125);
             this.radioButtonRestringidoEntreFechas.Name = "radioButtonRestringidoEntreFechas";
-            this.radioButtonRestringidoEntreFechas.Size = new System.Drawing.Size(255, 30);
+            this.radioButtonRestringidoEntreFechas.Size = new System.Drawing.Size(175, 22);
             this.radioButtonRestringidoEntreFechas.TabIndex = 25;
             this.radioButtonRestringidoEntreFechas.TabStop = true;
             this.radioButtonRestringidoEntreFechas.Text = "Restringido entre años";
@@ -95,37 +91,41 @@
             // 
             // txtFecha
             // 
-            this.txtFecha.Location = new System.Drawing.Point(597, 127);
+            this.txtFecha.Location = new System.Drawing.Point(398, 83);
+            this.txtFecha.Margin = new System.Windows.Forms.Padding(2);
             this.txtFecha.Mask = "9999";
             this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(99, 26);
+            this.txtFecha.Size = new System.Drawing.Size(67, 20);
             this.txtFecha.TabIndex = 26;
             this.txtFecha.ValidatingType = typeof(int);
             // 
             // txtFechaDesde
             // 
-            this.txtFechaDesde.Location = new System.Drawing.Point(597, 196);
+            this.txtFechaDesde.Location = new System.Drawing.Point(398, 127);
+            this.txtFechaDesde.Margin = new System.Windows.Forms.Padding(2);
             this.txtFechaDesde.Mask = "9999";
             this.txtFechaDesde.Name = "txtFechaDesde";
-            this.txtFechaDesde.Size = new System.Drawing.Size(99, 26);
+            this.txtFechaDesde.Size = new System.Drawing.Size(67, 20);
             this.txtFechaDesde.TabIndex = 27;
             this.txtFechaDesde.ValidatingType = typeof(int);
             // 
             // txtFechaHasta
             // 
-            this.txtFechaHasta.Location = new System.Drawing.Point(928, 196);
+            this.txtFechaHasta.Location = new System.Drawing.Point(619, 127);
+            this.txtFechaHasta.Margin = new System.Windows.Forms.Padding(2);
             this.txtFechaHasta.Mask = "9999";
             this.txtFechaHasta.Name = "txtFechaHasta";
-            this.txtFechaHasta.Size = new System.Drawing.Size(99, 26);
+            this.txtFechaHasta.Size = new System.Drawing.Size(67, 20);
             this.txtFechaHasta.TabIndex = 28;
             this.txtFechaHasta.ValidatingType = typeof(int);
             // 
             // lblDesde
             // 
             this.lblDesde.AutoSize = true;
-            this.lblDesde.Location = new System.Drawing.Point(508, 201);
+            this.lblDesde.Location = new System.Drawing.Point(339, 131);
+            this.lblDesde.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDesde.Name = "lblDesde";
-            this.lblDesde.Size = new System.Drawing.Size(60, 20);
+            this.lblDesde.Size = new System.Drawing.Size(41, 13);
             this.lblDesde.TabIndex = 29;
             this.lblDesde.Text = "Desde:";
             this.lblDesde.Click += new System.EventHandler(this.label1_Click);
@@ -133,17 +133,19 @@
             // lblHasta
             // 
             this.lblHasta.AutoSize = true;
-            this.lblHasta.Location = new System.Drawing.Point(834, 202);
+            this.lblHasta.Location = new System.Drawing.Point(556, 131);
+            this.lblHasta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHasta.Name = "lblHasta";
-            this.lblHasta.Size = new System.Drawing.Size(56, 20);
+            this.lblHasta.Size = new System.Drawing.Size(38, 13);
             this.lblHasta.TabIndex = 30;
             this.lblHasta.Text = "Hasta:";
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(878, 86);
+            this.btnBuscar.Location = new System.Drawing.Point(585, 56);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(130, 67);
+            this.btnBuscar.Size = new System.Drawing.Size(87, 44);
             this.btnBuscar.TabIndex = 31;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -151,9 +153,11 @@
             // 
             // ReporteComisiones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1213, 688);
+            this.BackgroundImage = global::TrabajoIntegradorG8.Properties.Resources.fondo___copia;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(809, 447);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblHasta);
             this.Controls.Add(this.lblDesde);
@@ -164,6 +168,7 @@
             this.Controls.Add(this.radioButtonRestringidoPorFecha);
             this.Controls.Add(this.reportViewerComisiones);
             this.Controls.Add(this.lblRepComisiones);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ReporteComisiones";
             this.Text = "Reporte de Comisiones";
             this.Load += new System.EventHandler(this.ReporteComisiones_Load);

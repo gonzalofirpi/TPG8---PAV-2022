@@ -52,7 +52,6 @@
             this.reportViewerPartidos1.ServerReport.BearerToken = null;
             this.reportViewerPartidos1.Size = new System.Drawing.Size(776, 268);
             this.reportViewerPartidos1.TabIndex = 0;
-           
             // 
             // lblAño
             // 
@@ -212,7 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            //this.BackgroundImage = global::TrabajoIntegradorG8.Properties.Resources.fondo;
+            this.BackgroundImage = global::TrabajoIntegradorG8.Properties.Resources.fondo___copia;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.maskedTextBoxHasta);

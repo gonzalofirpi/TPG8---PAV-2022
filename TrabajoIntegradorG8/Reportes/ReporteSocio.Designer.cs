@@ -60,10 +60,9 @@ namespace TrabajoIntegradorG8.Reportes
             this.lblsocios.AutoSize = true;
             this.lblsocios.BackColor = System.Drawing.Color.Transparent;
             this.lblsocios.Font = new System.Drawing.Font("Impact", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsocios.Location = new System.Drawing.Point(291, 36);
-            this.lblsocios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblsocios.Location = new System.Drawing.Point(218, 29);
             this.lblsocios.Name = "lblsocios";
-            this.lblsocios.Size = new System.Drawing.Size(402, 54);
+            this.lblsocios.Size = new System.Drawing.Size(325, 43);
             this.lblsocios.TabIndex = 13;
             this.lblsocios.Text = "REPORTES DE SOCIOS";
             // 
@@ -79,10 +78,11 @@ namespace TrabajoIntegradorG8.Reportes
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(969, 505);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(725, 408);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Por Fecha Alta";
             // 
@@ -90,9 +90,10 @@ namespace TrabajoIntegradorG8.Reportes
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 12);
+            this.label3.Location = new System.Drawing.Point(4, 10);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(391, 24);
+            this.label3.Size = new System.Drawing.Size(318, 18);
             this.label3.TabIndex = 9;
             this.label3.Text = "Ingrese los años para iniciar la consulta: ";
             // 
@@ -102,10 +103,11 @@ namespace TrabajoIntegradorG8.Reportes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rv1.BackColor = System.Drawing.Color.LightGray;
-            this.rv1.Location = new System.Drawing.Point(6, 128);
+            this.rv1.Location = new System.Drawing.Point(4, 104);
+            this.rv1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rv1.Name = "rv1";
             this.rv1.ServerReport.BearerToken = null;
-            this.rv1.Size = new System.Drawing.Size(953, 323);
+            this.rv1.Size = new System.Drawing.Size(715, 263);
             this.rv1.TabIndex = 8;
             // 
             // btnBuscar
@@ -113,10 +115,9 @@ namespace TrabajoIntegradorG8.Reportes
             this.btnBuscar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscar.Location = new System.Drawing.Point(693, 64);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscar.Location = new System.Drawing.Point(520, 52);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(125, 38);
+            this.btnBuscar.Size = new System.Drawing.Size(94, 31);
             this.btnBuscar.TabIndex = 7;
             this.btnBuscar.Text = "Consultar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -127,10 +128,11 @@ namespace TrabajoIntegradorG8.Reportes
             this.txtYear2.BackColor = System.Drawing.SystemColors.Window;
             this.txtYear2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtYear2.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txtYear2.Location = new System.Drawing.Point(578, 70);
+            this.txtYear2.Location = new System.Drawing.Point(434, 57);
+            this.txtYear2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtYear2.Mask = "9999";
             this.txtYear2.Name = "txtYear2";
-            this.txtYear2.Size = new System.Drawing.Size(64, 27);
+            this.txtYear2.Size = new System.Drawing.Size(49, 23);
             this.txtYear2.TabIndex = 5;
             // 
             // txtYear1
@@ -138,19 +140,21 @@ namespace TrabajoIntegradorG8.Reportes
             this.txtYear1.BackColor = System.Drawing.SystemColors.Window;
             this.txtYear1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtYear1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txtYear1.Location = new System.Drawing.Point(386, 70);
+            this.txtYear1.Location = new System.Drawing.Point(290, 57);
+            this.txtYear1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtYear1.Mask = "9999";
             this.txtYear1.Name = "txtYear1";
-            this.txtYear1.Size = new System.Drawing.Size(64, 27);
+            this.txtYear1.Size = new System.Drawing.Size(49, 23);
             this.txtYear1.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(474, 73);
+            this.label2.Location = new System.Drawing.Point(356, 59);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 20);
+            this.label2.Size = new System.Drawing.Size(82, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Año Hasta: ";
             // 
@@ -158,9 +162,10 @@ namespace TrabajoIntegradorG8.Reportes
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(278, 73);
+            this.label1.Location = new System.Drawing.Point(208, 59);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 20);
+            this.label1.Size = new System.Drawing.Size(86, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Año Desde: ";
             // 
@@ -171,10 +176,11 @@ namespace TrabajoIntegradorG8.Reportes
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 113);
+            this.tabControl1.Location = new System.Drawing.Point(9, 92);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(977, 534);
+            this.tabControl1.Size = new System.Drawing.Size(733, 434);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage2
@@ -185,9 +191,10 @@ namespace TrabajoIntegradorG8.Reportes
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.rv2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(969, 505);
+            this.tabPage2.Size = new System.Drawing.Size(725, 408);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Por Apellido ";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -195,19 +202,21 @@ namespace TrabajoIntegradorG8.Reportes
             // txtletra
             // 
             this.txtletra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtletra.Location = new System.Drawing.Point(467, 54);
+            this.txtletra.Location = new System.Drawing.Point(350, 44);
+            this.txtletra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtletra.Mask = "L";
             this.txtletra.Name = "txtletra";
-            this.txtletra.Size = new System.Drawing.Size(60, 30);
+            this.txtletra.Size = new System.Drawing.Size(46, 26);
             this.txtletra.TabIndex = 17;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(393, 54);
+            this.label5.Location = new System.Drawing.Point(295, 44);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 25);
+            this.label5.Size = new System.Drawing.Size(54, 20);
             this.label5.TabIndex = 16;
             this.label5.Text = "Letra: ";
             // 
@@ -217,11 +226,9 @@ namespace TrabajoIntegradorG8.Reportes
             this.groupBox1.Controls.Add(this.rbu02);
             this.groupBox1.Controls.Add(this.rbu01);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(17, 54);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(13, 44);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(369, 109);
+            this.groupBox1.Size = new System.Drawing.Size(277, 89);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipo Cálculo";
@@ -229,10 +236,9 @@ namespace TrabajoIntegradorG8.Reportes
             // rbu03
             // 
             this.rbu03.AutoSize = true;
-            this.rbu03.Location = new System.Drawing.Point(25, 71);
-            this.rbu03.Margin = new System.Windows.Forms.Padding(4);
+            this.rbu03.Location = new System.Drawing.Point(19, 58);
             this.rbu03.Name = "rbu03";
-            this.rbu03.Size = new System.Drawing.Size(198, 29);
+            this.rbu03.Size = new System.Drawing.Size(159, 24);
             this.rbu03.TabIndex = 2;
             this.rbu03.TabStop = true;
             this.rbu03.Text = "Todos los usuarios";
@@ -241,10 +247,9 @@ namespace TrabajoIntegradorG8.Reportes
             // rbu02
             // 
             this.rbu02.AutoSize = true;
-            this.rbu02.Location = new System.Drawing.Point(25, 47);
-            this.rbu02.Margin = new System.Windows.Forms.Padding(4);
+            this.rbu02.Location = new System.Drawing.Point(19, 38);
             this.rbu02.Name = "rbu02";
-            this.rbu02.Size = new System.Drawing.Size(219, 29);
+            this.rbu02.Size = new System.Drawing.Size(179, 24);
             this.rbu02.TabIndex = 1;
             this.rbu02.TabStop = true;
             this.rbu02.Text = "Que contenga la letra";
@@ -253,10 +258,9 @@ namespace TrabajoIntegradorG8.Reportes
             // rbu01
             // 
             this.rbu01.AutoSize = true;
-            this.rbu01.Location = new System.Drawing.Point(25, 23);
-            this.rbu01.Margin = new System.Windows.Forms.Padding(4);
+            this.rbu01.Location = new System.Drawing.Point(19, 19);
             this.rbu01.Name = "rbu01";
-            this.rbu01.Size = new System.Drawing.Size(311, 29);
+            this.rbu01.Size = new System.Drawing.Size(251, 24);
             this.rbu01.TabIndex = 0;
             this.rbu01.TabStop = true;
             this.rbu01.Text = "Que el apellido inicie con la letra";
@@ -267,10 +271,9 @@ namespace TrabajoIntegradorG8.Reportes
             this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(803, 83);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(602, 67);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 38);
+            this.button1.Size = new System.Drawing.Size(94, 31);
             this.button1.TabIndex = 14;
             this.button1.Text = "Consultar";
             this.button1.UseVisualStyleBackColor = false;
@@ -280,9 +283,10 @@ namespace TrabajoIntegradorG8.Reportes
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 12);
+            this.label4.Location = new System.Drawing.Point(10, 10);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(181, 24);
+            this.label4.Size = new System.Drawing.Size(149, 18);
             this.label4.TabIndex = 10;
             this.label4.Text = "Listado de Socios ";
             // 
@@ -292,19 +296,23 @@ namespace TrabajoIntegradorG8.Reportes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rv2.BackColor = System.Drawing.Color.LightGray;
-            this.rv2.Location = new System.Drawing.Point(17, 202);
+            this.rv2.Location = new System.Drawing.Point(13, 164);
+            this.rv2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rv2.Name = "rv2";
             this.rv2.ServerReport.BearerToken = null;
-            this.rv2.Size = new System.Drawing.Size(934, 291);
+            this.rv2.Size = new System.Drawing.Size(701, 237);
             this.rv2.TabIndex = 0;
             // 
             // ReporteSocio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 659);
+            this.BackgroundImage = global::TrabajoIntegradorG8.Properties.Resources.fondo___copia;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(753, 535);
             this.Controls.Add(this.lblsocios);
             this.Controls.Add(this.tabControl1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ReporteSocio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte";

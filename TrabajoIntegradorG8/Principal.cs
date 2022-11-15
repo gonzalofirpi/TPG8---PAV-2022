@@ -134,6 +134,7 @@ namespace TrabajoIntegradorG8
         private void estadísticaDeTopGoleadoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ReporteEstadisticaTopGoleadores ventana = new ReporteEstadisticaTopGoleadores();
+            ventana.ShowDialog();
         }
         private void reporteToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -175,6 +176,24 @@ namespace TrabajoIntegradorG8
         private void sociosEnLaUltimaDecadaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EstadisticaSociosDecada ventana = new EstadisticaSociosDecada();
+            ventana.ShowDialog();
+        }
+
+        private void listadoDeClubesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteListadoClubes ventana = new ReporteListadoClubes();
+            ventana.ShowDialog();
+        }
+
+        private void estadisticaGoleadorPorClubToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteEstadisticaGolClub ventana = new ReporteEstadisticaGolClub();
+            ventana.ShowDialog();
+        }
+
+        private void estadisticaGolMasRapidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteEstadisticaFastGol ventana = new ReporteEstadisticaFastGol();
             ventana.ShowDialog();
         }
     }       
