@@ -123,6 +123,12 @@
     <Compile Include="Estadisticas\EstadisticaSocio.Designer.cs">
       <DependentUpon>EstadisticaSocio.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReporteComisiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteComisiones.Designer.cs">
+      <DependentUpon>ReporteComisiones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -313,9 +319,13 @@
       <DependentUpon>PuestosABM.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ListadoDeCanchas.rdlc" />
+    <EmbeddedResource Include="ListadoDeComisiones.rdlc" />
     <EmbeddedResource Include="ListadoDePartidos.rdlc" />
     <EmbeddedResource Include="Partido.resx">
       <DependentUpon>Partido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteComisiones.resx">
+      <DependentUpon>ReporteComisiones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteEstadisticaComisiones.resx">
       <DependentUpon>ReporteEstadisticaComisiones.cs</DependentUpon>

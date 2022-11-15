@@ -152,6 +152,12 @@ namespace TrabajoIntegradorG8
             EstadisticaPartidocs ventana = new EstadisticaPartidocs();
             ventana.ShowDialog();
         }
+
+        private void reporteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ReporteComisiones ventana = new ReporteComisiones();
+            ventana.ShowDialog();
+        }
     }
 
        
