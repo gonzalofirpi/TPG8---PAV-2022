@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DatosEstadisticaPromedioEdadPorCategoriaUltimosCincoAnios" targetNamespace="http://tempuri.org/DatosEstadisticaPromedioEdadPorCategoriaUltimosCincoAnios.xsd" xmlns:mstns="http://tempuri.org/DatosEstadisticaPromedioEdadPorCategoriaUltimosCincoAnios.xsd" xmlns="http://tempuri.org/DatosEstadisticaPromedioEdadPorCategoriaUltimosCincoAnios.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DatosEstadisticaPromedioEdadPorCategoriaUltimosCincoAnios" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DatosEstadisticaPromedioEdadPorCategoriaUltimosCincoAnios" msprop:Generator_DataSetName="DatosEstadisticaPromedioEdadPorCategoriaUltimosCincoAnios">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DatosEstadisticaPromedioEdadCategoriaUltimosCincoAnios" msprop:Generator_RowEvHandlerName="DatosEstadisticaPromedioEdadCategoriaUltimosCincoAniosRowChangeEventHandler" msprop:Generator_RowDeletedName="DatosEstadisticaPromedioEdadCategoriaUltimosCincoAniosRowDeleted" msprop:Generator_RowDeletingName="DatosEstadisticaPromedioEdadCategoriaUltimosCincoAniosRowDeleting" msprop:Generator_RowEvArgName="DatosEstadisticaPromedioEdadCategoriaUltimosCincoAniosRowChangeEvent" msprop:Generator_TablePropName="DatosEstadisticaPromedioEdadCategoriaUltimosCincoAnios" msprop:Generator_RowChangedName="DatosEstadisticaPromedioEdadCategoriaUltimosCincoAniosRowChanged" msprop:Generator_RowChangingName="DatosEstadisticaPromedioEdadCategoriaUltimosCincoAniosRowChanging" msprop:Generator_TableClassName="DatosEstadisticaPromedioEdadCategoriaUltimosCincoAniosDataTable" msprop:Generator_RowClassName="DatosEstadisticaPromedioEdadCategoriaUltimosCincoAniosRow" msprop:Generator_TableVarName="tableDatosEstadisticaPromedioEdadCategoriaUltimosCincoAnios" msprop:Generator_UserTableName="DatosEstadisticaPromedioEdadCategoriaUltimosCincoAnios">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Categoria" msprop:Generator_ColumnPropNameInRow="Categoria" msprop:Generator_ColumnPropNameInTable="CategoriaColumn" msprop:Generator_ColumnVarNameInTable="columnCategoria" msprop:Generator_UserColumnName="Categoria" type="xs:string" minOccurs="0" />
+              <xs:element name="PromedioDeEdad" msprop:Generator_ColumnPropNameInRow="PromedioDeEdad" msprop:Generator_ColumnPropNameInTable="PromedioDeEdadColumn" msprop:Generator_ColumnVarNameInTable="columnPromedioDeEdad" msprop:Generator_UserColumnName="PromedioDeEdad" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
