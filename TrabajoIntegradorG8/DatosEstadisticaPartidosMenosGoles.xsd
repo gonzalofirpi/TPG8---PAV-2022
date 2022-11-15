@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DatosEstadisticaPartidosMenosGoles" targetNamespace="http://tempuri.org/DatosEstadisticaPartidosMenosGoles.xsd" xmlns:mstns="http://tempuri.org/DatosEstadisticaPartidosMenosGoles.xsd" xmlns="http://tempuri.org/DatosEstadisticaPartidosMenosGoles.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DatosEstadisticaPartidosMenosGoles" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DatosEstadisticaPartidosMenosGoles" msprop:Generator_DataSetName="DatosEstadisticaPartidosMenosGoles">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TablaEstadisticaPMG" msprop:Generator_RowEvHandlerName="TablaEstadisticaPMGRowChangeEventHandler" msprop:Generator_RowDeletedName="TablaEstadisticaPMGRowDeleted" msprop:Generator_RowDeletingName="TablaEstadisticaPMGRowDeleting" msprop:Generator_RowEvArgName="TablaEstadisticaPMGRowChangeEvent" msprop:Generator_TablePropName="TablaEstadisticaPMG" msprop:Generator_RowChangedName="TablaEstadisticaPMGRowChanged" msprop:Generator_RowChangingName="TablaEstadisticaPMGRowChanging" msprop:Generator_TableClassName="TablaEstadisticaPMGDataTable" msprop:Generator_RowClassName="TablaEstadisticaPMGRow" msprop:Generator_TableVarName="tableTablaEstadisticaPMG" msprop:Generator_UserTableName="TablaEstadisticaPMG">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_UserColumnName="Fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="Categoria" msprop:Generator_ColumnPropNameInRow="Categoria" msprop:Generator_ColumnPropNameInTable="CategoriaColumn" msprop:Generator_ColumnVarNameInTable="columnCategoria" msprop:Generator_UserColumnName="Categoria" type="xs:string" minOccurs="0" />
+              <xs:element name="Club" msprop:Generator_ColumnPropNameInRow="Club" msprop:Generator_ColumnPropNameInTable="ClubColumn" msprop:Generator_ColumnVarNameInTable="columnClub" msprop:Generator_UserColumnName="Club" type="xs:string" minOccurs="0" />
+              <xs:element name="Goles" msprop:Generator_ColumnPropNameInRow="Goles" msprop:Generator_ColumnPropNameInTable="GolesColumn" msprop:Generator_ColumnVarNameInTable="columnGoles" msprop:Generator_UserColumnName="Goles" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

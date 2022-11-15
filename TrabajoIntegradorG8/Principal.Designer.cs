@@ -34,6 +34,7 @@
             this.sociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMSociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadísticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.canchasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMCanchasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeCanchasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,7 +68,7 @@
             this.ListadoDePartidos = new System.Windows.Forms.ToolStripMenuItem();
             this.estadisticaDePartidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadisticaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.reporteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadisticaPartidosConMenosGolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,6 +134,13 @@
             this.estadísticasToolStripMenuItem.Size = new System.Drawing.Size(315, 34);
             this.estadísticasToolStripMenuItem.Text = "Estadística de comisiones";
             this.estadísticasToolStripMenuItem.Click += new System.EventHandler(this.estadísticasToolStripMenuItem_Click);
+            // 
+            // reporteToolStripMenuItem1
+            // 
+            this.reporteToolStripMenuItem1.Name = "reporteToolStripMenuItem1";
+            this.reporteToolStripMenuItem1.Size = new System.Drawing.Size(315, 34);
+            this.reporteToolStripMenuItem1.Text = "Reporte";
+            this.reporteToolStripMenuItem1.Click += new System.EventHandler(this.reporteToolStripMenuItem1_Click);
             // 
             // canchasToolStripMenuItem
             // 
@@ -353,7 +361,8 @@
             this.consultasToolStripMenuItem5,
             this.ListadoDePartidos,
             this.estadisticaDePartidosToolStripMenuItem,
-            this.estadisticaToolStripMenuItem1});
+            this.estadisticaToolStripMenuItem1,
+            this.estadisticaPartidosConMenosGolesToolStripMenuItem});
             this.partidosToolStripMenuItem.Name = "partidosToolStripMenuItem";
             this.partidosToolStripMenuItem.Size = new System.Drawing.Size(92, 29);
             this.partidosToolStripMenuItem.Text = "Partidos";
@@ -361,36 +370,36 @@
             // consultasToolStripMenuItem5
             // 
             this.consultasToolStripMenuItem5.Name = "consultasToolStripMenuItem5";
-            this.consultasToolStripMenuItem5.Size = new System.Drawing.Size(292, 34);
+            this.consultasToolStripMenuItem5.Size = new System.Drawing.Size(408, 34);
             this.consultasToolStripMenuItem5.Text = "Registrar partido";
             this.consultasToolStripMenuItem5.Click += new System.EventHandler(this.consultasToolStripMenuItem5_Click);
             // 
             // ListadoDePartidos
             // 
             this.ListadoDePartidos.Name = "ListadoDePartidos";
-            this.ListadoDePartidos.Size = new System.Drawing.Size(292, 34);
+            this.ListadoDePartidos.Size = new System.Drawing.Size(408, 34);
             this.ListadoDePartidos.Text = "Listado de partidos";
             this.ListadoDePartidos.Click += new System.EventHandler(this.listadoDePartidostoolStripMenuItem1_Click);
             // 
             // estadisticaDePartidosToolStripMenuItem
             // 
             this.estadisticaDePartidosToolStripMenuItem.Name = "estadisticaDePartidosToolStripMenuItem";
-            this.estadisticaDePartidosToolStripMenuItem.Size = new System.Drawing.Size(292, 34);
+            this.estadisticaDePartidosToolStripMenuItem.Size = new System.Drawing.Size(408, 34);
             this.estadisticaDePartidosToolStripMenuItem.Text = "Estadistica de partidos";
             // 
             // estadisticaToolStripMenuItem1
             // 
             this.estadisticaToolStripMenuItem1.Name = "estadisticaToolStripMenuItem1";
-            this.estadisticaToolStripMenuItem1.Size = new System.Drawing.Size(292, 34);
+            this.estadisticaToolStripMenuItem1.Size = new System.Drawing.Size(408, 34);
             this.estadisticaToolStripMenuItem1.Text = "Estadistica";
             this.estadisticaToolStripMenuItem1.Click += new System.EventHandler(this.estadisticaToolStripMenuItem1_Click);
             // 
-            // reporteToolStripMenuItem1
+            // estadisticaPartidosConMenosGolesToolStripMenuItem
             // 
-            this.reporteToolStripMenuItem1.Name = "reporteToolStripMenuItem1";
-            this.reporteToolStripMenuItem1.Size = new System.Drawing.Size(315, 34);
-            this.reporteToolStripMenuItem1.Text = "Reporte";
-            this.reporteToolStripMenuItem1.Click += new System.EventHandler(this.reporteToolStripMenuItem1_Click);
+            this.estadisticaPartidosConMenosGolesToolStripMenuItem.Name = "estadisticaPartidosConMenosGolesToolStripMenuItem";
+            this.estadisticaPartidosConMenosGolesToolStripMenuItem.Size = new System.Drawing.Size(408, 34);
+            this.estadisticaPartidosConMenosGolesToolStripMenuItem.Text = "Estadistica partidos con menos goles";
+            this.estadisticaPartidosConMenosGolesToolStripMenuItem.Click += new System.EventHandler(this.estadisticaPartidosConMenosGolesToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -452,5 +461,6 @@
         private System.Windows.Forms.ToolStripMenuItem estadisticaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem estadisticaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem estadisticaPartidosConMenosGolesToolStripMenuItem;
     }
 }

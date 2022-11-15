@@ -226,6 +226,41 @@ namespace TrabajoIntegradorG8.AccesoADatos
 
             }
 
+        public static DataTable obtenerEstadisticaPartidosConMenosGoles()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "Select top 5 oxp.fecha, cat.NOMBRE as Categoria, clu.NOMBRE as Club,  count(oxp.COD_OBSERVACION) AS Goles\r\nFrom OBSERVACIONESXPARTIDO oxp\r\nRIGHT JOIN Partidos p ON (p.fecha = oxp.fecha) AND (p.COD_CATEGORIA = oxp.COD_CATEGORIA) AND (p.ID_CLUBLOCAL = oxp.ID_CLUBLOCAL)\r\nJOIN CLUBES clu ON clu.ID_CLUB=oxp.ID_CLUBLOCAL\r\nJOIN CATEGORIAS cat ON cat.COD_CATEGORIA=oxp.COD_CATEGORIA\r\nWHERE (oxp.COD_OBSERVACION = 1 AND YEAR(GETDATE()) - YEAR(oxp.FECHA) <= 2)\r\nGROUP BY oxp.fecha, cat.NOMBRE, clu.NOMBRE\r\nORDER BY GOLES";
+
+                cmd.Parameters.Clear();
+
+
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally { cn.Close(); }
+
+
+
+        }
+
         public static DataTable ObtenerJugadorXId(int id)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];

@@ -158,6 +158,12 @@ namespace TrabajoIntegradorG8
             ReporteComisiones ventana = new ReporteComisiones();
             ventana.ShowDialog();
         }
+
+        private void estadisticaPartidosConMenosGolesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteEstadisticaPartidosConMenosGoles ventana = new ReporteEstadisticaPartidosConMenosGoles();
+            ventana.ShowDialog();
+        }
     }
 
        

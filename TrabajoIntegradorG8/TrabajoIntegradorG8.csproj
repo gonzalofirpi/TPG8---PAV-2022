@@ -98,6 +98,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatosEstadistica.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DatosEstadisticaPartidosMenosGoles.cs">
+      <DependentUpon>DatosEstadisticaPartidosMenosGoles.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatosEstadisticaPartidosMenosGoles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosEstadisticaPartidosMenosGoles.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Estadisticas\DataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -128,6 +136,12 @@
     </Compile>
     <Compile Include="ReporteComisiones.Designer.cs">
       <DependentUpon>ReporteComisiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteEstadisticaPartidosConMenosGoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEstadisticaPartidosConMenosGoles.Designer.cs">
+      <DependentUpon>ReporteEstadisticaPartidosConMenosGoles.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -255,6 +269,7 @@
     <EmbeddedResource Include="EstadisticaComisiones.rdlc" />
     <EmbeddedResource Include="EstadisticaExpulsionesCat.rdlc" />
     <EmbeddedResource Include="EstadisticaGolesClub.rdlc" />
+    <EmbeddedResource Include="EstadisticaPartidosConMenosGoles.rdlc" />
     <EmbeddedResource Include="EstadisticaTopGoleadores.rdlc" />
     <EmbeddedResource Include="Estadisticas\EstadisticaPartidocs.resx">
       <DependentUpon>EstadisticaPartidocs.cs</DependentUpon>
@@ -336,6 +351,9 @@
     <EmbeddedResource Include="ReporteEstadisticaGolesClub.resx">
       <DependentUpon>ReporteEstadisticaGolesClub.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEstadisticaPartidosConMenosGoles.resx">
+      <DependentUpon>ReporteEstadisticaPartidosConMenosGoles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReporteEstadisticaTopGoleadores.resx">
       <DependentUpon>ReporteEstadisticaTopGoleadores.cs</DependentUpon>
     </EmbeddedResource>
@@ -384,6 +402,17 @@
     </None>
     <None Include="DatosEstadistica.xss">
       <DependentUpon>DatosEstadistica.xsd</DependentUpon>
+    </None>
+    <None Include="DatosEstadisticaPartidosMenosGoles.xsc">
+      <DependentUpon>DatosEstadisticaPartidosMenosGoles.xsd</DependentUpon>
+    </None>
+    <None Include="DatosEstadisticaPartidosMenosGoles.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosEstadisticaPartidosMenosGoles.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DatosEstadisticaPartidosMenosGoles.xss">
+      <DependentUpon>DatosEstadisticaPartidosMenosGoles.xsd</DependentUpon>
     </None>
     <None Include="Estadisticas\DataSet3.xsc">
       <DependentUpon>DataSet3.xsd</DependentUpon>
