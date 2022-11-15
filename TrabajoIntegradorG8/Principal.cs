@@ -164,6 +164,13 @@ namespace TrabajoIntegradorG8
             ReporteEstadisticaPartidosConMenosGoles ventana = new ReporteEstadisticaPartidosConMenosGoles();
             ventana.ShowDialog();
         }
+
+        private void estadísticaPromedioDeEdadPorCategoríaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteEstadisticaPromedioEdadCategoriaUltimosCincoAnios ventana = new ReporteEstadisticaPromedioEdadCategoriaUltimosCincoAnios();
+            ventana.ShowDialog();
+            
+        }
     }
 
        

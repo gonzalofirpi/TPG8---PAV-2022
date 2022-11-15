@@ -69,6 +69,7 @@
             this.estadisticaDePartidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadisticaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.estadisticaPartidosConMenosGolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadísticaPromedioDeEdadPorCategoríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -221,7 +222,8 @@
             // categoriasToolStripMenuItem
             // 
             this.categoriasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultasToolStripMenuItem2});
+            this.consultasToolStripMenuItem2,
+            this.estadísticaPromedioDeEdadPorCategoríaToolStripMenuItem});
             this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
             this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
             this.categoriasToolStripMenuItem.Text = "Categorias";
@@ -401,6 +403,13 @@
             this.estadisticaPartidosConMenosGolesToolStripMenuItem.Text = "Estadistica partidos con menos goles";
             this.estadisticaPartidosConMenosGolesToolStripMenuItem.Click += new System.EventHandler(this.estadisticaPartidosConMenosGolesToolStripMenuItem_Click);
             // 
+            // estadísticaPromedioDeEdadPorCategoríaToolStripMenuItem
+            // 
+            this.estadísticaPromedioDeEdadPorCategoríaToolStripMenuItem.Name = "estadísticaPromedioDeEdadPorCategoríaToolStripMenuItem";
+            this.estadísticaPromedioDeEdadPorCategoríaToolStripMenuItem.Size = new System.Drawing.Size(461, 34);
+            this.estadísticaPromedioDeEdadPorCategoríaToolStripMenuItem.Text = "Estadística promedio de edad por categoría";
+            this.estadísticaPromedioDeEdadPorCategoríaToolStripMenuItem.Click += new System.EventHandler(this.estadísticaPromedioDeEdadPorCategoríaToolStripMenuItem_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -462,5 +471,6 @@
         private System.Windows.Forms.ToolStripMenuItem estadisticaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem estadisticaPartidosConMenosGolesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadísticaPromedioDeEdadPorCategoríaToolStripMenuItem;
     }
 }

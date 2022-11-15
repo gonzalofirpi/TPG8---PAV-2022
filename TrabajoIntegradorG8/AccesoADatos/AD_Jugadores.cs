@@ -236,5 +236,41 @@ namespace TrabajoIntegradorG8.AccesoADatos
 
         }
 
+
+        public static DataTable obtenerEstadisticaPromedioDeEdad()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT cat.NOMBRE as Categoria, AVG(YEAR(GetDate()) - YEAR(FECHA_NACIMIENTO)) as PromedioDeEdad\r\n  FROM [BD3K3G08_2022].[dbo].[JUGADORXEQUIPOXPARTIDO] jep \r\n  JOIN CATEGORIAS cat ON cat.COD_CATEGORIA=jep.COD_CATEGORIA\r\n  JOIN JUGADORES jug on jug.ID_JUGADOR=jep.ID_JUGADOR\r\n  JOIN SOCIOS soc ON soc.ID_SOCIO=jug.ID_SOCIO \r\n  WHERE ((YEAR(GetDate()) - Year(jep.FECHA)) <= 5)\r\n  GROUP BY cat.NOMBRE";
+
+                cmd.Parameters.Clear();
+
+
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally { cn.Close(); }
+
+
+
+        }
+
     }
 }
