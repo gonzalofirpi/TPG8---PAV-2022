@@ -33,7 +33,7 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.btnBuscarCancha = new System.Windows.Forms.Button();
             this.checkBoxCanchaFecha = new System.Windows.Forms.CheckBox();
-            this.reportViewerComisiones = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.reportViewerCanchas = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
             // lblRepCanchas
@@ -95,15 +95,15 @@
             this.checkBoxCanchaFecha.UseVisualStyleBackColor = false;
             this.checkBoxCanchaFecha.CheckedChanged += new System.EventHandler(this.checkBoxCanchaFecha_CheckedChanged);
             // 
-            // reportViewerComisiones
+            // reportViewerCanchas
             // 
-            this.reportViewerComisiones.Location = new System.Drawing.Point(35, 123);
-            this.reportViewerComisiones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.reportViewerComisiones.Name = "reportViewerComisiones";
-            this.reportViewerComisiones.ServerReport.BearerToken = null;
-            this.reportViewerComisiones.Size = new System.Drawing.Size(730, 319);
-            this.reportViewerComisiones.TabIndex = 24;
-            this.reportViewerComisiones.Load += new System.EventHandler(this.reportViewerComisiones_Load);
+            this.reportViewerCanchas.Location = new System.Drawing.Point(35, 123);
+            this.reportViewerCanchas.Margin = new System.Windows.Forms.Padding(2);
+            this.reportViewerCanchas.Name = "reportViewerCanchas";
+            this.reportViewerCanchas.ServerReport.BearerToken = null;
+            this.reportViewerCanchas.Size = new System.Drawing.Size(730, 319);
+            this.reportViewerCanchas.TabIndex = 24;
+            this.reportViewerCanchas.Load += new System.EventHandler(this.reportViewerComisiones_Load);
             // 
             // ReporteListadoCanchas
             // 
@@ -112,7 +112,7 @@
             this.BackgroundImage = global::TrabajoIntegradorG8.Properties.Resources.fondo___copia;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.reportViewerComisiones);
+            this.Controls.Add(this.reportViewerCanchas);
             this.Controls.Add(this.checkBoxCanchaFecha);
             this.Controls.Add(this.btnBuscarCancha);
             this.Controls.Add(this.maskedTextBoxFecha);
@@ -134,6 +134,6 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Button btnBuscarCancha;
         private System.Windows.Forms.CheckBox checkBoxCanchaFecha;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewerComisiones;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewerCanchas;
     }
 }

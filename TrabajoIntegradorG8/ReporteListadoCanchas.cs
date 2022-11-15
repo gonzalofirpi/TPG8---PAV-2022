@@ -26,7 +26,7 @@ namespace TrabajoIntegradorG8
         {
 
 
-            this.reportViewerComisiones.RefreshReport();
+            this.reportViewerCanchas.RefreshReport();
         }
 
 
@@ -82,14 +82,14 @@ namespace TrabajoIntegradorG8
 
                 Restriccion();
 
-                //ReportDataSource Datos = new ReportDataSource("DatosCanchas", Tabla);
-                //reportViewerCanchas.LocalReport.ReportEmbeddedResource = "TrabajoIntegradorG8.ListadoDeCanchas.rdlc";
-                //ReportParameter[] parametros = new ReportParameter[1];
-                //parametros[0] = new ReportParameter("Alcance", alcance);
-                //reportViewerCanchas.LocalReport.SetParameters(parametros);
-                //reportViewerCanchas.LocalReport.DataSources.Clear();
-                //reportViewerCanchas.LocalReport.DataSources.Add(Datos);
-                //reportViewerCanchas.RefreshReport();
+                ReportDataSource Datos = new ReportDataSource("DatosCanchas", Tabla);
+                reportViewerCanchas.LocalReport.ReportEmbeddedResource = "TrabajoIntegradorG8.ListadoDeCanchas.rdlc";
+                ReportParameter[] parametros = new ReportParameter[1];
+                parametros[0] = new ReportParameter("Alcance", alcance);
+                reportViewerCanchas.LocalReport.SetParameters(parametros);
+                reportViewerCanchas.LocalReport.DataSources.Clear();
+                reportViewerCanchas.LocalReport.DataSources.Add(Datos);
+                reportViewerCanchas.RefreshReport();
             }
         }
 
